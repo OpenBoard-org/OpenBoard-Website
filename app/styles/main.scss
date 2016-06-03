@@ -89,6 +89,10 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+
+  .dropdown {
+    display: inline-block;
+  }
 }
 
 .footer-links {
