@@ -64,12 +64,24 @@ body {
   .btn {
     font-size: 18px;
     padding: 14px 24px;
+    margin: 15px 0;
+  }
+
+  .compatibility {
+    color: $gray-light;
+    font-size: 12px;
   }
 }
 
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
+}
+
+.timestamp {
+  margin-top: 3em;
+  color: $gray-light;
+  font-size: 13px;
 }
 
 /* Custom page footer */
