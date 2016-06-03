@@ -25,17 +25,51 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
+/* Main navigation navbar */
+.navbar-default {
+  background-color: transparent;
+  border: none;
   border-bottom: 1px solid #e5e5e5;
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+  .navbar-header {
+    min-height: 50px;
+
+    .navbar-brand {
+      padding: 0;
+      height: auto;
+
+      .logo {
+        width: 200px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+      }
+    }
   }
+
+  .navbar-toggle {
+    background-color: $brand-primary;
+    margin-top: 0;
+
+    .icon-bar {
+      background-color: #FFF;
+    }
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
 }
 
 /* Custom page footer */
@@ -45,25 +79,20 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
+.footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  a {
+    color: $gray;
   }
-}
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
+  li {
+    display: inline-block;
+  } 
+
+  li+li {
+    margin-left: 15px;
   }
 }
 
@@ -81,13 +110,37 @@ body {
     padding-right: 0;
   }
 
+  /* Main navigation navbar styled as nav-pills */
+  .navbar-default {
+    .navbar-collapse {
+      padding: 0;
+    }
+
+    .navbar-nav > li {
+      a {
+        color: $brand-primary;
+        border-radius: 4px;
+        padding: 10px 15px;
+      }
+      a:hover,
+      a:focus {
+        background-color: $gray-lighter;
+      }
+    }
+
+    .navbar-nav > li.active {
+      a,
+      a:hover,
+      a:focus {
+        color: #fff;
+        background-color: $brand-primary;
+      }
+    }
+  }
+
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
