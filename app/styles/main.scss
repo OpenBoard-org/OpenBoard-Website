@@ -57,6 +57,13 @@ body {
   }
 }
 
+.language-select {
+  margin-left: 15px;
+  margin-right: -15px;
+  padding: 5px 0 5px 15px;
+  float: right;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -89,10 +96,6 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
-
-  .dropdown {
-    display: inline-block;
-  }
 }
 
 .footer-links {

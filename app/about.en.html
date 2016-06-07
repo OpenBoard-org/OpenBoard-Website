@@ -27,8 +27,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="container">
-
+    <div class="container-fluid">
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -42,16 +41,30 @@
               <img src="images/openboard-header-logo.png" class="logo img-responsive" alt="OpenBoard">
             </a>
           </div>
+          <div class="dropdown language-select">
+            <button class="btn btn-sm btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+               <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> En
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="about.en.html">English</a></li>
+              <li><a href="about.html">Français</a></li>
+            </ul>
+          </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.en.html">Home</a></li>
               <li><a href="https://github.com/DIP-SEM/OpenBoard/wiki/Downloads">Downloads</a></li>
+              <li><a href="http://ndprdjeq.preview.infomaniak.com/forum/">Community</a></li>
+              <li><a href="support.en.html">Support</a></li>
               <li class="active"><a href="about.en.html">About</a></li>
             </ul>
           </div>
         </div>
       </nav>
+    </div>
 
+    <div class="container">
       <div class="">
         <h2>About OpenBoard</h2>
         <p>OpenBoard is an open source cross-platform interactive whiteboard application designed primarily for use in schools and universities. It can be used both with interactive whiteboards or in a dual-screen setup with a pen-tablet display and a beamer.</p>
@@ -66,22 +79,14 @@
 
         <p class="timestamp">June 3rd 2016</p>
       </div>
+    </div>
 
+    <div class="container">
       <div class="footer">
         <ul class="footer-links pull-right">
           <li><a href="https://github.com/DIP-SEM/OpenBoard">Contribute on GitHub</a></li>
           <li><a href="mailto:support@openboard.ch">Contact</a></li>
         </ul>
-        <div class="dropdown">
-          <button class="btn btn-sm btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-             <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> En
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="about.en.html">English</a></li>
-            <li><a href="about.html">Français</a></li>
-          </ul>
-        </div>
       </div>
     </div>
     
