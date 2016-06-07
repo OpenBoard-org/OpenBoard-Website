@@ -58,9 +58,8 @@ body {
 }
 
 .language-select {
-  margin-left: 15px;
   margin-right: -15px;
-  padding: 5px 0 5px 15px;
+  padding: 2px 0;
   float: right;
 }
 
@@ -156,6 +155,11 @@ body {
         background-color: $brand-primary;
       }
     }
+  }
+
+  .language-select {
+    margin-left: 15px;
+    padding: 5px 0 5px 15px;
   }
 
   /* Space out the masthead */
