@@ -12,6 +12,10 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
+a {
+  transition: color 0.5s ease, background 0.5s ease;
+}
+
 /* Space out content a bit */
 body {
   padding-bottom: 20px;
@@ -40,10 +44,10 @@ body {
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand {
-  color:#DDD;
-  :hover{
-    color:blue;
-  }
+  color:#FFF;
+}
+.navbar-default .navbar-nav > li > a:hover{
+  color:rgb(239, 155, 73);
 }
 
 .spacer-lg {
@@ -52,8 +56,8 @@ body {
 }
 .splash {
     padding: 9em 0 2em;
-    background-color: #141d27;
-    background-image: url(/images/bg.jpg);
+    background-color: #176893;
+    background-image: url('/images/bg.png');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
