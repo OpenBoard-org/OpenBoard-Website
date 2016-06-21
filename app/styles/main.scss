@@ -1,5 +1,8 @@
 $icon-font-path: '../fonts/';
 
+
+@import "bootstrap-variables-overwrite.scss";
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/components-font-awesome/scss/font-awesome.scss";
