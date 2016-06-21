@@ -16,11 +16,11 @@ $icon-font-path: '../fonts/';
 }
 
 a {
-  transition: color 0.5s, background 0.5s , border 0.5s;
+  transition: color 0.3s, background 0.4s , border 0.4s;
 }
 
 .btn-primary:hover {
-  background-color: lighten($link-hover-color,3%);
+  background-color: $link-hover-color;
   border-color: $link-hover-color;
 }
 
