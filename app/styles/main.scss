@@ -1,7 +1,8 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-@import "bootstrap";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/components-font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browserupgrade {
@@ -13,7 +14,6 @@ $icon-font-path: '../fonts/';
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -26,81 +26,63 @@ body {
 }
 
 /* Main navigation navbar */
-.navbar-default {
+
+.navbar-brand > img {
+    display: inline;
+    margin: 0 10px;
+    height: 100%;
+}
+.navbar-transparent {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
-
-  .navbar-header {
-    min-height: 50px;
-
-    .navbar-brand {
-      padding: 0;
-      height: auto;
-
-      .logo {
-        width: 200px;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-      }
-    }
-  }
-
-  .navbar-toggle {
-    background-color: $brand-primary;
-    margin-top: 0;
-
-    .icon-bar {
-      background-color: #FFF;
-    }
+  color:#FFF;
+  position: absolute;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  color:#DDD;
+  :hover{
+    color:blue;
   }
 }
 
-.language-select {
-  margin-right: -15px;
-  padding: 2px 0;
-  float: right;
+.spacer-lg {
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.splash {
+    padding: 9em 0 2em;
+    background-color: #141d27;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 18px;
-    padding: 14px 24px;
-    margin: 15px 0;
-  }
-
-  .compatibility {
-    color: $gray-light;
-    font-size: 12px;
-  }
+.section-tout {
+    padding: 4em 0 3em;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    background-color: #eaf1f1;
+    margin-bottom: 40px;
 }
+
+
 
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
 }
 
-.timestamp {
-  margin-top: 3em;
-  color: $gray-light;
-  font-size: 13px;
-}
 
 /* Custom page footer */
 .footer {
-  margin-top: 20px;
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 .footer-links {
   padding-left: 0;
-  margin-bottom: 20px;
 
   a {
     color: $gray;
@@ -115,56 +97,3 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Main navigation navbar styled as nav-pills */
-  .navbar-default {
-    .navbar-collapse {
-      padding: 0;
-    }
-
-    .navbar-nav > li {
-      a {
-        color: $brand-primary;
-        border-radius: 4px;
-        padding: 10px 15px;
-      }
-      a:hover,
-      a:focus {
-        background-color: $gray-lighter;
-      }
-    }
-
-    .navbar-nav > li.active {
-      a,
-      a:hover,
-      a:focus {
-        color: #fff;
-        background-color: $brand-primary;
-      }
-    }
-  }
-
-  .language-select {
-    margin-left: 15px;
-    padding: 5px 0 5px 15px;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-}
