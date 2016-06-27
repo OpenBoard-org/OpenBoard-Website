@@ -47,16 +47,9 @@ body {
 .navbar-transparent {
   background-color: transparent;
   border: none;
-  color:#FFF;
   position: absolute;
 }
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-brand {
-  color:#FFF;
-}
-.navbar-default .navbar-nav > li > a:hover{
-  color:rgb(239, 155, 73);
-}
+
 
 .spacer-lg {
   margin-top:50px;
