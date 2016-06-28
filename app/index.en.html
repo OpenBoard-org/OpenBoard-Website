@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="description" content="OpenBoard is an open source cross-platform interactive whiteboard application. OpenBoard is intended for use primarily in schools and universities, and can be used both with interactive whiteboards or in a dual-screen setup with a touchscreen and secondary display.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OpenBoard - Home</title>
+  <title>OpenBoard, the best interactive whiteboard for schools and universities</title>
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -25,9 +26,8 @@
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-  <div class="container">
-    <nav class="navbar navbar-default navbar-transparent" role="navigation">
+    <div class="container">
+    <nav class="navbar navbar-default navbar-static-top navbar-transparent" role="navigation">
       <div class="container">
 
         <div class="navbar-header">
@@ -46,7 +46,7 @@
           <ul class="nav navbar-nav">
             <li><a href="https://github.com/DIP-SEM/OpenBoard/wiki/Downloads">Downloads</a></li>
             <li><a href="http://ndprdjeq.preview.infomaniak.com/forum/">Forum</a></li>
-            <li><a href="support.en.html">Contact</a></li>
+            <li><a href="support.en.html">Documentation</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.en.html">English</a></li>
@@ -56,7 +56,6 @@
       </div>
     </nav>
   </div>
-
   <div class="splash">
     <div class="container">
 
@@ -100,7 +99,7 @@
             </div>
             <div class="col-lg-4 col-sm-6">
               <h3><i class="fa fa-pencil"></i> Handwriting</h3>
-              <p>Use a tablette, a projector, or even the mouse to write and annotate your slide. We are constantly working the improve the writing experience.</p>
+              <p>Use a tablette, a projector, or even a mouse to write and annotate your slide. We are constantly working the improve the writing experience.</p>
             </div>
           </div>
       </div>
@@ -109,8 +108,8 @@
    <div class="container">
       <div class="row text-center spacer-lg">
          <p>
-          <img src='/images/openboard-wacom.jpg' width="100%" />
-          <p>
+            <img src='/images/openboard-wacom.jpg' width="100%" />
+          </p>
           <h2>Choose the best for your class</h2>
           <p class=lead>Free and open source</p>
           <p><a class="btn btn-lg btn-primary" href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.1">Get OpenBoard now</a></p>
@@ -140,8 +139,8 @@
       <div class="footer">
 
         <ul class="footer-links pull-right">
-          <li><a href="https://github.com/DIP-SEM/OpenBoard">Contribute on GitHub</a></li>
-          <li><a href="mailto:support@openboard.ch">Contact</a></li>
+          <li><a href="https://github.com/DIP-SEM/OpenBoard">OpenBoard on GitHub</a></li>
+          <li><a href="mailto:support@openboard.ch">support@openboard.ch</a></li>
         </ul>
       </div>
     </div>
@@ -156,9 +155,10 @@
       ga('create','UA-19466870-19');ga('send','pageview');
     </script>
 
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <!-- build:js scripts/plugins.js -->
+      <script type="text/javascript" src="../bower_components/bootstrap.native/dist/bootstrap-native.js"></script>
     <!-- endbuild -->
+
+
   </body>
 </html>

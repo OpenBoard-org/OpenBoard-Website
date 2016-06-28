@@ -3,6 +3,14 @@ $icon-font-path: '../fonts/';
 
 @import "bootstrap-variables-overwrite.scss";
 
+// Aditional Style for bootstrap without jQuery
+/* enables CSS3 transition for simple collapses, accordion and also navbar in responsive view */
+.collapse { transition: height .3s ease-out; /*-webkit-transition: height .3s ease-out*/ } 
+
+/* styles the close button for the dismissible popovers */
+.popover .close { position: absolute; top: 7px; right: 10px; }
+
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/components-font-awesome/scss/font-awesome.scss";
@@ -47,16 +55,9 @@ body {
 .navbar-transparent {
   background-color: transparent;
   border: none;
-  color:#FFF;
   position: absolute;
 }
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-brand {
-  color:#FFF;
-}
-.navbar-default .navbar-nav > li > a:hover{
-  color:rgb(239, 155, 73);
-}
+
 
 .spacer-lg {
   margin-top:50px;
@@ -76,7 +77,6 @@ body {
     padding: 4em 0 3em;
     border-bottom: 1px solid rgba(0,0,0,.05);
     background-color: #eaf1f1;
-    margin-bottom: 40px;
 }
 
 
