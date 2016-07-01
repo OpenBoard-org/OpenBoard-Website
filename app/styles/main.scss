@@ -48,15 +48,24 @@ body {
 /* Main navigation navbar */
 
 .navbar-brand > img {
-    display: inline;
-    margin: 0 10px;
-    height: 100%;
+  display: inline;
+  margin: 0 10px;
+  height: 100%;
 }
 .navbar-transparent {
   background-color: transparent;
   border: none;
 }
 
+.navbar-default .navbar-toggle {
+  &:hover,
+  &:focus {
+    background-color: $brand-primary;
+  }
+  .icon-bar {
+    background-color: #FFF;
+  }
+}
 
 .spacer-lg {
   margin-top:50px;
@@ -76,22 +85,19 @@ body {
 }
 
 .section-tout {
-    padding: 4em 0 3em;
-    border-bottom: 1px solid rgba(0,0,0,.05);
-    background-color: #eaf1f1;
+  padding: 4em 0 3em;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  background-color: #eaf1f1;
 }
-
-
 
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
 }
 
-
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
+  padding-top: 4em;
   color: #777;
 }
 
