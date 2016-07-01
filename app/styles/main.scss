@@ -62,14 +62,17 @@ body {
   margin-top:50px;
   margin-bottom: 50px;
 }
+
 .splash {
-    padding: 9em 0 2em;
-    background-color: #176893;
-    background-image: url('/images/bg.png');
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    text-align: center;
+  >.container {
+    padding: 2em 0 1em;
+  }
+  background-color: #176893;
+  background-image: url('/images/bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
 }
 
 .section-tout {
@@ -108,3 +111,9 @@ body {
   }
 }
 
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .splash>.container {
+    padding: 9em 0 2em;
+  }
+}
