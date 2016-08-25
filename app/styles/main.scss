@@ -117,6 +117,24 @@ body {
   }
 }
 
+/* Platforms styles */
+.platforms {
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.platform {
+  line-height: 1.21951;
+  font-weight: 200;
+  letter-spacing: normal;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .splash>.container {

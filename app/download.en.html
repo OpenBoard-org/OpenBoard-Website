@@ -1,0 +1,257 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="OpenBoard is an open source cross-platform interactive whiteboard application. OpenBoard is intended for use primarily in schools and universities, and can be used both with interactive whiteboards or in a dual-screen setup with a touchscreen and secondary display.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenBoard, the best interactive whiteboard for schools and universities</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.en.html">
+          <img src="images/openboard-logo.png" alt="*">
+          OpenBoard
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="download.en.html">Download</a></span></li>
+          <li><a href="http://openboard.ch/forum/">Forum</a></li>
+          <li><a href="support.en.html">Documentation</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="download.en.html">English</a></li>
+          <li><a href="download.html">Français</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Download OpenBoard</h1>
+    </div>
+
+    <div class="row platforms">
+      <div class="col-md-4 col-sm-12 platform">
+        <img alt="OS X logo" class="img-circle" src="images/OS-X-logo.png">
+        <p>OS&nbsp;X</p>
+        <a class="btn btn-success" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/OpenBoard.dmg">Download OpenBoard 1.3.3 for OS X</a>
+      </div>
+      <div class="col-md-4 col-sm-12 platform">
+        <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
+        <p>Windows</p>
+        <a class="btn btn-success" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/OpenBoard_Installer_1.3.3.exe">Download OpenBoard 1.3.3 for Windows</a>
+      </div>
+      <div class="col-md-4 col-sm-12 platform">
+        <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
+        <p>Ubuntu</p>
+        <a class="btn btn-success" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/openboard_ubuntu_14.04_1.3.3_amd64.deb">Download OpenBoard 1.3.3 for Ubuntu 14.04</a>
+        <a class="btn btn-success" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/openboard_ubuntu_16.04_1.3.3_amd64.deb">Download OpenBoard 1.3.3 for Ubuntu 16.04</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Release Notes</h1>
+
+        <h2>
+        <a id="user-content-whats-new-in-version-133" class="anchor" href="#whats-new-in-version-133" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.3</h2>
+
+        <p>Bug fixes related mostly to import and export of documents (in .ubz or .pdf) with a pdf item.</p>
+
+        <p>A bug was also fixed which affected on-screen keyboard. </p>
+
+        <h2>
+        <a id="user-content-whats-new-in-version-131" class="anchor" href="#whats-new-in-version-131" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.1</h2>
+
+        <p>A few bug fixes, mainly related to desktop interaction and multi-screen mode on Linux, as well as a reborn Google Maps widget.</p>
+
+        <h2>
+        <a id="user-content-whats-new-in-version-130" class="anchor" href="#whats-new-in-version-130" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.0</h2>
+
+        <p>Below is a list of the main changes since the last version (1.02.10)</p>
+
+        <h4>
+        <a id="user-content-codebase" class="anchor" href="#codebase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Codebase</h4>
+
+        <ul>
+        <li>Qt code migrated from version 4.8 to 5.5.
+
+        <ul>
+        <li>Multimedia elements (video and audio) based on Qt Multimedia instead of Phonon</li>
+        </ul>
+        </li>
+        <li>OS X: Carbon framework largely replaced by Cocoa</li>
+        <li>OS X: Podcast module back-end migrated from QuickTime to AV Foundation</li>
+        </ul>
+
+        <h4>
+        <a id="user-content-general" class="anchor" href="#general" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General</h4>
+
+        <ul>
+        <li>Support for system's on-screen keyboard on Windows and OS X (as well as Onboard on Linux)</li>
+        <li>5th pen color added</li>
+        <li>Added image search on data.abulEdu.org and Pixabay.com</li>
+        </ul>
+
+        <h4>
+        <a id="user-content-pages-display-saving-and-loading" class="anchor" href="#pages-display-saving-and-loading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pages (display, saving and loading)</h4>
+
+        <ul>
+        <li>Corrected many bugs related to the display and saving of elements' positions on the page (*)</li>
+        <li>Corrected a scale issue with PDF documents when switching screen resolutions (scale was not preserved when opening the document on another computer)</li>
+        </ul>
+
+        <h4>
+        <a id="user-content-graphics-items" class="anchor" href="#graphics-items" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Graphics items</h4>
+
+        <ul>
+        <li>Added a preview circle around the eraser and highlighter</li>
+        <li>Color picker can now be used with the compass</li>
+        <li>
+        <p>Various enhancements for media items, including:</p>
+
+        <ul>
+        <li>Progress bar appears on mouse hover above a video; then auto-hides</li>
+        <li>Media items can be moved by clicking the gray area beside the progress bar</li>
+        </ul>
+        </li>
+        <li><p>"Go to content source" option removed</p></li>
+        <li>Compass size reduced</li>
+        </ul>
+
+        <h4>
+        <a id="user-content-documents-pane" class="anchor" href="#documents-pane" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documents pane</h4>
+
+        <ul>
+        <li>Multiple selection is now possible (using Shift or Ctrl/Cmd)</li>
+        </ul>
+
+        <h4>
+        <a id="user-content-minor-changes" class="anchor" href="#minor-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Minor changes</h4>
+
+        <ul>
+        <li>
+        <p>Linux: </p>
+
+        <ul>
+        <li>OpenBoard is now installed in <code>/opt/openboard</code> instead of <code>/usr/local/OpenBoard-$VERSION</code>
+        </li>
+        <li>OpenBoard can be started from the terminal, with the <code>openboard</code> command</li>
+        <li>.ubz files are opened with OpenBoard by default</li>
+        </ul>
+        </li>
+        <li><p>New icons for .ubz files on Windows and OS X</p></li>
+        <li>New icons for "previous page"/"next page" buttons</li>
+        <li>New default pen colors (inc. white on white and black on black)</li>
+        <li>Google image search removed</li>
+        <li>Better handling of configuration files and document metadata files, resulting in less disk I/O</li>
+        <li>OS X: system print dialog offers the option of printing to PDF to OpenBoard</li>
+        <li>Various other bug fixes and tweaks</li>
+        </ul>
+
+        <p>(*) Details:</p>
+
+        <ul>
+        <li>Corrected saving and loading of elements' z-levels</li>
+        <li>Corrected z-level display issues when switching pages or zooming in/out</li>
+        <li>Corrected position (x, y and z) assignment when duplicating elements</li>
+        <li>Corrected saving and loading of positions of grouped items and pen strokes</li>
+        </ul>
+
+        <h2>
+        <a id="user-content-compatibility-with-older-versions" class="anchor" href="#compatibility-with-older-versions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compatibility with older versions</h2>
+
+        <p>While no breaking changes have been made between versions 1.02 and 1.3, we cannot necessarily guarantee that documents saved with version 1.3 will display correctly when opened in version 1.2. This is due to the many bugs that were present in version 1.02 related to the saving of elements' positions, and PDF size relative to the document, among other issues.</p>
+
+        <p>That being said, documents created in version 1.02 should import correctly to version 1.3.</p>
+
+        <p>Furthermore, an importer for Open-Sankoré documents up to v2.0 is provided (and has been since OpenBoard v1). Exporting documents from OpenBoard to Open-Sankoré, however, is not guaranteed to produce good results.</p>
+
+        <h2>
+        <a id="user-content-known-issues-in-version-130" class="anchor" href="#known-issues-in-version-130" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known issues in version 1.3.0</h2>
+
+        <ul>
+        <li>Google Maps widget is broken</li>
+        <li>A few minor bugs with text boxes (positioning &amp; selection)</li>
+        <li>OpenBoard may crash on exiting with a blank document</li>
+        <li>On OS X, switching from desktop mode to board mode and back causes shadows to be drawn around pen strokes, and these shadows persist if the strokes are erased. A quick fix for this is to switch again to board mode and back.</li>
+        <li>Exporting a document containing both a background PDF item and a marker stroke on the same page, to PDF, results in scale issues. A quick fix is to restart OpenBoard and re-open the document. It should then export correctly.</li>
+        <li>OS X: in desktop mode, the dock and menu bar stay hidden. </li>
+        <li>... other issues <a href="https://github.com/DIP-SEM/OpenBoard/issues?q=is%3Aopen+is%3Aissue+label%3Abug">here</a>
+        </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>For developers</h2>
+        <h3>Packages</h3>
+
+        <p>The latest available version, 1.3.3, can be obtained <a href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.3">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
+
+        <p>See here for <a href="https://github.com/DIP-SEM/OpenBoard/wiki/Install">installation instructions</a>.</p>
+
+        <p>Please check the <a href="#known-issues-in-version-130">list of known issues</a> below, before reporting a bug.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="footer">
+
+      <ul class="footer-links pull-right">
+        <li><a href="https://github.com/DIP-SEM/OpenBoard">OpenBoard on GitHub</a></li>
+        <li><a href="mailto:support@openboard.ch">support@openboard.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-19466870-19');ga('send','pageview');
+  </script>
+
+  <!-- build:js scripts/plugins.js -->
+    <script type="text/javascript" src="../bower_components/bootstrap.native/dist/bootstrap-native.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>
