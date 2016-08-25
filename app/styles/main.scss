@@ -119,14 +119,14 @@ body {
 
 /* Platforms styles */
 .platforms {
-  text-align: center;
-  font-size: 40px;
   border-bottom: 1px solid rgba(0,0,0,.05);
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .platform {
+  text-align: center;
+  font-size: 40px;
   line-height: 1.21951;
   font-weight: 200;
   letter-spacing: normal;
