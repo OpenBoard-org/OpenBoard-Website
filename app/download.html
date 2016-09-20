@@ -66,23 +66,45 @@
       <div class="col-md-4 col-sm-12 platform">
         <img alt="OS X logo" src="images/OS-X-logo.png">
         <p>OS&nbsp;X</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/OpenBoard.dmg">Télécharger OpenBoard pour OS X</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard.dmg">Télécharger OpenBoard pour OS X</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Windows logo" src="images/Windows-logo.png">
         <p>Windows</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/OpenBoard_Installer_1.3.3.exe">Télécharger OpenBoard pour Windows</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard_Installer_1.3.4.exe">Télécharger OpenBoard pour Windows</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Ubuntu logo" src="images/Ubuntu-logo.png">
         <p>Ubuntu</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/openboard_ubuntu_14.04_1.3.3_amd64.deb">Télécharger OpenBoard pour Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/openboard_ubuntu_16.04_1.3.3_amd64.deb">Télécharger OpenBoard pour Ubuntu 16.04</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_14.04_1.3.4_amd64.deb">Télécharger OpenBoard pour Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_16.04_1.3.4_amd64.deb">Télécharger OpenBoard pour Ubuntu 16.04</a>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-8">
         <h1>Notes de version</h1>
+
+        <h2>
+        <a id="user-content-nouveautés-dans-la-version-134" class="anchor" href="#nouveaut%C3%A9s-dans-la-version-134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nouveautés dans la version 1.3.4</h2>
+
+        <p>De nombreuses corrections de bugs, certains apparus avec la 1.3.3, d'autres plus anciens. </p>
+
+        <ul>
+        <li>OS X: le bug de l'ombre qui apparaissait en effaçant les annotations en mode Bureau est réglé.</li>
+        <li>Windows: l'installeur est maintenant silencieux.</li>
+        <li>Linux: la détection du réglage de "multi-moniteurs clonés" est réglée pour éviter que le mode multi-écran soit activé dans cette configuration [Note: il reste quelques problèmes avec le réglage multi-moniteurs sur certaines versions de Linux ; voir Bugs connus].</li>
+        <li>Boîte de texte: le texte ne peut plus être sélectionné ou édité quand il est marqué comme non-évitable. </li>
+        <li>Boîte de texte: au chargement de la page, la boîte des texte ne garde plus le focus du clavier.</li>
+        <li>Panneau de la bibliothèque : le déplacement d'éléments est réglé ainsi que l'imbrication de dossiers.</li>
+        <li>Mode Document: les noms de dossier renommés sont correctement sauvegardés.</li>
+        <li>La sauvegarde des éléments audio se fait maintenant correctement (v1.3.3 bug)</li>
+        <li>Mode Bureau: les cercles de la gomme et du stabylo disparaissent bien quand le curseur "entre" dans la palette d'outils, comme dans le mode Tableau.</li>
+        </ul>
+
+        <h3>
+        <a id="user-content-bugs-connus-dans-la-version-134" class="anchor" href="#bugs-connus-dans-la-version-134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs connus dans la version 1.3.4</h3>
+
+        <p>Su Ubuntu 14.04, certains environnement de bureau causent problème dans le mode bureau étendu. Sur MATE, le mode multi-écran est actuellement non fonctionnel, avec les 2 fenêtres d'OpenBoard (maître et élève) apparaissant sur le même écran. Sur KDE, échanger les vues maître et élève dans le menu des préférences peut amener les 2 fenêtres à apparaître sur le même écran., mais cela eut être résolu en décochant puis cochant le mode multi-écran, ou en relançant OpenBoard.</p>
 
         <h2>
         <a id="user-content-nouveautés-dans-la-version-133" class="anchor" href="#nouveaut%C3%A9s-dans-la-version-133" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nouveautés dans la version 1.3.3</h2>
@@ -217,7 +239,7 @@
         <h2>Pour développeurs</h2>
         <h3>Paquets</h3>
 
-        <p>La dernière version, 1.3.3, peut être obtenue <a href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.3">ici</a>. Des installeurs sont mis à disposition pour Windows (&gt;= 7), OS X (&gt;= 10.9) et Ubuntu (14.04 et 16.04).</p>
+        <p>La dernière version, 1.3.4, peut être obtenue <a href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.4">ici</a>. Des installeurs sont mis à disposition pour Windows (&gt;= 7), OS X (&gt;= 10.9) et Ubuntu (14.04 et 16.04).</p>
 
         <p>Cf. <a href="https://github.com/DIP-SEM/OpenBoard/wiki/Fr:-installation">instructions d'installation</a>.</p>
 

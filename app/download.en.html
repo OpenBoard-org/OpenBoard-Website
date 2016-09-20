@@ -67,23 +67,46 @@
       <div class="col-md-4 col-sm-12 platform">
         <img alt="OS X logo" class="img-circle" src="images/OS-X-logo.png">
         <p>OS&nbsp;X</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/OpenBoard.dmg">Download OpenBoard for OS X</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard.dmg">Download OpenBoard for OS X</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
         <p>Windows</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/OpenBoard_Installer_1.3.3.exe">Download OpenBoard for Windows</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard_Installer_1.3.4.exe">Download OpenBoard for Windows</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
         <p>Ubuntu</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/openboard_ubuntu_14.04_1.3.3_amd64.deb">Download OpenBoard for Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.3/openboard_ubuntu_16.04_1.3.3_amd64.deb">Download OpenBoard for Ubuntu 16.04</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_14.04_1.3.4_amd64.deb">Download OpenBoard for Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_16.04_1.3.4_amd64.deb">Download OpenBoard for Ubuntu 16.04</a>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-8">
         <h1>Release Notes</h1>
+
+        <h2>
+        <a id="user-content-whats-new-in-version-134" class="anchor" href="#whats-new-in-version-134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.4</h2>
+
+        <p>This release fixes various bugs, some which appeared in v1.3.3, and some of which have been around for a while. </p>
+
+        <ul>
+        <li>OS X: fixed desktop shadow bug.</li>
+        <li>Windows: fixed installer so that the library installation would be silent.</li>
+        <li>Linux: fixed detection of "cloned" multi-monitor setups to avoid multi-screen mode being activated in this configuration. [Note: some problems remain with multi-monitor setups on some Linux versions; see Known Issues].</li>
+        <li>Text items: text can no longer be selected or edited if the text item is marked as non-editable.</li>
+        <li>Text items: on page load, text items no longer take keyboard focus.</li>
+        <li>Library pane: fixed moving of items.</li>
+        <li>Library pane: fixed nested folder issue in breadcrumbs trail.</li>
+        <li>Document view: fixed folder names not being saved after renaming them.</li>
+        <li>Fixed audio item saving (v1.3.3 bug): documents containing an audio item were saved incorrectly.</li>
+        <li>Desktop mode: eraser and marker preview circles now disappear when the cursor hovers over the left or right-hand toolbars, as in board mode</li>
+        </ul>
+
+        <h3>
+        <a id="user-content-known-issues-in-version-134" class="anchor" href="#known-issues-in-version-134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known issues in version 1.3.4</h3>
+
+        <p>On Ubuntu 14.04, some desktop environments cause problems in extended desktop mode. Specifically, on MATE, multi-screen mode is currently broken, with both OpenBoard windows (control and display views) appearing on the same display. On KDE, swapping the control and display views via the preferences menu can cause both windows to appear on the same display, but this can be solved by turning multi-screen mode off and on again, or by restarting OpenBoard.</p>
 
         <h2>
         <a id="user-content-whats-new-in-version-133" class="anchor" href="#whats-new-in-version-133" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.3</h2>
@@ -217,7 +240,7 @@
         <h2>For developers</h2>
         <h3>Packages</h3>
 
-        <p>The latest available version, 1.3.3, can be obtained <a href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.3">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
+        <p>The latest available version, 1.3.4, can be obtained <a href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.4">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
 
         <p>See here for <a href="https://github.com/DIP-SEM/OpenBoard/wiki/Install">installation instructions</a>.</p>
 
