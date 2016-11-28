@@ -2,13 +2,15 @@
 
 ## Install
 
+```
 $ npm install
 $ bower install
+```
 
-## build 
+## Build 
 
-$ gulp
+`$ gulp`
 
-## serve and watch
+## Serve and watch
 
-$ gulp serve
+`$ gulp serve`
