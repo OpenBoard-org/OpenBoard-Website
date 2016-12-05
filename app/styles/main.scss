@@ -134,6 +134,12 @@ body {
   margin-bottom: 0;
 }
 
+.platform p.text-muted {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .splash>.container {
