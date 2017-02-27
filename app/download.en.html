@@ -68,19 +68,19 @@
         <img alt="OS X logo" class="img-circle" src="images/OS-X-logo.png">
         <p>OS&nbsp;X</p>
         <p class="text-muted">(Mac OS X 10.9+)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard.dmg">Download OpenBoard for OS X</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard.dmg">Download OpenBoard for OS X</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
         <p>Windows</p>
         <p class="text-muted">(Windows 7+)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard_Installer_1.3.4.exe">Download OpenBoard for Windows</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard_Installer_1.3.5.exe">Download OpenBoard for Windows</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
         <p>Ubuntu</p>
         <p class="text-muted">(64-bits)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_14.04_1.3.4_amd64.deb">Download OpenBoard for Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_16.04_1.3.4_amd64.deb">Download OpenBoard for Ubuntu 16.04</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_14.04_1.3.5_amd64.deb">Download OpenBoard for Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_16.04_1.3.5_amd64.deb">Download OpenBoard for Ubuntu 16.04</a>
       </div>
     </div>
 
@@ -88,166 +88,62 @@
       <div class="col-md-8">
         <h1>Release Notes</h1>
 
-        <h2>
-        <a id="user-content-whats-new-in-version-134" class="anchor" href="#whats-new-in-version-134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.4</h2>
+        <p>Release notes for all version can be found <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">on the GitHub wiki</a></p>
 
-        <p>This release fixes various bugs, some which appeared in v1.3.3, and some of which have been around for a while. </p>
+        <h2>What's new in version 1.3.5</h2>
 
         <ul>
-        <li>OS X: fixed desktop shadow bug.</li>
-        <li>Windows: fixed installer so that the library installation would be silent.</li>
-        <li>Linux: fixed detection of "cloned" multi-monitor setups to avoid multi-screen mode being activated in this configuration. [Note: some problems remain with multi-monitor setups on some Linux versions; see Known Issues].</li>
-        <li>Text items: text can no longer be selected or edited if the text item is marked as non-editable.</li>
-        <li>Text items: on page load, text items no longer take keyboard focus.</li>
-        <li>Library pane: fixed moving of items.</li>
-        <li>Library pane: fixed nested folder issue in breadcrumbs trail.</li>
-        <li>Document view: fixed folder names not being saved after renaming them.</li>
-        <li>Fixed audio item saving (v1.3.3 bug): documents containing an audio item were saved incorrectly.</li>
-        <li>Desktop mode: eraser and marker preview circles now disappear when the cursor hovers over the left or right-hand toolbars, as in board mode</li>
+        <li>Fixed an issue where text could be displayed at different sizes on different platforms, even with the same font and font size. From now on, a newly created or modified document should display the same on all platforms (provided one uses version 1.3.5)</li>
+        <li>Fixed an issue in document mode where deleting a document by drag-n-drop could make OpenBoard crash</li>
+        <li>Fixed a bug where media elements couldn't be selected by rubber band</li>
+        <li>Document mode: multiple documents can now be moved together, by drag-n-drop</li>
+        <li>Added a setting in the configuration files for the background grid's colour*</li>
+        <li>Added Basque translation (credit: Inigo Gebara)</li>
+        <li>Updated German translation (credit: EmPeWe)</li>
+        <li>Fixed the colour of the highlighter cursor in desktop mode</li>
+        <li>Fixed an issue where in desktop mode, the display could be cloned even if multi-display mode was deactivated</li>
+        <li>Fixed an issue in document mode where OpenBoard could crash when deleting pages from a document</li>
+        <li>Fixed an issue where groups of objects or pen strokes that had been locked would be unlocked when saving then loading the document</li>
+        <li>Fixed an issue where groups of objects lost their transforms (movement, rotation, scaling) when saving then loading the document</li>
+        <li>Specified a minimum size for the protractor, so that it can no longer be resized to an unusable size</li>
+        <li>Shrunk the compass slightly</li>
+        <li>Fixed an issue where the position of groups of pen strokes could be lost upon saving and loading the document</li>
+        <li>Fixed an issue where locked objects could be moved by dragging them directly (rather than by their selection frame)</li>
+        <li>Fixed an issue where the icons on a text box's frame could overflow from the frame, on low-resolution displays on Windows or Linux</li>
+        <li>Fixed an issue where OpenBoard would crash upon exiting with an empty, but modified document</li>
+        <li>Fixed an issue where the Open-Sankoré importer would not launch, on Windows</li>
         </ul>
 
-        <h3>
-        <a id="user-content-known-issues-in-version-134" class="anchor" href="#known-issues-in-version-134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known issues in version 1.3.4</h3>
-
-        <p>On Ubuntu 14.04, some desktop environments cause problems in extended desktop mode. Specifically, on MATE, multi-screen mode is currently broken, with both OpenBoard windows (control and display views) appearing on the same display. On KDE, swapping the control and display views via the preferences menu can cause both windows to appear on the same display, but this can be solved by turning multi-screen mode off and on again, or by restarting OpenBoard.</p>
-
-        <h2>
-        <a id="user-content-whats-new-in-version-133" class="anchor" href="#whats-new-in-version-133" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.3</h2>
-
-        <p>Bug fixes related mostly to import and export of documents (in .ubz or .pdf) with a pdf item.</p>
-
-        <p>A bug was also fixed which affected on-screen keyboard. </p>
-
-        <h2>
-        <a id="user-content-whats-new-in-version-131" class="anchor" href="#whats-new-in-version-131" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.1</h2>
-
-        <p>A few bug fixes, mainly related to desktop interaction and multi-screen mode on Linux, as well as a reborn Google Maps widget.</p>
-
-        <h2>
-        <a id="user-content-whats-new-in-version-130" class="anchor" href="#whats-new-in-version-130" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's new in version 1.3.0</h2>
-
-        <p>Below is a list of the main changes since the last version (1.02.10)</p>
-
-        <h4>
-        <a id="user-content-codebase" class="anchor" href="#codebase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Codebase</h4>
+        <p>(*) This allows the user to change the colour or opacity of the background grid, for example if it isn't sufficiently visible on a low-contrast display or projector. 
+        The parameters can be found in the <code>Board</code> category and are named <code>CrossColorDarkBackground</code> and <code>CrossColorLightBackground</code> for the colour of the background grid on dark and light backgrounds, respectively.
+        The possible values for these parameters are strings respecting any of the following formats:</p>
 
         <ul>
-        <li>Qt code migrated from version 4.8 to 5.5.
-
-        <ul>
-        <li>Multimedia elements (video and audio) based on Qt Multimedia instead of Phonon</li>
-        </ul>
-        </li>
-        <li>OS X: Carbon framework largely replaced by Cocoa</li>
-        <li>OS X: Podcast module back-end migrated from QuickTime to AV Foundation</li>
-        </ul>
-
-        <h4>
-        <a id="user-content-general" class="anchor" href="#general" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General</h4>
-
-        <ul>
-        <li>Support for system's on-screen keyboard on Windows and OS X (as well as Onboard on Linux)</li>
-        <li>5th pen color added</li>
-        <li>Added image search on data.abulEdu.org and Pixabay.com</li>
-        </ul>
-
-        <h4>
-        <a id="user-content-pages-display-saving-and-loading" class="anchor" href="#pages-display-saving-and-loading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pages (display, saving and loading)</h4>
-
-        <ul>
-        <li>Corrected many bugs related to the display and saving of elements' positions on the page (*)</li>
-        <li>Corrected a scale issue with PDF documents when switching screen resolutions (scale was not preserved when opening the document on another computer)</li>
-        </ul>
-
-        <h4>
-        <a id="user-content-graphics-items" class="anchor" href="#graphics-items" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Graphics items</h4>
-
-        <ul>
-        <li>Added a preview circle around the eraser and highlighter</li>
-        <li>Color picker can now be used with the compass</li>
-        <li>
-        <p>Various enhancements for media items, including:</p>
-
-        <ul>
-        <li>Progress bar appears on mouse hover above a video; then auto-hides</li>
-        <li>Media items can be moved by clicking the gray area beside the progress bar</li>
-        </ul>
-        </li>
-        <li><p>"Go to content source" option removed</p></li>
-        <li>Compass size reduced</li>
-        </ul>
-
-        <h4>
-        <a id="user-content-documents-pane" class="anchor" href="#documents-pane" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documents pane</h4>
-
-        <ul>
-        <li>Multiple selection is now possible (using Shift or Ctrl/Cmd)</li>
-        </ul>
-
-        <h4>
-        <a id="user-content-minor-changes" class="anchor" href="#minor-changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Minor changes</h4>
-
-        <ul>
-        <li>
-        <p>Linux: </p>
-
-        <ul>
-        <li>OpenBoard is now installed in <code>/opt/openboard</code> instead of <code>/usr/local/OpenBoard-$VERSION</code>
-        </li>
-        <li>OpenBoard can be started from the terminal, with the <code>openboard</code> command</li>
-        <li>.ubz files are opened with OpenBoard by default</li>
-        </ul>
-        </li>
-        <li><p>New icons for .ubz files on Windows and OS X</p></li>
-        <li>New icons for "previous page"/"next page" buttons</li>
-        <li>New default pen colors (inc. white on white and black on black)</li>
-        <li>Google image search removed</li>
-        <li>Better handling of configuration files and document metadata files, resulting in less disk I/O</li>
-        <li>OS X: system print dialog offers the option of printing to PDF to OpenBoard</li>
-        <li>Various other bug fixes and tweaks</li>
-        </ul>
-
-        <p>(*) Details:</p>
-
-        <ul>
-        <li>Corrected saving and loading of elements' z-levels</li>
-        <li>Corrected z-level display issues when switching pages or zooming in/out</li>
-        <li>Corrected position (x, y and z) assignment when duplicating elements</li>
-        <li>Corrected saving and loading of positions of grouped items and pen strokes</li>
-        </ul>
-
-        <h2>
-        <a id="user-content-compatibility-with-older-versions" class="anchor" href="#compatibility-with-older-versions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compatibility with older versions</h2>
-
-        <p>While no breaking changes have been made between versions 1.02 and 1.3, we cannot necessarily guarantee that documents saved with version 1.3 will display correctly when opened in version 1.2. This is due to the many bugs that were present in version 1.02 related to the saving of elements' positions, and PDF size relative to the document, among other issues.</p>
-
-        <p>That being said, documents created in version 1.02 should import correctly to version 1.3.</p>
-
-        <p>Furthermore, an importer for Open-Sankoré documents up to v2.0 is provided (and has been since OpenBoard v1). Exporting documents from OpenBoard to Open-Sankoré, however, is not guaranteed to produce good results.</p>
-
-        <h2>
-        <a id="user-content-known-issues-in-version-130" class="anchor" href="#known-issues-in-version-130" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known issues in version 1.3.0</h2>
-
-        <ul>
-        <li>Google Maps widget is broken</li>
-        <li>A few minor bugs with text boxes (positioning &amp; selection)</li>
-        <li>OpenBoard may crash on exiting with a blank document</li>
-        <li>On OS X, switching from desktop mode to board mode and back causes shadows to be drawn around pen strokes, and these shadows persist if the strokes are erased. A quick fix for this is to switch again to board mode and back.</li>
-        <li>Exporting a document containing both a background PDF item and a marker stroke on the same page, to PDF, results in scale issues. A quick fix is to restart OpenBoard and re-open the document. It should then export correctly.</li>
-        <li>OS X: in desktop mode, the dock and menu bar stay hidden. </li>
-        <li>... other issues <a href="https://github.com/DIP-SEM/OpenBoard/issues?q=is%3Aopen+is%3Aissue+label%3Abug">here</a>
+        <li>#RGB </li>
+        <li>#RRGGBB</li>
+        <li>#AARRGGBB</li>
+        <li>#RRRGGGBBB</li>
+        <li>#RRRRGGGGBBBB</li>
+        <li>SVG colour keywords, <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords">as defined by W3C</a>
         </li>
         </ul>
+
+        <p>Where A = alpha (transparency); R = red; G = green; B = blue, in hexadecimal values.</p>
+
+        <p>The default values are:</p>
+
+        <pre><code>CrossColorDarkBackground=#C82C2C2C
+CrossColorLightBackground=#A5E1FF</code></pre>
+
+        
       </div>
       <div class="col-md-4">
         <h2>For developers</h2>
         <h3>Packages</h3>
 
-        <p>The latest available version, 1.3.4, can be obtained <a href="https://github.com/DIP-SEM/OpenBoard/releases/tag/v1.3.4">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
+        <p>The latest available version, 1.3.5, can be obtained <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.5">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
 
-        <p>See here for <a href="https://github.com/DIP-SEM/OpenBoard/wiki/Install">installation instructions</a>.</p>
-
-        <p>Please check the <a href="#known-issues-in-version-130">list of known issues</a> below, before reporting a bug.</p>
+        <p>See here for <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Install">installation instructions</a>.</p>
       </div>
     </div>
 
@@ -257,7 +153,7 @@
     <div class="footer">
 
       <ul class="footer-links pull-right">
-        <li><a href="https://github.com/DIP-SEM/OpenBoard">OpenBoard on GitHub</a></li>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard">OpenBoard on GitHub</a></li>
         <li><a href="mailto:support@openboard.ch">support@openboard.ch</a></li>
       </ul>
     </div>
