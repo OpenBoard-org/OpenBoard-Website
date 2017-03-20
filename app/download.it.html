@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="no-js" lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="OpenBoard is an open source cross-platform interactive whiteboard application. OpenBoard is intended for use primarily in schools and universities, and can be used both with interactive whiteboards or in a dual-screen setup with a touchscreen and secondary display.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenBoard, il miglior programma per lavagne interattive per la scuola e l'università</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browserupgrade">State usando un browser <strong>obsoleto</strong>. <a href="http://browsehappy.com/">Aggiornate il vostro browser</a> per migliorare la vostra esperienza di navigazione.</p>
+    <![endif]-->
+    
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Commuta navigazione</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.it.html">
+          <img src="images/openboard-logo.png" alt="*">
+          OpenBoard
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="download.it.html">Scarica</a></span></li>
+          <li><a href="http://openboard.ch/forum/">Forum</a></li>
+          <li><a href="support.it.html">Documentazione</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="download.en.html">English</a></li>
+          <li><a href="download.html">Français</a></li>
+          <li><a href="download.it.html">Italiano</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Scarica OpenBoard</h1>
+    </div>
+
+    <div class="row platforms">
+      <div class="col-md-4 col-sm-12 platform">
+        <img alt="OS X logo" class="img-circle" src="images/OS-X-logo.png">
+        <p>OS&nbsp;X</p>
+        <p class="text-muted">(Mac OS X 10.9+)</p>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard.dmg">Scarica OpenBoard per OS X</a>
+      </div>
+      <div class="col-md-4 col-sm-12 platform">
+        <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
+        <p>Windows</p>
+        <p class="text-muted">(Windows 7+)</p>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/OpenBoard_Installer_1.3.5.exe">Scarica OpenBoard per Windows</a>
+      </div>
+      <div class="col-md-4 col-sm-12 platform">
+        <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
+        <p>Ubuntu</p>
+        <p class="text-muted">(64-bits)</p>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_14.04_1.3.5_amd64.deb">Scarica OpenBoard per Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.4/openboard_ubuntu_16.04_1.3.5_amd64.deb">Scarica OpenBoard per Ubuntu 16.04</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Note di rilascio</h1>
+
+        <p>Le note di rilascio per tutte le versioni si trovano <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">sul wiki di GitHub</a></p>
+
+        <h2>Novità nella versione 1.3.5</h2>
+
+        <ul>
+        <li>Sistemato un problema per cui un testo poteva essere visualizzato in dimensioni diverse su piattaforme diverse, anche se con lo stesso font e con la stessa dimensione. Da ora in avanti, un documento creato da zero o modificato dovrebbe apparire uguale su tutte le piattaforme (a patto che si usi la versione 1.3.5 o successive)</li>
+        <li>Sistemato un problema nella modalità documenti dove se si cancellava un documento con il clic-e-trascina avrebbe potuto far andare in crash OpenBoard</li>
+        <li>Sistemato un problema per il quale gli elementi multimediali non potevano essere selezionati dalla gomma</li>
+        <li>Modalità documenti: ora più documenti possono essere spostati assieme, dal clic-e-trascina</li>
+        <li>Aggiunta una impostazione nei file di configurazione per il colore della griglia di sfondo*</li>
+        <li>Aggiunta traduzione in Basco (grazie a: Inigo Gebara)</li>
+        <li>Aggiunta traduzione in Tedesco (grazie a: EmPeWe)</li>
+        <li>Sistemato il colore del puntatore dell'evidenziatore in modalità scrivania</li>
+        <li>Sistemato un problema in modalità scrivania, dove lo schermo poteva venir clonato anche se era disattivata la modalità multi-schermo</li>
+        <li>Sistemato un problema in modalità documenti, dove OpenBoard poteva andare in crash alla cancellazione di pagine da un documento</li>
+        <li>Sistemato un problema dove un gruppo di oggetti o tratti di penna che erano stati bloccati potevano essere sbloccati dal salvataggio e successiva ricarica del documento</li>
+        <li>Sistemato un problema dove un gruppo di oggetti perdevano le loro trasformazioni (spostamento, rotazione, scalatura) dal salvataggio e successiva ricarica del documento</li>
+        <li>Specificata una dimensione minima per il goniometro, in modo che non possa più essere ridimensionato fino ad una dimensione inutilizzabile</li>
+        <li>Ridotto leggermente il compasso</li>
+        <li>Sistemato un problema dove la posizione di gruppi di tratti di penna potevano andare persi durante il salvataggio e la successiva ricarica del documento</li>
+        <li>Sistemato un problema dove oggetti bloccati potevano essere spostati dal trascinamento diretto (piuttosto che dal loro riquadro di selezione)</li>
+        <li>Sistemato un problema dove le icone su un riquadro di testo potevano sbordare dal riquadro, negli schermi a bassa risoluzione su Windows o Linux</li>
+        <li>Sistemato un problema per il quale OpenBoard avrebbe potuto andare in crash all'uscita di un documento vuoto, ma modificato</li>
+        <li>Sistemato un problema a causa del quale l'importatore Open-Sankoré non si avviava, su Windows</li>
+        </ul>
+
+        <p>(*) Ciò permette all'utente di cambiare il colore o l'opacità della griglia di sfondo, per esempio se non è sufficientemente visibile su uno schermo o un proiettore a basso contrasto.
+        I parametri si possono trovare nella categoria <code>Board</code> e si chiamano <code>CrossColorDarkBackground</code> e <code>CrossColorLightBackground</code> rispettivamente per il colore della griglia di sfondo su sfondi scuri e chiari.
+        I valori possibili per questi parametri sono stringhe che rispettino uno dei seguenti formati:</p>
+
+        <ul>
+        <li>#RGB </li>
+        <li>#RRGGBB</li>
+        <li>#AARRGGBB</li>
+        <li>#RRRGGGBBB</li>
+        <li>#RRRRGGGGBBBB</li>
+        <li>parole chiave di colore SVG, <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords">come definite dal W3C</a>
+        </li>
+        </ul>
+
+        <p>dove A = alfa (transparenza); R = rosso; G = verde; B = blu, in valori esadecimali.</p>
+
+        <p>I valori predefiniti sono:</p>
+
+        <pre><code>CrossColorDarkBackground=#C82C2C2C
+CrossColorLightBackground=#A5E1FF</code></pre>
+
+        
+      </div>
+      <div class="col-md-4">
+        <h2>Per sviluppatori</h2>
+        <h3>Pacchetti</h3>
+
+        <p>L'ultima versione disponibile, 1.3.5, può essere scaricata da <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.5">qui</a>. I pacchetti binari vengono forniti per Windows 7+, OS X 10.9+, Ubuntu 14.04 e Ubuntu 16.04.</p>
+
+        <p>Controllare qui per le  <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Install">istruzioni per l'installazione</a>.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="footer">
+
+      <ul class="footer-links pull-right">
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard">OpenBoard on GitHub</a></li>
+        <li><a href="mailto:support@openboard.ch">support@openboard.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-19466870-19');ga('send','pageview');
+  </script>
+
+  <!-- build:js scripts/plugins.js -->
+    <script type="text/javascript" src="../bower_components/bootstrap.native/dist/bootstrap-native.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>
