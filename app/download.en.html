@@ -69,19 +69,19 @@
         <img alt="OS X logo" class="img-circle" src="images/OS-X-logo.png">
         <p>OS&nbsp;X</p>
         <p class="text-muted">(Mac OS X 10.9+)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard.dmg">Download OpenBoard for OS X</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/OpenBoard.dmg">Download OpenBoard for OS X</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
         <p>Windows</p>
         <p class="text-muted">(Windows 7+)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard_Installer_1.3.5.exe">Download OpenBoard for Windows</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/OpenBoard_Installer_1.3.6.exe">Download OpenBoard for Windows</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
         <p>Ubuntu</p>
         <p class="text-muted">(64-bits)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/openboard_ubuntu_14.04_1.3.5_amd64.deb">Download OpenBoard for Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/openboard_ubuntu_16.04_1.3.5_amd64.deb">Download OpenBoard for Ubuntu 16.04</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/openboard_ubuntu_14.04_1.3.6_amd64.deb">Download OpenBoard for Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/openboard_ubuntu_16.04_1.3.6_amd64.deb">Download OpenBoard for Ubuntu 16.04</a>
       </div>
     </div>
 
@@ -91,58 +91,29 @@
 
         <p>Release notes for all version can be found <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">on the GitHub wiki</a></p>
 
-        <h2>What's new in version 1.3.5</h2>
+        <h2>What's new in version 1.3.6</h2>
 
         <ul>
-        <li>Fixed an issue where text could be displayed at different sizes on different platforms, even with the same font and font size. From now on, a newly created or modified document should display the same on all platforms (provided one uses version 1.3.5)</li>
-        <li>Fixed an issue in document mode where deleting a document by drag-n-drop could make OpenBoard crash</li>
-        <li>Fixed a bug where media elements couldn't be selected by rubber band</li>
-        <li>Document mode: multiple documents can now be moved together, by drag-n-drop</li>
-        <li>Added a setting in the configuration files for the background grid's colour*</li>
-        <li>Added Basque translation (credit: Inigo Gebara)</li>
-        <li>Updated German translation (credit: EmPeWe)</li>
-        <li>Fixed the colour of the highlighter cursor in desktop mode</li>
-        <li>Fixed an issue where in desktop mode, the display could be cloned even if multi-display mode was deactivated</li>
-        <li>Fixed an issue in document mode where OpenBoard could crash when deleting pages from a document</li>
-        <li>Fixed an issue where groups of objects or pen strokes that had been locked would be unlocked when saving then loading the document</li>
-        <li>Fixed an issue where groups of objects lost their transforms (movement, rotation, scaling) when saving then loading the document</li>
-        <li>Specified a minimum size for the protractor, so that it can no longer be resized to an unusable size</li>
-        <li>Shrunk the compass slightly</li>
-        <li>Fixed an issue where the position of groups of pen strokes could be lost upon saving and loading the document</li>
-        <li>Fixed an issue where locked objects could be moved by dragging them directly (rather than by their selection frame)</li>
-        <li>Fixed an issue where the icons on a text box's frame could overflow from the frame, on low-resolution displays on Windows or Linux</li>
-        <li>Fixed an issue where OpenBoard would crash upon exiting with an empty, but modified document</li>
-        <li>Fixed an issue where the Open-Sankoré importer would not launch, on Windows</li>
+          <li>Fixed several issues relating to copy-pasting and cut-and-pasting elements from one page or document to another</li>
+          <li>Fixed an issue on Windows where OpenBoard could crash upon saving the document when a video was on the board</li>
+          <li>Fixed an issue where pen strokes that had been erased with the eraser would reappear after saving and loading.</li>
+          <li>Fixed an issue where duplicating a pen stroke that had been moved could cause the new stroke to be placed in the wrong position</li>
+          <li>Fixed an issue where strokes could be badly placed after using the "undo" and "redo" functions</li>
+          <li>Fixed an issue where compass strokes were not saved (when making several strokes, only the first one was saved)</li>
+          <li>Fixed an issue where pages could be truncated when exporting to PDF</li>
+          <li>Fixed an issue where locked items could be moved when part of a multiple selection</li>
+          <li>(Document mode) Fixed document selection after deleting a trashed document</li>
+          <li>Tweaked the background grid color for the dark background</li>
+          <li>The mask tool can now be resized non-proportionately</li>
+          <li>Re-implemented automatic update checking, which will appear to users when the next version is released</li>
         </ul>
-
-        <p>(*) This allows the user to change the colour or opacity of the background grid, for example if it isn't sufficiently visible on a low-contrast display or projector.
-        The parameters can be found in the <code>Board</code> category and are named <code>CrossColorDarkBackground</code> and <code>CrossColorLightBackground</code> for the colour of the background grid on dark and light backgrounds, respectively.
-        The possible values for these parameters are strings respecting any of the following formats:</p>
-
-        <ul>
-        <li>#RGB </li>
-        <li>#RRGGBB</li>
-        <li>#AARRGGBB</li>
-        <li>#RRRGGGBBB</li>
-        <li>#RRRRGGGGBBBB</li>
-        <li>SVG colour keywords, <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords">as defined by W3C</a>
-        </li>
-        </ul>
-
-        <p>Where A = alpha (transparency); R = red; G = green; B = blue, in hexadecimal values.</p>
-
-        <p>The default values are:</p>
-
-        <pre><code>CrossColorDarkBackground=#C82C2C2C
-CrossColorLightBackground=#A5E1FF</code></pre>
-
 
       </div>
       <div class="col-md-4">
         <h2>For developers</h2>
         <h3>Packages</h3>
 
-        <p>The latest available version, 1.3.5, can be obtained <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.5">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
+        <p>The latest available version, 1.3.6, can be obtained <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.6">here</a>. Packages are provided for Windows 7+, OS X 10.9+, Ubuntu 14.04 and Ubuntu 16.04.</p>
 
         <p>See here for <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Install">installation instructions</a>.</p>
       </div>

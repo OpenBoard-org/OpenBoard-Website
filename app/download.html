@@ -68,19 +68,19 @@
         <img alt="OS X logo" src="images/OS-X-logo.png">
         <p>OS&nbsp;X</p>
         <p class="text-muted">(à partir de Mac OS X 10.9)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard.dmg">Télécharger OpenBoard pour OS X</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/OpenBoard.dmg">Télécharger OpenBoard pour OS X</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Windows logo" src="images/Windows-logo.png">
         <p>Windows</p>
         <p class="text-muted">(à partir de Windows 7)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard_Installer_1.3.5.exe">Télécharger OpenBoard pour Windows</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/OpenBoard_Installer_1.3.6.exe">Télécharger OpenBoard pour Windows</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Ubuntu logo" src="images/Ubuntu-logo.png">
         <p>Ubuntu</p>
         <p class="text-muted">(64 bits)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/openboard_ubuntu_14.04_1.3.5_amd64.deb">Télécharger OpenBoard pour Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/openboard_ubuntu_16.04_1.3.5_amd64.deb">Télécharger OpenBoard pour Ubuntu 16.04</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/openboard_ubuntu_14.04_1.3.6_amd64.deb">Télécharger OpenBoard pour Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/openboard_ubuntu_16.04_1.3.6_amd64.deb">Télécharger OpenBoard pour Ubuntu 16.04</a>
       </div>
     </div>
 
@@ -90,50 +90,22 @@
 
         <p>Consultez le journal des modifications pour toutes les versions <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Fr:-Journal-des-modifications">sur le wiki GitHub</a></p>
 
-        <h2>Nouveautés dans la version 1.3.5</h2>
+        <h2>Nouveautés dans la version 1.3.6</h2>
 
         <ul>
-          <li>Correction : le texte pouvait s'afficher à des tailles différentes d'une plateforme à l'autre, même avec la même police et taille de police. A partir de cette version, tout document créé ou modifié devrait s'afficher identiquement sur toutes les plateformes (tant qu'il est ouvert avec OpenBoard 1.3.5 minimum)</li>
-          <li>Correction : en mode document, la suppression d'un document par drag-n-drop pouvait faire planter OpenBoard</li>
-          <li>Correction : les éléments audio/vidéo ne pouvaient pas être sélectionnés par un rectangle de sélection</li>
-          <li>Mode document: possibilité de déplacer une sélection multiple</li>
-          <li>Ajout d'un paramètre dans les fichiers de configuration pour la couleur du quadrillage de fond de page *</li>
-          <li>Ajout de la traduction Basque (crédit: Inigo Gebara)</li>
-          <li>Mise à jour de la traduction Allemande (crédit: EmPeWe)</li>
-          <li>Couleur du cercle du marqueur corrigé en mode bureau</li>
-          <li>Correction : En mode bureau, avec le mode multi-écran désactivé, l'écran était parfois tout de même cloné</li>
-          <li>Correction : en mode document, OpenBoard pouvait planter lors de la suppression de pages d'un document</li>
-          <li>Correction : les groupes d'objets et les traits ne conservaient pas leur verrouillage à l'enregistrement du document</li>
-          <li>Correction : les groupes d'objets ne conservaient pas leurs transformations (déplacement/rotation) à l'enregistrement du document</li>
-          <li>Ajout d'un rayon minimum pour le rapporteur, pour qu'il ne puisse pas être redimensionné jusqu'à être inutilisable</li>
-          <li>Taille du compas diminuée légèrement</li>
-          <li>Taille minimum de l'équerre diminuée</li>
-          <li>Correction : un groupe déplacé en cliquant dessus directement (pas sur le cadre) perdait son déplacement à l'enregistrement</li>
-          <li>Correction : les objets verrouillés pouvaient être déplacés (en cliquant dessus directement, pas en déplaçant le cadre)</li>
-          <li>Correction : La position des groupes de traits était mal enregistrée</li>
-          <li>Correction : sur Linux et Windows, sur des écrans à basse résolution, les boutons des boîtes de texte pouvaient dépasser de leur cadre</li>
-          <li>Correction : crash à la fermeture du logiciel avec une page vide, mais modifiée (p. ex si un élément avait été ajouté à la page puis supprimé)</li>
-          <li>Correction : sur Windows, l'importeur Open-Sankoré ne se lançait pas</li>
+          <li>Correction de plusieurs problèmes liés au copier-coller et couper-coller d'éléments d'une page ou d'un document à un(e) autre</li>
+          <li>Correction : sous Windows, la présence d'une vidéo sur la page pouvait faire planter OpenBoard au passage en mode document</li>
+          <li>Correction : l'effaçage d'un trait à la gomme était mal enregistré</li>
+          <li>Correction : la duplication d'un trait pouvait placer le nouveau trait à la mauvaise position</li>
+          <li>Correction : après utilisation des fonctions "annuler" et "rétablir", des traits pouvaient être placés à la mauvaise position</li>
+          <li>Correction : des traits de compas consécutifs n'étaient pas enregistrés</li>
+          <li>Correction : l'export PDF d'un document pouvait tronquer certaines pages</li>
+          <li>Correction : des éléments verrouillés pouvaient être déplacés lorsqu'ils étaient sélectionnés avec d'autres éléments</li>
+          <li>Correction : en mode document, correction de la sélection d'un nouveau document après suppression d'un document dans la corbeille</li>
+          <li>Légère amélioration de la couleur du quadrillage sur fond noir</li>
+          <li>L'outil masque peut désormais être redimensionné non-proportionnellement.</li>
+          <li>Ajout de vérification automatique des mises à jour. Ceci peut être activé sous l'onglet "A propos" dans la fenêtre de préférences, et la vérification peut être demandée manuellement via le menu principal.</li>
         </ul>
-
-        <p>(*) Ceci permet à l'utilisateur de changer la couleur ou l'opacité du quadrillage, par exemple s'il n'est pas assez visible sur un écran à bas contraste ou un projecteur.
-Les paramètres se trouvent sous la catégorie <code>Board</code> et sont nommés <code>CrossColorDarkBackground</code> et <code>CrossColorLightBackground</code> pour les fonds foncés et clairs, respectivement. Les valeurs possibles sont des chaînes de caractères dans n'importe lequel des formats suivants:</p>
-
-        <ul>
-          <li>#RGB (Hexadécimal)</li>
-          <li>#RRGGBB</li>
-          <li>#AARRGGBB</li>
-          <li>#RRRGGGBBB</li>
-          <li>#RRRRGGGGBBBB</li>
-          <li>Mots-clés de couleur SVG (tels que définis par W3C)</li>
-        </ul>
-
-        <p>N.B: A = alpha (transparence); R = rouge; G = vert; B = bleu</p>
-
-        <p>Les valeurs par défaut sont :</p>
-
-        <pre><code>CrossColorDarkBackground=#C82C2C2C
-CrossColorLightBackground=#A5E1FF</code></pre>
 
       </div>
 
@@ -141,7 +113,7 @@ CrossColorLightBackground=#A5E1FF</code></pre>
         <h2>Pour développeurs</h2>
         <h3>Paquets</h3>
 
-        <p>La dernière version, 1.3.5, peut être obtenue <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.5">ici</a>. Des installeurs sont mis à disposition pour Windows (&gt;= 7), OS X (&gt;= 10.9) et Ubuntu (14.04 et 16.04).</p>
+        <p>La dernière version, 1.3.6, peut être obtenue <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.6">ici</a>. Des installeurs sont mis à disposition pour Windows (&gt;= 7), OS X (&gt;= 10.9) et Ubuntu (14.04 et 16.04).</p>
 
         <p>Cf. <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Fr:-installation">instructions d'installation</a>.</p>
       </div>

@@ -69,19 +69,19 @@
         <img alt="OS X logo" class="img-circle" src="images/OS-X-logo.png">
         <p>OS&nbsp;X</p>
         <p class="text-muted">(Mac OS X 10.9+)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard.dmg">Scarica OpenBoard per OS X</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/OpenBoard.dmg">Scarica OpenBoard per OS X</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
         <p>Windows</p>
         <p class="text-muted">(Windows 7+)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/OpenBoard_Installer_1.3.5.exe">Scarica OpenBoard per Windows</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/OpenBoard_Installer_1.3.6.exe">Scarica OpenBoard per Windows</a>
       </div>
       <div class="col-md-4 col-sm-12 platform">
         <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
         <p>Ubuntu</p>
         <p class="text-muted">(64-bits)</p>
-        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/openboard_ubuntu_14.04_1.3.5_amd64.deb">Scarica OpenBoard per Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.5/openboard_ubuntu_16.04_1.3.5_amd64.deb">Scarica OpenBoard per Ubuntu 16.04</a>
+        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/openboard_ubuntu_14.04_1.3.6_amd64.deb">Scarica OpenBoard per Ubuntu 14.04</a><a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.3.6/openboard_ubuntu_16.04_1.3.6_amd64.deb">Scarica OpenBoard per Ubuntu 16.04</a>
       </div>
     </div>
 
@@ -91,58 +91,29 @@
 
         <p>Le note di rilascio per tutte le versioni si trovano <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">sul wiki di GitHub</a></p>
 
-        <h2>Novità nella versione 1.3.5</h2>
+        <h2>Novità nella versione 1.3.6</h2>
 
-        <ul>
-        <li>Sistemato un problema per cui un testo poteva essere visualizzato in dimensioni diverse su piattaforme diverse, anche se con lo stesso font e con la stessa dimensione. Da ora in avanti, un documento creato da zero o modificato dovrebbe apparire uguale su tutte le piattaforme (a patto che si usi la versione 1.3.5 o successive)</li>
-        <li>Sistemato un problema nella modalità documenti dove se si cancellava un documento con il clic-e-trascina avrebbe potuto far andare in crash OpenBoard</li>
-        <li>Sistemato un problema per il quale gli elementi multimediali non potevano essere selezionati dalla gomma</li>
-        <li>Modalità documenti: ora più documenti possono essere spostati assieme, dal clic-e-trascina</li>
-        <li>Aggiunta una impostazione nei file di configurazione per il colore della griglia di sfondo*</li>
-        <li>Aggiunta traduzione in Basco (grazie a: Inigo Gebara)</li>
-        <li>Aggiunta traduzione in Tedesco (grazie a: EmPeWe)</li>
-        <li>Sistemato il colore del puntatore dell'evidenziatore in modalità scrivania</li>
-        <li>Sistemato un problema in modalità scrivania, dove lo schermo poteva venir clonato anche se era disattivata la modalità multi-schermo</li>
-        <li>Sistemato un problema in modalità documenti, dove OpenBoard poteva andare in crash alla cancellazione di pagine da un documento</li>
-        <li>Sistemato un problema dove un gruppo di oggetti o tratti di penna che erano stati bloccati potevano essere sbloccati dal salvataggio e successiva ricarica del documento</li>
-        <li>Sistemato un problema dove un gruppo di oggetti perdevano le loro trasformazioni (spostamento, rotazione, scalatura) dal salvataggio e successiva ricarica del documento</li>
-        <li>Specificata una dimensione minima per il goniometro, in modo che non possa più essere ridimensionato fino ad una dimensione inutilizzabile</li>
-        <li>Ridotto leggermente il compasso</li>
-        <li>Sistemato un problema dove la posizione di gruppi di tratti di penna potevano andare persi durante il salvataggio e la successiva ricarica del documento</li>
-        <li>Sistemato un problema dove oggetti bloccati potevano essere spostati dal trascinamento diretto (piuttosto che dal loro riquadro di selezione)</li>
-        <li>Sistemato un problema dove le icone su un riquadro di testo potevano sbordare dal riquadro, negli schermi a bassa risoluzione su Windows o Linux</li>
-        <li>Sistemato un problema per il quale OpenBoard avrebbe potuto andare in crash all'uscita di un documento vuoto, ma modificato</li>
-        <li>Sistemato un problema a causa del quale l'importatore Open-Sankoré non si avviava, su Windows</li>
+        <ul> <!-- English version awaiting italian translation-->
+          <li>Fixed several issues relating to copy-pasting and cut-and-pasting elements from one page or document to another</li>
+          <li>Fixed an issue on Windows where OpenBoard could crash upon saving the document when a video was on the board</li>
+          <li>Fixed an issue where pen strokes that had been erased with the eraser would reappear after saving and loading.</li>
+          <li>Fixed an issue where duplicating a pen stroke that had been moved could cause the new stroke to be placed in the wrong position</li>
+          <li>Fixed an issue where strokes could be badly placed after using the "undo" and "redo" functions</li>
+          <li>Fixed an issue where compass strokes were not saved (when making several strokes, only the first one was saved)</li>
+          <li>Fixed an issue where pages could be truncated when exporting to PDF</li>
+          <li>Fixed an issue where locked items could be moved when part of a multiple selection</li>
+          <li>(Document mode) Fixed document selection after deleting a trashed document</li>
+          <li>Tweaked the background grid color for the dark background</li>
+          <li>The mask tool can now be resized non-proportionately</li>
+          <li>Re-implemented automatic update checking, which will appear to users when the next version is released</li>
         </ul>
-
-        <p>(*) Ciò permette all'utente di cambiare il colore o l'opacità della griglia di sfondo, per esempio se non è sufficientemente visibile su uno schermo o un proiettore a basso contrasto.
-        I parametri si possono trovare nella categoria <code>Board</code> e si chiamano <code>CrossColorDarkBackground</code> e <code>CrossColorLightBackground</code> rispettivamente per il colore della griglia di sfondo su sfondi scuri e chiari.
-        I valori possibili per questi parametri sono stringhe che rispettino uno dei seguenti formati:</p>
-
-        <ul>
-        <li>#RGB </li>
-        <li>#RRGGBB</li>
-        <li>#AARRGGBB</li>
-        <li>#RRRGGGBBB</li>
-        <li>#RRRRGGGGBBBB</li>
-        <li>parole chiave di colore SVG, <a href="https://www.w3.org/TR/SVG11/types.html#ColorKeywords">come definite dal W3C</a>
-        </li>
-        </ul>
-
-        <p>dove A = alfa (transparenza); R = rosso; G = verde; B = blu, in valori esadecimali.</p>
-
-        <p>I valori predefiniti sono:</p>
-
-        <pre><code>CrossColorDarkBackground=#C82C2C2C
-CrossColorLightBackground=#A5E1FF</code></pre>
-
         
       </div>
       <div class="col-md-4">
         <h2>Per sviluppatori</h2>
         <h3>Pacchetti</h3>
 
-        <p>L'ultima versione disponibile, 1.3.5, può essere scaricata da <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.5">qui</a>. I pacchetti binari vengono forniti per Windows 7+, OS X 10.9+, Ubuntu 14.04 e Ubuntu 16.04.</p>
+        <p>L'ultima versione disponibile, 1.3.6, può essere scaricata da <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.3.6">qui</a>. I pacchetti binari vengono forniti per Windows 7+, OS X 10.9+, Ubuntu 14.04 e Ubuntu 16.04.</p>
 
         <p>Controllare qui per le  <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Install">istruzioni per l'installazione</a>.</p>
       </div>
