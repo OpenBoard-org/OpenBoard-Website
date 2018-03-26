@@ -90,22 +90,76 @@
 
         <p>Consultez le journal des modifications pour toutes les versions <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Fr:-Journal-des-modifications">sur le wiki GitHub</a></p>
 
-        <h2>Nouveautés dans la version 1.3.6</h2>
-
+        <h2>
+          <a id="user-content-version-140" class="anchor" href="#version-140" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version 1.4.0</h2>
+        <h3>
+        <a id="user-content-nouvelles-fonctionnalités" class="anchor" href="#nouvelles-fonctionnalit%C3%A9s" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nouvelles fonctionnalités</h3>
+        <h4>
+        <a id="user-content-lissage-des-traits-de-stylo-et-surligneur" class="anchor" href="#lissage-des-traits-de-stylo-et-surligneur" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lissage des traits de stylo et surligneur</h4>
+        <p>Un important travail de lissage et de simplification des traits a été effectué pour réduire la complexité des tracés et donner plus de fluidité à l’écriture. La taille des nouveaux documents OpenBoard annotés est ainsi fortement réduite.</p>
+        <h4>
+        <a id="user-content-simplification-de-laccès-aux-objets-de-la-librairie" class="anchor" href="#simplification-de-lacc%C3%A8s-aux-objets-de-la-librairie" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simplification de l’accès aux objets de la librairie</h4>
+        <p>Suppression de la vue détaillée pour les apps, les interactivités, les images, les sons, les vidéos. Ces éléments sont simplement glissés depuis le tiroir de la librairie. Pour placer maintenant une image en fond de page, la glisser sur la page puis utiliser le menu de l’image.</p>
+        <h4>
+        <a id="user-content-taille-du-quadrillage-de-fond-décran-ajustable" class="anchor" href="#taille-du-quadrillage-de-fond-d%C3%A9cran-ajustable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Taille du quadrillage de fond d’écran ajustable</h4>
+        <p>La fenêtre de sélection d’arrière-plan offre l’option d’un fond ligné ainsi que l’ajustement de l’espacement du quadrillage ou des lignes.
+        Cette option est enregistrée dans chaque page du document et la création d’une nouvelle page quadrillée garde le quadrillage choisi précédemment. Mais il est aussi possible d’avoir des fonds de tailles différentes pour chaque page d’un document. Un bouton permet de revenir à l’espacement par défaut d’OpenBoard.
+        Cette taille est initialisée au démarrage d’OpenBoard pour correspondre à environ 1 cm à l’écran. La taille en pixels dépend donc de la résolution de l’écran sur lequel OpenBoard est lancé. Mais dès ce moment, c’est la taille en pixels qui est enregistrée et utilisée. Contrairement aux versions précédentes d’OpenBoard, la taille du quadrillage par rapport au contenu de la page est donc conservée lors de l’import d’un document sur une autre machine.
+        Les outils de géométrie (règle, triangle et compas) sont également ajustés selon la taille du quadrillage, pour qu’un carré corresponde à 1 cm sur l’outil.</p>
+        <h4>
+        <a id="user-content-onglet-quadrillage-dans-les-préférences" class="anchor" href="#onglet-quadrillage-dans-les-pr%C3%A9f%C3%A9rences" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Onglet Quadrillage dans les préférences</h4>
+        <p>Il est maintenant possible de choisir la couleur (parmi une liste) et l’intensité du quadrillage pour les arrière-plans blancs et noirs. Le réglage de l'intensité n'est pas effectif pour des niveaux de zoom inférieurs à ~0,7.</p>
+        <h4>
+        <a id="user-content-chemin-de-fer" class="anchor" href="#chemin-de-fer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Chemin de fer</h4>
+        <p>Les vignettes peuvent maintenant être réordonnées avec le stylet / la souris, d’où la disparition des boutons flèche haut et flèche bas. La taille des icônes de suppression et duplication a été doublée.</p>
+        <h4>
+        <a id="user-content-module--podcast--enregistrement-décran-sur-linux" class="anchor" href="#module--podcast--enregistrement-d%C3%A9cran-sur-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Module « podcast » (enregistrement d’écran) sur Linux</h4>
+        <p>L’enregistrement d’écran débarque enfin sur Linux, avec une interface identique aux versions Windows et MacOS. L’encodage de la vidéo se fait au moyen des librairies ffmpeg, au format h264 / AAC dans un conteneur MP4</p>
+        <h4>
+        <a id="user-content-outil-crayon" class="anchor" href="#outil-crayon" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Outil crayon</h4>
+        <p>Dès une certaine taille (fixée dans les préférences), il y a un cercle pointillé représentatif.</p>
+        <h4>
+        <a id="user-content-mise-à-jour" class="anchor" href="#mise-%C3%A0-jour" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mise à jour</h4>
+        <p>La réactivation de la fonction indiquant la disponibilité d’une mise à jour (dès la 1.3.6) a fait apparaître une ligne dans le menu d’OpenBoard (Contrôler la mise à jour). Cette ligne n’est pas utile en situation d’école et un nouveau paramètre dans le fichier de configuration permet de la supprimer.</p>
+        <h4>
+        <a id="user-content-widgets-planète-sankore" class="anchor" href="#widgets-plan%C3%A8te-sankore" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Widgets Planète-Sankore</h4>
+        <p>Le site planete-sankore.org n'étant plus accessible, les apps de recherche de médias (image, audio, vidéo et  flash) ont dû être supprimées.</p>
+        <h4>
+        <a id="user-content-widget-horloge" class="anchor" href="#widget-horloge" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Widget Horloge</h4>
+        <p>Le Widget Horloge présent dans Open-Sankore a été ajouté à la bibliothèque.</p>
+        <h3>
+        <a id="user-content-corrections" class="anchor" href="#corrections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Corrections</h3>
         <ul>
-          <li>Correction de plusieurs problèmes liés au copier-coller et couper-coller d'éléments d'une page ou d'un document à un(e) autre</li>
-          <li>Correction : sous Windows, la présence d'une vidéo sur la page pouvait faire planter OpenBoard au passage en mode document</li>
-          <li>Correction : l'effaçage d'un trait à la gomme était mal enregistré</li>
-          <li>Correction : la duplication d'un trait pouvait placer le nouveau trait à la mauvaise position</li>
-          <li>Correction : après utilisation des fonctions "annuler" et "rétablir", des traits pouvaient être placés à la mauvaise position</li>
-          <li>Correction : des traits de compas consécutifs n'étaient pas enregistrés</li>
-          <li>Correction : l'export PDF d'un document pouvait tronquer certaines pages</li>
-          <li>Correction : des éléments verrouillés pouvaient être déplacés lorsqu'ils étaient sélectionnés avec d'autres éléments</li>
-          <li>Correction : en mode document, correction de la sélection d'un nouveau document après suppression d'un document dans la corbeille</li>
-          <li>Légère amélioration de la couleur du quadrillage sur fond noir</li>
-          <li>L'outil masque peut désormais être redimensionné non-proportionnellement.</li>
-          <li>Ajout de vérification automatique des mises à jour. Ceci peut être activé sous l'onglet "A propos" dans la fenêtre de préférences, et la vérification peut être demandée manuellement via le menu principal.</li>
+        <li>Zoom et déplacement : au sein d’un document, seul le zoom d’une page donnée était conservé, pas le déplacement par l’outil main dans la page.</li>
+        <li>Il y avait perte de la propriété de visibilité / invisibilité en mode écran étendu. </li>
+        <li>Plusieurs corrections apportées sur des groupes contenant des objets invisibles ou verrouillés.</li>
+        <li>Boîtes de texte : le redimensionnement par la poignée gauche d'une boite de texte vide causait un déplacement de la boîte.</li>
+        <li>Boîtes de texte : perte de curseur en glissant une image ou une forme sur une boîte de texte alors que le curseur était actif.</li>
+        <li>Boîtes de texte : crash en saisissant la boîte de texte avec l'outil texte sur la bordure et en le déplaçant.</li>
+        <li>Crash en effaçant une partie d'un trait de compas ainsi que la croix centrale (d'un seul coup de gomme).</li>
+        <li>Il y avait une perte de données dans le cas où il n’y avait qu’un document.</li>
         </ul>
+        <h3>
+        <a id="user-content-problèmes-connus" class="anchor" href="#probl%C3%A8mes-connus" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problèmes connus</h3>
+        <h4>
+        <a id="user-content-module-podcast-linux" class="anchor" href="#module-podcast-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Module podcast Linux</h4>
+        <ul>
+        <li>La performance est fortement dépendante de la configuration, éviter donc les trop hautes résolutions sur des machines peu performantes.</li>
+        <li>Les dernières images d’un enregistrement peuvent ne pas être ajoutées à la vidéo.</li>
+        <li>Enregistrement lent en mode bureau.</li>
+        </ul>
+        <h4>
+        <a id="user-content-module-podcast-mac" class="anchor" href="#module-podcast-mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Module podcast Mac</h4>
+        <ul>
+        <li>Le son se répète parfois en boucle.</li>
+        <li>Problèmes de désynchronisation son et image si l’utilisateur interrompt ses annotations.</li>
+        </ul>
+        <h4>
+        <a id="user-content-internal-web-navigator" class="anchor" href="#internal-web-navigator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Internal web navigator</h4>
+        <p>Nombreuses erreurs, particulièrement avec les sites en https. La question se posera dans un avenir proche du maintien ou non, pour des raisons de sécurité, du navigateur interne.</p>
+        <h4>
+        <a id="user-content-perte-de-données" class="anchor" href="#perte-de-donn%C3%A9es" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Perte de données</h4>
+        <p>La plupart des erreurs entraînant une perte de document ont été résolues. Toutefois, dans certains contextes (utilisation en réseau, machines lentes), certaines fonctionnalités liées à la sauvegarde de données peuvent ne pas fonctionner comme attendu. Par exemple, il est possible que la duplication d’un document se fasse avant que la demande de sauvegarde du document dupliqué ait été traitée par le processus qui en est responsable. Il faut alors supprimer la nouvelle page et rejouer l’opération.</p>
 
       </div>
 

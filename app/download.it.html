@@ -90,23 +90,73 @@
         <h1>Note di rilascio</h1>
 
         <p>Le note di rilascio per tutte le versioni si trovano <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">sul wiki di GitHub</a></p>
-
-        <h2>Novità nella versione 1.3.6</h2>
-
-        <ul> <!-- English version awaiting italian translation-->
-          <li>Fixed several issues relating to copy-pasting and cut-and-pasting elements from one page or document to another</li>
-          <li>Fixed an issue on Windows where OpenBoard could crash upon saving the document when a video was on the board</li>
-          <li>Fixed an issue where pen strokes that had been erased with the eraser would reappear after saving and loading.</li>
-          <li>Fixed an issue where duplicating a pen stroke that had been moved could cause the new stroke to be placed in the wrong position</li>
-          <li>Fixed an issue where strokes could be badly placed after using the "undo" and "redo" functions</li>
-          <li>Fixed an issue where compass strokes were not saved (when making several strokes, only the first one was saved)</li>
-          <li>Fixed an issue where pages could be truncated when exporting to PDF</li>
-          <li>Fixed an issue where locked items could be moved when part of a multiple selection</li>
-          <li>(Document mode) Fixed document selection after deleting a trashed document</li>
-          <li>Tweaked the background grid color for the dark background</li>
-          <li>The mask tool can now be resized non-proportionately</li>
-          <li>Re-implemented automatic update checking, which will appear to users when the next version is released</li>
+        
+        <h2>
+        <a id="user-content-version-140" class="anchor" href="#version-140" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version 1.4.0
+        </h2>
+        <h3>
+        <a id="user-content-new-features" class="anchor" href="#new-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New features</h3>
+        <h4>
+        <a id="user-content-simplified-drawing" class="anchor" href="#simplified-drawing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simplified drawing</h4>
+        <p>An important work has been done on strokes to reduce their complexity and give more fluidity to drawing. The weight of new OpenBoard documents is indeed greatly reduced.</p>
+        <h4>
+        <a id="user-content-size-of-the-background-grid" class="anchor" href="#size-of-the-background-grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Size of the background grid</h4>
+        <p>You can now adjust it in the background window, with the option of a lined background.
+        This new parameter can be set for each page of a document. A new page is set with the background settings of the current page. A new button on the background window resets the grid size to its default value. When OpenBoard starts, the size is initialized to represent approximately 1 cm on the screen. Indeed, the size of the grid is preserved while importing a document on another computer. Geometry tools have been adjusted to fit this initialization.</p>
+        <h4>
+        <a id="user-content-background-grid-tab-on-preferences" class="anchor" href="#background-grid-tab-on-preferences" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background grid tab on preferences</h4>
+        <p>You can now choose the color of the grid and the its opacity on dark and light backgrounds. The grid opacity is ignored if the zoom is lower than ~0.7.</p>
+        <h4>
+        <a id="user-content-thumbnails-tab-drag-and-drop" class="anchor" href="#thumbnails-tab-drag-and-drop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thumbnails tab drag and drop</h4>
+        <p>Thumbnails can be reordered using the pen/mouse, by drag and drop. The "move up page" and "move down page" icons have been retired. The "remove page" and "duplicate page" icons' size was increased by a factor of 2.</p>
+        <h4>
+        <a id="user-content-podcast-module-on-linux-screen-recording" class="anchor" href="#podcast-module-on-linux-screen-recording" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Podcast module on Linux (screen recording)</h4>
+        <p>The screen recording is finally available on Linux. ffmpeg is used for video encoding, with the MP4 format (h264/AAC).</p>
+        <h4>
+        <a id="user-content-pen-tool-circle-preview" class="anchor" href="#pen-tool-circle-preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pen tool circle preview</h4>
+        <p>Above a certain size (set in preferences), a circle preview appears.</p>
+        <h4>
+        <a id="user-content-software-update-option" class="anchor" href="#software-update-option" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Software update option</h4>
+        <p>A new parameter in the configuration file allows to hide the "check for software update" option in the OpenBoard menu.</p>
+        <h4>
+        <a id="user-content-planète-sankore-widgets" class="anchor" href="#plan%C3%A8te-sankore-widgets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Planète-Sankore widgets</h4>
+        <p>Because planete-sankore.org is down, the research applications (image, audio, video and flash medias) had to be deleted.</p>
+        <h4>
+        <a id="user-content-clock-widget" class="anchor" href="#clock-widget" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Clock Widget</h4>
+        <p>The Clock widget used in Open-Sankore has been added to the library.</p>
+        <h3>
+        <a id="user-content-bug-fixes" class="anchor" href="#bug-fixes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bug fixes</h3>
+        <ul>
+          <li>The state of the zoom was persisted on each page, but not the state of the position of the view. Now both are.</li>
+          <li>The "visible on extended screen" property was not correctly persisted.</li>
+          <li>Several corrections have been added to improve their behavior on object groups.</li>
+          <li>Text box : resizing, using the left handle, was causing unexpected text box moving</li>
+          <li>Text box : you could lose the cursor by dragging an image or a shape on a text box.</li>
+          <li>Text box : OpenBoard could crash, while trying to select a text box by its border with the text tool selected.</li>
+          <li>OpenBoard could crash when erasing part of a stroke, drawn with the compass, and the center cross, simultaneously.</li>
+          <li>You could lose data if you had only one document on the main directory.</li>
         </ul>
+        <h3>
+        <a id="user-content-known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known Issues</h3>
+        <h4>
+        <a id="user-content-podcast-module-on-linux" class="anchor" href="#podcast-module-on-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Podcast module on Linux</h4>
+        <ul>
+          <li>the module's performance depends on its configuration, so please don't use too high resolutions on slow devices,</li>
+          <li>last images of a record can not be added to the video,</li>
+          <li>recording is slow on desktop mode.</li>
+        </ul>
+        <h4>
+        <a id="user-content-podcast-module-on-mac" class="anchor" href="#podcast-module-on-mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Podcast module on Mac</h4>
+        <ul>
+          <li>audio sometimes loops,</li>
+          <li>audio and video can be unsynchronized if the user stops his annotations.</li>
+        </ul>
+        <h4>
+        <a id="user-content-internal-web-navigator" class="anchor" href="#internal-web-navigator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Internal web navigator</h4>
+        <p>Many errors, mainly on secured sites (https). The internal  web navigator may be removed, for security reasons, on a future release of OpenBoard.</p>
+        <h4>
+        <a id="user-content-data-loss" class="anchor" href="#data-loss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data loss</h4>
+        <p>Most issues concerning data loss have been resolved. However, in some cases (network context, slow computers), some features related to the data saving may not behave as expected. For example, it is possible for the duplication of a page to be done before the save of the duplicated page by the thread which has to perform this save. If so, you have to delete the new page and retry the duplication on the original page.</p>
         
       </div>
       <div class="col-md-4">
