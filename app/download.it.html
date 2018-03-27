@@ -92,71 +92,73 @@
         <p>Le note di rilascio per tutte le versioni si trovano <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">sul wiki di GitHub</a></p>
         
         <h2>
-        <a id="user-content-version-140" class="anchor" href="#version-140" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version 1.4.0
+        <a id="user-content-version-140" class="anchor" href="#version-140" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Versione 1.4.0
         </h2>
         <h3>
-        <a id="user-content-new-features" class="anchor" href="#new-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New features</h3>
+        <a id="user-content-new-features" class="anchor" href="#new-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Le nuove funzionalità</h3>
         <h4>
-        <a id="user-content-simplified-drawing" class="anchor" href="#simplified-drawing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simplified drawing</h4>
-        <p>An important work has been done on strokes to reduce their complexity and give more fluidity to drawing. The weight of new OpenBoard documents is indeed greatly reduced.</p>
+        <a id="user-content-simplified-drawing" class="anchor" href="#simplified-drawing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Smoothing dei tratti della penna e dell'evidenziatore</h4>
+        <p>Un importante lavoro è stato fatto per ridurre la complessità dei tracciati e dare maggiore fluidità alla scrittura. Il peso dei nuovi documenti OpenBoard è infatti notevolmente ridotto.</p>
+        <a id="user-content-semplificazione-biblioteca" class="anchor" href="#semplificazione-biblioteca" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Semplificazione dell'accesso agli oggetti nella biblioteca</h4>
+        <p>Rimozione della visualizzazione dettagliata di applicazioni, interattività, immagini, suoni, video. Questi elementi sono semplicemente trascinati dal cassetto della biblioteca. Ora per inserire un'immagine sullo sfondo basta trascinarla sulla pagina e poi utilizzare il suo menu.</p>
         <h4>
-        <a id="user-content-size-of-the-background-grid" class="anchor" href="#size-of-the-background-grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Size of the background grid</h4>
-        <p>You can now adjust it in the background window, with the option of a lined background.
-        This new parameter can be set for each page of a document. A new page is set with the background settings of the current page. A new button on the background window resets the grid size to its default value. When OpenBoard starts, the size is initialized to represent approximately 1 cm on the screen. Indeed, the size of the grid is preserved while importing a document on another computer. Geometry tools have been adjusted to fit this initialization.</p>
+        <a id="user-content-size-of-the-background-grid" class="anchor" href="#size-of-the-background-grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dimensione regolabile della griglia sul sfondo</h4>
+        <p>La finestra per selezionare lo sfondo fornisce un'opzione per un fondo lineato e la regolazione della spaziatura della griglia o delle linee. La spaziatura è registrata in ciascuna pagina del documento e la creazione di una nuova pagina conserva la spaziature selezionata in precedenza. Ma è anche possibile avere diverse dimensioni di spaziature per ogni pagina di un documento.<br>
+        Un pulsante per tornare alla spaziatura predefinita di OpenBoard. Questa dimensione viene inizializzata al lancio di OpenBoard per corrispondere circa a 1 cm sullo schermo. La dimensione in pixel dipende dalla risoluzione dello schermo su cui si lancia OpenBoard. Da quel momento in poi, è la dimensione in pixel che viene memorizzata e utilizzata. A differenza delle versioni precedenti di OpenBoard, la dimensione della griglia in confronto al contenuto della pagina è conservata durante l'importazione di un documento su un altro computer. Gli strumenti di geometria (righello, goniometro e squadra) sono anche regolati a seconda la spaziatura della griglia, in modo che un quadrato corrisponde a 1 cm sullo strumento.</p>
         <h4>
-        <a id="user-content-background-grid-tab-on-preferences" class="anchor" href="#background-grid-tab-on-preferences" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background grid tab on preferences</h4>
-        <p>You can now choose the color of the grid and the its opacity on dark and light backgrounds. The grid opacity is ignored if the zoom is lower than ~0.7.</p>
+        <a id="user-content-background-grid-tab-on-preferences" class="anchor" href="#background-grid-tab-on-preferences" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scheda Griglia nelle preferenze</h4>
+        <p>Ora è possibile scegliere il colore (da una lista) e l'intensità della griglia per gli sfondi bianchi e neri. L'impostazione dell'intensità non è effetiva per i livelli di zoom inferiori a ~ 0.7.</p>
         <h4>
-        <a id="user-content-thumbnails-tab-drag-and-drop" class="anchor" href="#thumbnails-tab-drag-and-drop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thumbnails tab drag and drop</h4>
-        <p>Thumbnails can be reordered using the pen/mouse, by drag and drop. The "move up page" and "move down page" icons have been retired. The "remove page" and "duplicate page" icons' size was increased by a factor of 2.</p>
+        <a id="user-content-thumbnails-tab-drag-and-drop" class="anchor" href="#thumbnails-tab-drag-and-drop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ferrovia</h4>
+        <p>Le miniature possono ora essere riordinate con la penna/il mouse, ecco perché i pulsanti delle frecce su e giù sono scomparse. La dimensione delle icone per rimuovere o duplicare è stata raddoppiata.</p>
         <h4>
-        <a id="user-content-podcast-module-on-linux-screen-recording" class="anchor" href="#podcast-module-on-linux-screen-recording" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Podcast module on Linux (screen recording)</h4>
-        <p>The screen recording is finally available on Linux. ffmpeg is used for video encoding, with the MP4 format (h264/AAC).</p>
+        <a id="user-content-podcast-module-on-linux-screen-recording" class="anchor" href="#podcast-module-on-linux-screen-recording" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulo "Podcast" (registrazione dello schermo) su Linux</h4>
+        <p>Infine, la registrazione dello schermo è possibile sulle piattaforma Linux. L'interfaccia è identica alle versioni Windows e MacOS. La codifica video avviene in un contenitore MP4 mediante le biblioteche FFmpeg, H264 / AAC.</p>
         <h4>
-        <a id="user-content-pen-tool-circle-preview" class="anchor" href="#pen-tool-circle-preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pen tool circle preview</h4>
-        <p>Above a certain size (set in preferences), a circle preview appears.</p>
+        <a id="user-content-pen-tool-circle-preview" class="anchor" href="#pen-tool-circle-preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Strumento penna</h4>
+        <p>A partire di una certa dimensione (definita nelle preferenze) vi è un cerchio tratteggiato rappresentativo.</p>
         <h4>
-        <a id="user-content-software-update-option" class="anchor" href="#software-update-option" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Software update option</h4>
-        <p>A new parameter in the configuration file allows to hide the "check for software update" option in the OpenBoard menu.</p>
+        <a id="user-content-software-update-option" class="anchor" href="#software-update-option" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aggiornare</h4>
+        <p>La riattivazione della funzione che indica la disponibilità di un aggiornamento (sin la versione 1.3.6) ha fatto apparire una nuova voce nel menu di OpenBoard (Cerca aggiornamenti). Questa voce non è utile in situazioni di scuola e una nuova impostazione nel file di configurazione permette di cancellarla.</p>
         <h4>
-        <a id="user-content-planète-sankore-widgets" class="anchor" href="#plan%C3%A8te-sankore-widgets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Planète-Sankore widgets</h4>
-        <p>Because planete-sankore.org is down, the research applications (image, audio, video and flash medias) had to be deleted.</p>
+        <a id="user-content-planète-sankore-widgets" class="anchor" href="#plan%C3%A8te-sankore-widgets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Widget Planet-Sankore</h4>
+        <p>Il sito planete-sankore.org non essendo più accessibile, le applicazioni di ricerca dei media (immagini, audio, video e flash) hanno dovuto essere rimosse.</p>
         <h4>
-        <a id="user-content-clock-widget" class="anchor" href="#clock-widget" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Clock Widget</h4>
-        <p>The Clock widget used in Open-Sankore has been added to the library.</p>
+        <a id="user-content-clock-widget" class="anchor" href="#clock-widget" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Widget orologio</h4>
+        <p>Il widget orologio presente in Open-Sankore è stato aggiunto alla biblioteca.</p>
         <h3>
-        <a id="user-content-bug-fixes" class="anchor" href="#bug-fixes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bug fixes</h3>
+        <a id="user-content-bug-fixes" class="anchor" href="#bug-fixes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Correzioni</h3>
         <ul>
-          <li>The state of the zoom was persisted on each page, but not the state of the position of the view. Now both are.</li>
-          <li>The "visible on extended screen" property was not correctly persisted.</li>
-          <li>Several corrections have been added to improve their behavior on object groups.</li>
-          <li>Text box : resizing, using the left handle, was causing unexpected text box moving</li>
-          <li>Text box : you could lose the cursor by dragging an image or a shape on a text box.</li>
-          <li>Text box : OpenBoard could crash, while trying to select a text box by its border with the text tool selected.</li>
-          <li>OpenBoard could crash when erasing part of a stroke, drawn with the compass, and the center cross, simultaneously.</li>
-          <li>You could lose data if you had only one document on the main directory.</li>
+          <li>Zoom e spostamento : all'interno di un documento, solo lo zoom di una data pagina era conservato, ma non lo spostamento della pagina col strumento “Scorri pagina”.</li>
+          <li>C'era la perdita della proprietà visibilità/invisibilità nella modalità con uno schermo esteso.</li>
+          <li>Diverse correzioni su gruppi contenenti oggetti invisibili o bloccati.</li>
+          <li>Caselle di testo: il ridimensionamento con la maniglia sinistra di una casella di testo vuota provocava uno spostamento della casella.</li>
+          <li>Caselle di testo: perdita cursore quando si trascinava un'immagine o una forma in una casella di testo quando il cursore era attivo.</li>
+          <li>Le caselle di testo : incidente digitando la casella di testo con lo strumento testo sul confine e in movimento.</li>
+          <li>Crash quando si cancellava una porzione di un tratto e la croce centrale fatti con il compasso (con un singolo uso della gomma).</li>
+          <li>C'era una perdita di dati nel caso ci fosse un unico documento.</li>
         </ul>
         <h3>
-        <a id="user-content-known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Known Issues</h3>
+        <a id="user-content-known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problemi conosciuti</h3>
         <h4>
-        <a id="user-content-podcast-module-on-linux" class="anchor" href="#podcast-module-on-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Podcast module on Linux</h4>
+        <a id="user-content-podcast-module-on-linux" class="anchor" href="#podcast-module-on-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulo Podcast con Linux</h4>
         <ul>
-          <li>the module's performance depends on its configuration, so please don't use too high resolutions on slow devices,</li>
-          <li>last images of a record can not be added to the video,</li>
-          <li>recording is slow on desktop mode.</li>
+          <li>La prestazione è fortemente dipendente dalla configurazione. Si devono dunque evitare le risoluzioni troppo elevate su dei computer poco potenti.</li>
+          <li>Le ultime immagini di una registrazione possono non essere aggiunte al video.</li>
+          <li>Registrazione lenta nella modalità Desktop.</li>
         </ul>
         <h4>
-        <a id="user-content-podcast-module-on-mac" class="anchor" href="#podcast-module-on-mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Podcast module on Mac</h4>
+        <a id="user-content-podcast-module-on-mac" class="anchor" href="#podcast-module-on-mac" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulo di podcast Mac</h4>
         <ul>
-          <li>audio sometimes loops,</li>
-          <li>audio and video can be unsynchronized if the user stops his annotations.</li>
+          <li>Il suono è a volte ripetuto in loop</li>
+          <li>Problemi di sincronizzazione tra suono e immagine se l'utente interrompe le sue annotazioni.</li>
         </ul>
         <h4>
-        <a id="user-content-internal-web-navigator" class="anchor" href="#internal-web-navigator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Internal web navigator</h4>
-        <p>Many errors, mainly on secured sites (https). The internal  web navigator may be removed, for security reasons, on a future release of OpenBoard.</p>
+        <a id="user-content-internal-web-navigator" class="anchor" href="#internal-web-navigator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Navigatore web interno</h4>
+        <p>Molti errori, in particolare con siti HTTPS. La questione si porrà nel prossimo futuro per mantenere o no, per motivi di sicurezza, il browser interno.</p>
         <h4>
-        <a id="user-content-data-loss" class="anchor" href="#data-loss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data loss</h4>
-        <p>Most issues concerning data loss have been resolved. However, in some cases (network context, slow computers), some features related to the data saving may not behave as expected. For example, it is possible for the duplication of a page to be done before the save of the duplicated page by the thread which has to perform this save. If so, you have to delete the new page and retry the duplication on the original page.</p>
+        <a id="user-content-data-loss" class="anchor" href="#data-loss" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>La perdita di dati</h4>
+        <p>La maggior parte degli errori con conseguente perdita dei documenti sono stati risolti. Tuttavia, in alcuni contesti (uso della rete, computer lenti), alcune caratteristiche relative al backup dei dati potrebbero non funzionare come previsto. Ad esempio, è possibile che la duplicazione di un documento viene fatta prima che la funzione di backup del documento duplicato viene eseguita dal processo responsabile. Bisogna allora rimuovere la nuova pagina e reiterare la duplicazione.</p>
         
       </div>
       <div class="col-md-4">
