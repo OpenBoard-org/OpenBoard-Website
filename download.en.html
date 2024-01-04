@@ -147,19 +147,133 @@
             <div class="row">
                 <div class="col-md-8">
                     <h1>
-                        Release Notes
+                        Old releases
                     </h1>
                     <p>
                         For older operating system versions, such as macOS 10.12, Windows 7 or
                         Ubuntu 16.04 for example, all OpenBoard releases are available
                         <a href="https://github.com/OpenBoard-org/OpenBoard/releases">
-                            on the GitHub wiki releases page
-                        </a>
-                        ,
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changelog">
-                            with their features.
+                            on GitHub
                         </a>
                     </p>
+                    <h1>
+                        Release Notes
+                    </h1>
+                    <h2>Version 1.7.0 </h2>
+                    <p><strong>Important Note:</strong> Many of these changes were made possible with the help of the OpenBoard community! 
+                        A big thank you to all for your support. 
+                        Special thanks to GitHub contributors: 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>,
+                        <a href="https://github.com/JBBgameich">JBBGameish</a>,
+                        <a href="https://github.com/cheese1">cheese1</a>,
+                        <a href="https://github.com/sebojolais">sebojolais</a>,
+                        <a href="https://github.com/ootwch">ootchw</a>, and
+                        <a href="https://github.com/micolous">micolous</a> !
+                    </p>
+
+                    <h3>New Features</h3>
+                    <ul>
+                        <li>Added the ability to mark your documents as favorites. You can then drag them from the library palette (the palette located on the right in board mode) to the board, making it faster to switch between documents. Note that each recently opened document (during your current session) is also temporarily added to the Favorites folder in the library palette, even if not marked as favorites. They will be removed when you exit OpenBoard, unless you mark them as favorites before (you can do this directly in the Favorites folder).</li>
+                        <li>Added the ability to import multiple files at once.</li>
+                        <li>Added a "Tips and Tricks" dialog that appears in board mode, providing basic knowledge about using OpenBoard. The dialog can also be displayed via the OpenBoard menu.</li>
+                        <li>Removed the obsolete "Web Browser" application from OpenBoard.</li>
+                        <li>Added the "Replace All" option in the replacement dialog when importing a UBX file.</li>
+                        <li>Added options to "Export Background Grid" and "Export Background Color" in preferences.</li>
+                        <li>In Board mode, the thumbnails in the left palette display the current page in "real-time".</li>
+                        <li>Added the ability to start in Document mode.</li>
+                        <li>UBZ documents can now be imported anywhere in the document tree.</li>
+                        <li>Added the ability to hide an object on the extended screen when the object is selected (useful for editable text areas that you want to hide with a mask and edit during class without revealing their content, for example).</li>
+                        <li>Added a context window asking the user what to do when dropping an object over a widget, as the intention could be to drop it inside the widget or on the board.</li>
+                        <li>The internal browser has been completely reworked to use a modern Chrome-based browser engine, providing full HTML5 support. This migration comes with a redesign and some interesting additions, including:
+                            <ul>
+                                <li>Better support for creating widgets from web pages and detecting integratable content on the board.</li>
+                                <li>Configurable cookie management.</li>
+                                <li>Web inspector for widget developers.</li>
+                                <li>Selecting images and PDFs from web pages and adding them to the board.</li>
+                            </ul>
+                        </li>
+                        <li>Added the ability to drag and drop or copy-paste URLs onto the board to create a widget from the dropped web page.</li>
+                        <li>Redesigned display management. Through preferences, you can now organize your screens in a more user-friendly way.</li>
+                        <li>Added a tool to draw Cartesian axes.</li>
+                        <li>Added an option to display intermediate grid lines (5 mm).</li>
+                        <li>Zoom with "Ctrl + mouse wheel". You can have more precise control of the zoom using this feature. You can also scroll the current page (up and down with the mouse wheel, left and right with Alt + mouse wheel).</li>
+                        <li>Added a Camera widget to directly integrate your camera into the board.</li>
+                        <li>Added the ability to choose the size of the text area by holding down the mouse click until the desired width is reached.</li>
+                        <li>Added the ability to operate the main OpenBoard screen in windowed mode.</li>
+                        <li>Added support for ffmpeg-5.</li>
+                        <li>Added support for Qt 6.</li>
+                        <li>Added support for universal package on macOS (a single version for Intel or ARM processors).</li>
+                    </ul>
+                    
+                    <h3>Enhancements</h3>
+                    <ul>
+                        <li>Added keyboard shortcuts for colors (1, 2, 3, 4, and 5).</li>
+                        <li>Improved the user interface in desktop mode to make it easier for the user to see what is selected. Also reduced the time needed to hold down the left click for sub-menus to appear.</li>
+                        <li>The toolbar and preferences are now usable on low-resolution devices.</li>
+                        <li>Improved the management of text box height. The height is now automatically managed and adjusts to user-initiated width resizing.</li>
+                        <li>Enhanced "confirm before delete" dialogues, making them more explicit about what will be deleted. Added better icons to illustrate each use case.</li>
+                        <li>Display name in the tooltip for objects in the library palette.</li>
+                        <li>Storage of JPEG images in their native format.</li>
+                        <li>Observation of image rotation based on image metadata.</li>
+                        <li>The size of the exported PDF page is now the same as the imported PDF page.</li>
+                        <li>Allowing the dropping of images into subfolders of the image library.</li>
+                        <li>Improved positioning of annotations.</li>
+                        <li>Maintained compatibility with Qt 5.12.</li>
+                        <li>Many performance improvements.</li>
+                    </ul>
+                    
+                    <h3>Bug Fixes</h3>
+                    <ul>
+                        <li>Fixed a crash when zooming with an active Axes tool on the current page.</li>
+                        <li>Fixed an issue where, in a network storage context, the PDF layer of a newly imported document disappeared if the document was imported on Linux.</li>
+                        <li>Fixed an issue where it was impossible to resize a widget horizontally or vertically.</li>
+                        <li>Fixed an issue where right-clicking on a text box would deselect it, preventing pasting clipboard content into it.</li>
+                        <li>Fixed a crash where an incorrectly readable PDF prevented the export from working. A new dialog now explains to the user what is happening before returning to exporting PDF pages as detailed (heavy) images.</li>
+                        <li>Fixed an issue where the user had to click "Cancel" multiple times to get the desired result.</li>
+                        <li>Fixed an issue where it was not possible to change the font size in an empty text box.</li>
+                        <li>Fixed an issue where deleting the last character in a text box would resize the box.</li>
+                        <li>Fixed an issue where the user could accidentally duplicate a page by dragging a thumbnail from Document mode to Board mode.</li>
+                        <li>Fixed an issue where rotating an object more than 90° would flip it horizontally.</li>
+                        <li>Fixed an issue on macOS where clicking "Play" on a video resized it to its original size.</li>
+                        <li>Fixed an issue where it was impossible to open a UBZ by double-clicking on it with OpenBoard already launched.</li>
+                        <li>Fixed an issue where an unwanted drag-and-drop could be initiated by simply clicking on a thumbnail on the left palette.</li>
+                        <li>Fixed an issue where the grid size was not persistent or read if the checkered or custom background was not selected (causing the Axes tool loaded on another machine not to match the original).</li>
+                        <li>Fixed an issue where an object in the right palette could be selected, but the displayed buttons did not refer to it or its current state, after a drag-and-drop, for example.</li>
+                        <li>Fixed an issue where clicking on a selected element or its delegation frame would deselect it.</li>
+                        <li>Fixed an issue where the Google Maps application stopped working.</li>
+                        <li>Fixed an issue where it was no longer possible to drag and drop a JPEG from a Pixabay search.</li>
+                        <li>Fixed several crashes.</li>
+                        <li>Various issues related to interactivity have been resolved, thanks to the migration to a Chrome-based browser engine. Dropdown lists should now work correctly, and it should be possible to scroll up and down when needed.</li>
+                        <li>Many corrections related to metadata management.</li>
+                        <li>Exporting pages with widgets now exports a screenshot of the widget's content.</li>
+                        <li>Fixed some typos.</li>
+                    </ul>
+
+                    <h3>Known Issues</h3>
+                    <ul>
+                        <li>Some third-party widgets may no longer work as the internal widget API has been modified. Please report this to the widget author and the OpenBoard team to help update the widget.</li>
+                        <li>Adding a PDF to the board from the internal browser (right-click -> add to board) may not consistently work.</li>
+                        <li>In some cases, documents at the same level may have the same name.</li>
+                        <li>An issue may occur when importing a UBX, where users end up with imported documents appearing multiple times in the document tree at the same level.</li>
+                        <li>Resizing the mask preserves the initial ratio if the bottom right handle is used. A fix will be available in version 1.7.1.</li>
+                        <li>The depth order of objects is no longer respected in some cases. A fix will be available in version 1.7.1.</li>
+                    </ul>
+
+                    <h3>Linux</h3>
+                    <ul>
+                        <li>In Desktop mode, the Gnome Dock must be positioned at the bottom to work around the issue with the left palette of OpenBoard not being usable from the top (see https://bugreports.qt.io/browse/QTBUG-81341 for more details).</li>
+                    </ul>
+
+                    <h3>Ubuntu 20.04</h3>
+                    <ul>
+                        <li>When the control screen is not the leftmost screen, the main menu will not appear where it should. This is due to a Qt bug (see https://bugreports.qt.io/browse/QTBUG-84462 for more details).</li>
+                    </ul>
+
+                    <h3>macOS</h3>
+                    <ul>
+                        <li>Some .mp4 videos may be playable, while others are not.</li>
+                    </ul>
+
                     <h2>
                         <a id="user-content-version-6" class="anchor" href="#version-150" aria-hidden="true">
                             <span aria-hidden="true" class="octicon octicon-link">
