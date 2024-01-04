@@ -149,19 +149,168 @@
                 <div class="row">
                     <div class="col-md-8">
                         <h1>
-                            Note di rilascio
+                            Vecchie versioni
                         </h1>
                         <p>
-                            Per le vecchie versioni del sistema operativo, come macOS 10.12, Windows
-                            7 o Ubuntu 16.04 per esempio, tutte le versioni di OpenBoard sono disponibili
+                            Per versioni di sistemi operativi più datate, come macOS
+                            10.12, Windows 7 o Ubuntu 16.04 ad esempio, tutte le release di OpenBoard
+                            sono disponibili
                             <a href="https://github.com/OpenBoard-org/OpenBoard/releases">
-                                sulla pagina delle versioni del wiki di GitHub
-                            </a>
-                            ,
-                            <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Fr:-Journal-des-modifications">
-                                con le loro caratteristiche.
+                                su GitHub
                             </a>
                         </p>
+                        <h1>
+                            Note sulla versione
+                        </h1>
+                        <h2>Versione 1.7.0 </h2>
+                        <p><strong>Nota importante:</strong> molti di questi cambiamenti sono stati resi possibili grazie all'aiuto della comunità OpenBoard! 
+                            Un grande ringraziamento a tutti per il vostro supporto. 
+                            Un ringraziamento particolare ai contributori di GitHub: 
+                            <a href="https://github.com/letsfindaway">letsfindaway</a>,
+                            <a href="https://github.com/JBBgameich">JBBGameish</a>,
+                            <a href="https://github.com/cheese1">cheese1</a>,
+                            <a href="https://github.com/sebojolais">sebojolais</a>,
+                            <a href="https://github.com/ootwch">ootchw</a> e
+                            <a href="https://github.com/micolous">micolous</a>!
+                        </p>
+                        <h3>Nuove funzionalità</h3>
+                        <ul>
+                            <li>Aggiunta della possibilità di contrassegnare i documenti come preferiti. È possibile quindi trascinarli dalla
+                                libreria (posizionata a destra in modalità tabella) alla tavola, per passare da un documento all'altro più rapidamente.
+                                Nota che ogni documento aperto di recente (durante la sessione corrente) viene temporaneamente aggiunto alla cartella
+                                Preferiti nella libreria, anche se non è contrassegnato come preferito. Saranno eliminati quando si chiude OpenBoard,
+                                a meno che non siano contrassegnati come preferiti prima (è possibile farlo direttamente nella cartella Preferiti).</li>
+                            <li>Aggiunta della possibilità di importare più file contemporaneamente.</li>
+                            <li>Aggiunta di una finestra di dialogo "Suggerimenti" che appare in modalità tabella, per fornire conoscenze di base
+                                sull'uso di OpenBoard. La finestra di dialogo può essere visualizzata anche tramite il menu OpenBoard.</li>
+                            <li>Rimozione dell'applicazione obsoleta "Browser Web" da OpenBoard.</li>
+                            <li>Aggiunta dell'opzione "Sostituisci tutto" nella finestra di dialogo di sostituzione durante l'importazione di un file UBX.</li>
+                            <li>Aggiunta delle opzioni "Esporta griglia di fondo" e "Esporta colore di sfondo" nelle preferenze.</li>
+                            <li>In modalità tavola, le miniature nella libreria di sinistra mostrano la pagina corrente in "tempo reale".</li>
+                            <li>Aggiunta della possibilità di avviare in modalità Documento.</li>
+                            <li>I documenti UBZ possono ora essere importati ovunque nella struttura dei documenti.</li>
+                            <li>Aggiunta della possibilità di nascondere un oggetto sullo schermo esteso quando l'oggetto è selezionato (utile per
+                                le aree di testo modificabili che si desidera nascondere con la maschera e modificare durante la lezione senza rivelarne
+                                il contenuto, ad esempio).</li>
+                            <li>Aggiunta di una finestra di dialogo che chiede all'utente cosa fare quando si rilascia un oggetto sopra un widget,
+                                poiché l'intenzione potrebbe essere di rilasciarlo all'interno del widget o sulla tavola.</li>
+                            <li>Il browser interno è stato completamente riprogettato per utilizzare un motore di navigazione moderno basato su Chrome,
+                                offrendo pieno supporto a HTML5. Questa migrazione è accompagnata da un restyling, ma anche da alcune aggiunte interessanti.
+                                Tra le altre cose:
+                                <ul>
+                                    <li>Miglior supporto per la creazione di widget da pagine web e rilevamento di contenuti integrabili nella tavola.</li>
+                                    <li>Gestione configurabile dei cookie.</li>
+                                    <li>Inspector web per gli sviluppatori di widget.</li>
+                                    <li>Selezione di immagini e PDF da pagine web e aggiunta alla tavola.</li>
+                                </ul>
+                            </li>
+                            <li>Aggiunta della possibilità di trascinare e rilasciare o copiare e incollare URL sulla tavola per creare un widget
+                                dalla pagina web rilasciata.</li>
+                            <li>Ristrutturazione della gestione dell'visualizzazione. Tramite le preferenze, ora è possibile organizzare gli schermi in modo
+                                più user-friendly.</li>
+                            <li>Aggiunta di uno strumento per disegnare assi cartesiani.</li>
+                            <li>Aggiunta di un'opzione per visualizzare linee di griglia intermedie (5 mm).</li>
+                            <li>Zoom con "Ctrl + rotellina del mouse". È possibile avere un controllo più preciso dello zoom
+                                utilizzando questa funzione. È anche possibile scorrere la pagina corrente
+                                (su e giù con la rotellina del mouse, a sinistra e a destra con Alt + rotellina del mouse).</li>
+                            <li>Aggiunta di un widget Fotocamera, per integrare direttamente la tua fotocamera nella tavola.</li>
+                            <li>Aggiunta della possibilità di scegliere la dimensione della zona di testo tenendo premuto il clic del mouse
+                                fino a raggiungere la larghezza desiderata.</li>
+                            <li>Aggiunta della possibilità di far funzionare lo schermo principale di OpenBoard in modalità finestra.</li>
+                            <li>Aggiunto il supporto per ffmpeg-5.</li>
+                            <li>Aggiunto il supporto per Qt 6.</li>
+                            <li>Aggiunto il supporto per il pacchetto universale su macOS (una sola versione per processore Intel o ARM).</li>
+                        </ul>
+                        
+                        <h3>Miglioramenti</h3>
+                        <ul>
+                            <li>Aggiunta di scorciatoie da tastiera per i colori (1, 2, 3, 4 e 5).</li>
+                            <li>Miglioramento dell'interfaccia utente in modalità desktop in modo che l'utente possa facilmente capire
+                                cosa è selezionato. Riduzione anche del tempo necessario per mantenere premuto il pulsante sinistro del mouse in modo che
+                                i sottomenu siano visualizzati.</li>
+                            <li>La barra degli strumenti e le preferenze sono ora utilizzabili anche su dispositivi a bassa risoluzione.</li>
+                            <li>Miglioramento della gestione dell'altezza delle aree di testo. L'altezza è ora gestita automaticamente
+                                e si adatta alle ridimensionamenti della larghezza dell'utente.</li>
+                            <li>Miglioramento delle finestre di dialogo "conferma prima di eliminare", rendendole più esplicative su ciò che
+                                verrà eliminato. Aggiunta di icone migliori per illustrare ogni caso d'uso.</li>
+                            <li>Nome visualizzato nell'infobulle degli oggetti nella libreria.</li>
+                            <li>Archiviazione delle immagini JPEG nel loro formato nativo</li>
+                            <li>Osservazione della rotazione delle immagini dalle metadati dell'immagine</li>
+                            <li>La dimensione della pagina PDF esportata è ora la stessa della dimensione della pagina PDF importata.</li>
+                            <li>Autorizzazione del deposito di immagini nelle sottocartelle della libreria di immagini</li>
+                            <li>Miglior posizionamento delle annotazioni</li>
+                            <li>Mantenimento della compatibilità con Qt 5.12</li>
+                            <li>Numerose miglioramenti delle prestazioni</li>
+                        </ul>
+                        
+                        <h3>Correzioni di bug</h3>
+                        <ul>
+                            <li>Correzione di un crash durante lo zoom con un'attivazione dell'utensile Assi sulla pagina corrente.</li>
+                            <li>Correzione di un problema in cui, in un contesto di archiviazione di rete, lo strato PDF di un documento appena
+                                importato scompariva se il documento veniva importato su Linux.</li>
+                            <li>Correzione di un problema in cui non era possibile ridimensionare un widget orizzontalmente o verticalmente.</li>
+                            <li>Correzione di un problema in cui fare clic destro su una casella di testo ne causava la deselezione,
+                                impedendo così il collage del contenuto degli appunti al suo interno.</li>
+                            <li>Correzione di un crash in cui un PDF non correttamente leggibile impediva il corretto funzionamento
+                                dell'esportazione. Ora compare una nuova finestra di dialogo per spiegare all'utente cosa sta accadendo,
+                                prima di tornare all'esportazione delle pagine PDF in immagini dettagliate (pesanti).</li>
+                            <li>Correzione di un problema in cui l'utente doveva fare clic più volte su "Annulla" per ottenere il risultato desiderato.</li>
+                            <li>Correzione di un problema in cui non era possibile cambiare la dimensione del font in una casella di testo vuota.</li>
+                            <li>Correzione di un problema in cui l'eliminazione dell'ultimo carattere in una casella di testo causava
+                                il ridimensionamento della stessa.</li>
+                            <li>Correzione di un problema in cui l'utente poteva duplicare una pagina facendo accidentalmente
+                                trascinare un'anteprima dalla modalità Documenti alla modalità Tavola.</li>
+                            <li>Correzione di un problema in cui la rotazione di un oggetto di più di 90° lo ribaltava orizzontalmente.</li>
+                            <li>Correzione di un problema su macOS in cui fare clic su "Riproduci" su un video lo ridimensionava alle dimensioni originali.</li>
+                            <li>Correzione di un problema in cui non era possibile aprire un UBZ facendo doppio clic su di esso con OpenBoard già avviato.</li>
+                            <li>Correzione di un problema in cui un trascinamento indesiderato poteva essere avviato facendo clic semplicemente
+                                su un'anteprima nella palette di sinistra.</li>
+                            <li>Correzione di un problema in cui le dimensioni della griglia non erano persistenti né lette se lo sfondo a quadretti
+                                o impostato non era selezionato (ciò faceva sì che lo strumento Assi caricato su un'altra macchina non corrispondesse
+                                all'originale).</li>
+                            <li>Correzione di un problema in cui un oggetto nella palette di destra poteva essere selezionato ma i pulsanti
+                                visualizzati non facevano riferimento a esso né al suo stato attuale, dopo un trascinamento, ad esempio.</li>
+                            <li>Correzione di un problema in cui fare clic su un elemento selezionato o sul suo riquadro di delega lo deselezionava.</li>
+                            <li>Correzione di un problema in cui l'applicazione Google Maps non funzionava più.</li>
+                            <li>Correzione di un problema in cui non era più possibile trascinare e rilasciare un JPEG da una ricerca su Pixabay.</li>
+                            <li>Correzione di diversi crash.</li>
+                            <li>Sono stati risolti vari problemi legati alle interattività grazie alla migrazione verso un
+                                motore di navigazione basato su Chrome. Le caselle a discesa dovrebbero ora funzionare correttamente,
+                                e dovrebbe essere possibile scorrere verso l'alto e verso il basso quando necessario.</li>
+                            <li>Molte correzioni legate alla gestione dei metadati.</li>
+                            <li>L'esportazione di pagine con widget ora esporta uno screenshot del contenuto del widget.</li>
+                            <li>Correzione di alcuni errori di battitura.</li>
+                        </ul>
+                        
+                        <h3>Problemi Conosciuti</h3>
+                        <ul>
+                            <li>Alcuni widget di terze parti potrebbero non funzionare più perché l'API interna del widget è stata modificata. Segnalare questo
+                                all'autore del widget e al team OpenBoard per assistere nell'aggiornamento del widget.</li>
+                            <li>L'aggiunta di un PDF alla lavagna dal browser interno (clic destro -> aggiungi alla lavagna) non funziona in modo coerente.</li>
+                            <li>In alcuni casi, documenti dello stesso livello possono avere lo stesso nome.</li>
+                            <li>Un problema può verificarsi durante l'importazione di un UBX, dove gli utenti si ritrovano con documenti importati che appaiono più
+                                volte nell'albero dei documenti, allo stesso livello.</li>
+                            <li>Il ridimensionamento della maschera preserva il rapporto iniziale se si utilizza la maniglia in basso a destra. Una correzione sarà disponibile nella versione 1.7.1.</li>
+                            <li>L'ordine di profondità degli oggetti non viene più rispettato in alcuni casi. Una correzione sarà disponibile nella versione 1.7.1.</li>
+                        </ul>
+
+                        <h3>Linux</h3>
+                        <ul>
+                            <li>In modalità Desktop, il Dock Gnome deve essere posizionato in basso per aggirare il problema con la palette sinistra
+                                di OpenBoard che non è utilizzabile dall'alto (vedi https://bugreports.qt.io/browse/QTBUG-81341 per ulteriori dettagli).</li>
+                        </ul>
+
+                        <h3>Ubuntu 20.04</h3>
+                        <ul>
+                            <li>Quando lo schermo di controllo non è il sinistro più a sinistra, il menu principale non apparirà dove dovrebbe.
+                                Ciò è dovuto a un bug di Qt (vedi https://bugreports.qt.io/browse/QTBUG-84462 per ulteriori dettagli).</li>
+                        </ul>
+
+                        <h3>macOS</h3>
+                        <ul>
+                            <li>Alcuni video .mp4 potrebbero essere riproducibili, altri no.</li>
+                        </ul>
+
                         <h2>
                             <a id="user-content-version-6" class="anchor" href="#version-150" aria-hidden="true">
                                 <span aria-hidden="true" class="octicon octicon-link">
