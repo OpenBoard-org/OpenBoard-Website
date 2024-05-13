@@ -111,7 +111,7 @@
                         (à partir de macOS 12)
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard-1.7.0.dmg">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
                             Télécharger OpenBoard pour macOS
                         </a>
                     </p>
@@ -124,7 +124,7 @@
                     <p class="text-muted">
                         (à partir de Windows 10)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard_Installer_1.7.0.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
                         Télécharger OpenBoard pour Windows
                     </a>
                 </div>
@@ -137,12 +137,12 @@
                         (64-bits)
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_22.04_1.7.0_amd64.deb">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
                             Télécharger OpenBoard pour Ubuntu 22.04
                         </a>
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_20.04_1.7.0_amd64.deb">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
                             Télécharger OpenBoard pour Ubuntu 20.04
                         </a>
                     </p>
@@ -164,6 +164,75 @@
                     <h1 id="changelog">
                         Notes de version
                     </h1>
+                    <h2>Version 1.7.1</h2>
+                    <p><strong>Note importante :</strong> beaucoup de ces changements ont été possibles grâce à l’aide de la communauté OpenBoard ! 
+                        Un grand merci à tous et toutes pour votre soutien. 
+                        Merci en particulier aux contributeurs GitHub : 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>,
+                        <a href="https://github.com/Vekhir">Vekhir</a> et
+                        <a href="https://github.com/PatricCunhaforWork">PatricCunhaforWork</a> !
+                    </p>
+                    <h3>Nouvelles fonctionnalités</h3>
+                    <ul>
+                        <li>Ajout de la possibilité de déplacer les outils (règle, compas, etc.) à l'aide des flèches du clavier.</li>
+                        <li>Ajout d'une nouvelle application Latex2SVG convertissant les formules Latex en SVG, que vous pouvez ensuite glisser-déposer sur le tableau. Prend également en charge mhchem pour la chimie.</li>
+                        <li>Ajout de la prise en charge de CMake pour les builds Linux</li>
+                    </ul>
+                    <h3>Améliorations</h3>
+                    <ul>
+                        <li>Simplification des règles permettant d'ajouter un nouveau texte sur le tableau, lorsqu'il est proche d'une autre boîte de texte.</li>
+                        <li>Amélioration des performances lors du chargement de documents, en particulier pour les documents volumineux contenant de nombreuses annotations.</li>
+                        <li>Modification de l'info-bulle des icônes de suppression en fonction de leur texte.</li>
+                        <li>Migration de la version Windows de xpdf vers poppler.</li>
+                        <li>Amélioration de la cohérence du zLevel et de la manière dont les utilisateurs peuvent le modifier. Un simple clic sur "Niveau supérieur" et "Niveau inférieur" incrémente ou décrémente désormais le zLevel de l'objet ciblé. Le comportement en cas de clic long reste inchangé.</li>
+                    </ul>
+                        
+                    <h3>Corrections</h3>
+                    <ul>
+                        <li>Contournement d'un problème lié à QTBUG-79216, où les touches mortes étaient simplement ignorées dans les widgets web. Le contournement résout complètement le problème sous Linux, mais pas sous macOS. Vous pouvez contourner le problème en donnant le focus à un champ du widget et en appuyant sur la page suivante puis sur la page précédente dans la barre d'outils du tableau, ou simplement en rechargeant la page lorsque cela est possible.</li>
+                        <li>Correction d'un problème où le masque conserverait le rapport d'aspect lors de l'utilisation de la poignée inférieure droite pour le redimensionner.</li>
+                        <li>Correction d'un problème où un nouveau widget créé ne serait pas visible jusqu'au prochain lancement</li>
+                        <li>Correction d'un problème où la suppression d'un widget nouvellement créé du tableau l'effacerait de la bibliothèque et du disque</li>
+                        <li>Correction d'un problème où le glisser-déposer d'un objet d'un widget vers le tableau ne déclencherait jamais l'événement mouseReleaseEvent, se terminant par le déplacement du widget lorsque ce n'était pas prévu</li>
+                        <li>Correction d'un problème où les niveaux z des objets ne seraient pas correctement définis</li>
+                        <li>Correction des plantages survenant lors de l'utilisation des fonctionnalités du bouton 'Ajouter' en mode Documents</li>
+                        <li>Correction d'un plantage survenant lors de la tentative de glisser-déposer une image déjà présente sur le tableau</li>
+                        <li>Correction d'un problème où une image serait copiée-collée à de mauvaises positions hors écran sous Windows</li>
+                        <li>Correction d'un plantage survenant lors de la sortie directe d'OpenBoard depuis le mode Tableau sur des documents volumineux.</li>
+                        <li>Correction d'un problème où l'échelle d'un élément pdf n'était pas conservée lors de la copie de la page vers un autre document</li>
+                        <li>Correction d'un problème où la gomme ne fonctionnait pas lorsqu'elle était complètement à l'intérieur du polygone</li>
+                        <li>Correction du profil sRGB incorrect et de certains droits de fichiers</li>
+                        <li>Correction d'un problème où il était possible d'accéder au DisplayManager avant qu'il ne soit initialisé</li>
+                        <li>Correction du comportement des icônes de la règle lors du zoom</li>
+                        <li>Correction des paramètres d'installation silencieuse de Windows pour vcredist</li>
+                    </ul>
+                    <h3>Problèmes connus</h3>
+                    <ul>
+                      <li>Certains widgets tiers peuvent ne plus fonctionner, car l'API de widget interne a été modifiée. Veuillez signaler cela
+                          à l'auteur du widget ainsi qu'à l'équipe OpenBoard pour aider à mettre à jour le widget.</li>
+                      <li>Ajouter un PDF au tableau à partir du navigateur interne (clic droit -> ajouter au tableau) ne fonctionne pas 
+                          de manière consistante.</li>
+                      <li>Dans certains cas, des documents de même niveau peuvent avoir le même nom.</li>
+                      <li>Un problème peut survenir lors de l'importation d'un UBX, où les utilisateurs se retrouvent avec les documents 
+                          importés apparaissant plusieurs fois dans l'arborescence des documents, au même niveau.</li>
+                    </ul>
+
+                    <h3>Linux</h3>
+                    <ul>
+                      <li>En mode Bureau, le Dock Gnome doit être positionné en bas pour contourner le problème avec la palette de gauche
+                          d'OpenBoard qui n'est pas utilisable depuis le dessus (cf. https://bugreports.qt.io/browse/QTBUG-81341 pour plus de détails).</li>
+                    </ul>
+
+                    <h3>Ubuntu 20.04</h3>
+                    <ul>
+                      <li>Lorsque l'écran de contrôle n'est pas le premier écran à gauche, le menu principal n'apparaîtra pas où il devrait.
+                          Cela est dû à un bug Qt (cf. https://bugreports.qt.io/browse/QTBUG-84462 pour plus de détails).</li>
+                    </ul>
+
+                    <h3>MacOS</h3>
+                    <ul>
+                      <li>Certains vidéos .mp4 peuvent être lus, d'autres non.</li>
+                    </ul>
                     <h2>Version 1.7.0 </h2>
                     <p><strong>Note importante :</strong> beaucoup de ces changements ont été possibles grâce à l’aide de la communauté OpenBoard ! 
                         Un grand merci à tous et toutes pour votre soutien. 
@@ -1630,8 +1699,8 @@
                         Code source
                     </h3>
                     <p>
-                        Le code source de la dernière version, 1.7.0, peut être obtenu
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.0">
+                        Le code source de la dernière version, 1.7.1, peut être obtenu
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
                             ici
                         </a>
                     </p>
@@ -1647,7 +1716,7 @@
                 <ul class="footer-links pull-right">
                     <li>
                         <a href="https://github.com/OpenBoard-org/OpenBoard">
-                            OpenBoard sur GitHub
+                            GitHub
                         </a>
                     </li>
                 </ul>

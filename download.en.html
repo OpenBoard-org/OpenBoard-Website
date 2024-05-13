@@ -110,7 +110,7 @@
                     <p class="text-muted">
                         (macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard-1.7.0.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
                         Download OpenBoard for macOS
                     </a>
                 </div>
@@ -122,7 +122,7 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard_Installer_1.7.0.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
                         Download OpenBoard for Windows
                     </a>
                 </div>
@@ -134,11 +134,11 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_22.04_1.7.0_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
                         Download OpenBoard for Ubuntu 22.04
                     </a>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_20.04_1.7.0_amd64.deb">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
                             Download OpenBoard for Ubuntu 20.04
                         </a>
                     </p>
@@ -159,6 +159,73 @@
                     <h1 id="changelog">
                         Release Notes
                     </h1>
+                    <h2>Version 1.7.1</h2>
+                    <p><strong>Important Note:</strong> Many of these changes were made possible with the help of the OpenBoard community! 
+                        A big thank you to all for your support. 
+                        Special thanks to GitHub contributors:  
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>,
+                        <a href="https://github.com/Vekhir">Vekhir</a> and
+                        <a href="https://github.com/PatricCunhaforWork">PatricCunhaforWork</a> !
+                    </p>
+                    
+                    <h3>New features</h3>
+                    <ul>
+                        <li>added the possibility to move tools (ruler, compass, etc) using arrow keys.</li>
+                        <li>added a new Latex2SVG application converting Latex formulas to SVG, that you can then drag and drop on the board. Also supports mhchem for chemistry</li>
+                        <li>added CMake support for community-driven Linux builds</li>
+                    </ul>
+                    
+                    <h3>Improvements</h3>
+                    <ul>
+                        <li>simplified the rules to be authorized to put a new text on the board, when close to another text box.</li>
+                        <li>Improved performances on document loading time, especially for heavy documents, containing a lot of annotations.</li>
+                        <li>changed delete icons' tooltip according to their text</li>
+                        <li>migrated Windows build from xpdf to poppler</li>
+                        <li>improved zLevel consistency and how the users can change it. A simple click on the "Layer Up" and "Layer Down" now simply increments or decrements the zLevel of the targeted object. Long click behavior remains unchanged.</li>
+                    </ul>
+                    
+                    <h3>Bug fixes</h3>
+                    <ul>
+                        <li>Workaround for an issue related to QTBUG-79216, where dead keys were simply ignored in web widgets. The workaround fixes completely the issue on Linux, but not on macOS. You can workaround the issue by giving focus of an input of the widget and pressing Next page then previous page on the Board toolbar, or by simply reloading the page when possible.</li>
+                        <li>Fixed an issue where the mask would preserve aspect ratio when using the bottom right handle to resize it.</li>
+                        <li>Fixed an issue where a newly created widget would not be visible until next launch</li>
+                        <li>Fixed an issue where removing from board a newly created widget would erase it from library and disk</li>
+                        <li>Fixed an issue where drag and dropping an object from a widget to the board would never trigger mouseReleaseEvent, ending with the widget being moved when not intended</li>
+                        <li>Fixed an issue where object zLevels would not be correctly set</li>
+                        <li>Fixed crashes occurring when using the 'Add' button's functionalities in Documents Mode</li>
+                        <li>Fixed a crash occurring when trying to drag and drop an image already on the board</li>
+                        <li>Fixed an issue where an image would be copy-pasted at bad off-screen positions on Windows</li>
+                        <li>Fixed a crash occuring when directly exiting OpenBoard from Board Mode on heavy documents.</li>
+                        <li>Fixed an issue where the scale of a pdf item was not preserved when copying the page to another document</li>
+                        <li>Fixed an issue where the eraser was not working when completely inside polygon</li>
+                        <li>Fixed incorrect sRGB profile and some files rights</li>
+                        <li>Fixed an issue by avoiding access to uninitialized DisplayManager</li>
+                        <li>Fixed ruler icons behaviors when zooming</li>
+                        <li>Fixed windows silent install parameters for vcredist</li>
+                    </ul>
+                    
+                    <h3>Known Issues</h3>
+                    <ul>
+                        <li>Some third-party widgets may no longer work as the internal widget API has been modified. Please report this to the widget author and the OpenBoard team to help update the widget.</li>
+                        <li>Adding a PDF to the board from the internal browser (right-click -> add to board) may not consistently work.</li>
+                        <li>In some cases, documents at the same level may have the same name.</li>
+                        <li>An issue may occur when importing a UBX, where users end up with imported documents appearing multiple times in the document tree at the same level.</li>
+                    </ul>
+
+                    <h3>Linux</h3>
+                    <ul>
+                        <li>In Desktop mode, the Gnome Dock must be positioned at the bottom to work around the issue with the left palette of OpenBoard not being usable from the top (see https://bugreports.qt.io/browse/QTBUG-81341 for more details).</li>
+                    </ul>
+
+                    <h3>Ubuntu 20.04</h3>
+                    <ul>
+                        <li>When the control screen is not the leftmost screen, the main menu will not appear where it should. This is due to a Qt bug (see https://bugreports.qt.io/browse/QTBUG-84462 for more details).</li>
+                    </ul>
+
+                    <h3>macOS</h3>
+                    <ul>
+                        <li>Some .mp4 videos may be playable, while others are not.</li>
+                    </ul>
                     <h2>Version 1.7.0 </h2>
                     <p><strong>Important Note:</strong> Many of these changes were made possible with the help of the OpenBoard community! 
                         A big thank you to all for your support. 
@@ -1566,22 +1633,19 @@
                         For developers
                     </h2>
                     <h3>
-                        Packages
+                        Source code
                     </h3>
                     <p>
-                        The latest available version, 1.6.4, can be obtained
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.6.4">
-                            here
+                        The source code of the latest available version, 1.7.1, can be obtained
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
+                            here. 
                         </a>
-                        . Packages are provided for Windows 10+, macOS 10.13+, Ubuntu 20.04 and
-                        22.04.
                     </p>
                     <p>
-                        See here for
+                        You'll also find documentation to build OpenBoard from source
                         <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-from-source">
-                            installation instructions
+                            on GitHub.
                         </a>
-                        .
                     </p>
                 </div>
             </div>
@@ -1591,7 +1655,7 @@
                 <ul class="footer-links pull-right">
                     <li>
                         <a href="https://github.com/OpenBoard-org/OpenBoard">
-                            OpenBoard sur GitHub
+                            GitHub
                         </a>
                     </li>
                 </ul>

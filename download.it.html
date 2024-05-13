@@ -112,7 +112,7 @@
                         (macOS 12+)
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard-1.7.0.dmg">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
                             Scarica OpenBoard per macOS
                         </a>
                     </p>
@@ -125,7 +125,7 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard_Installer_1.7.0.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
                         Scarica OpenBoard per Windows
                     </a>
                 </div>
@@ -138,11 +138,11 @@
                         (64-bits)
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_22.04_1.7.0_amd64.deb">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
                             Scarica OpenBoard per Ubuntu 22.04
                         </a>
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_20.04_1.7.0_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
                         Scarica OpenBoard per Ubuntu 20.04
                     </a>
                 </div>
@@ -162,6 +162,61 @@
                         <h1 id="changelog">
                             Note sulla versione
                         </h1>
+                        <h2>Versione 1.7.1</h2>
+                        <p><strong>Nota importante:</strong> Molte di queste modifiche sono state possibili grazie all'aiuto della comunità di OpenBoard! 
+                            Un grande ringraziamento a tutti per il vostro supporto. Ringraziamenti speciali ai contributori di GitHub: 
+                            <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                            <a href="https://github.com/Vekhir">Vekhir</a> e 
+                            <a href="https://github.com/PatricCunhaforWork">PatricCunhaforWork</a> !
+                        </p> 
+                        <h3>Nuove funzionalità</h3>
+                        <ul>
+                            <li>Aggiunta la possibilità di spostare gli strumenti (riga, compasso, ecc.) utilizzando i tasti freccia.</li>
+                            <li>Aggiunta una nuova applicazione Latex2SVG per convertire le formule Latex in SVG, che è possibile trascinare e rilasciare sulla lavagna. Supporta anche mhchem per la chimica.</li>
+                            <li>Aggiunto il supporto CMake per le build Linux guidate dalla comunità.</li>
+                        </ul>
+                        <h3>Miglioramenti</h3>
+                        <ul>
+                            <li>Semplificate le regole per essere autorizzati a inserire un nuovo testo sulla lavagna, quando si è vicini a un'altra casella di testo.</li>
+                            <li>Migliorate le prestazioni durante il caricamento del documento, soprattutto per i documenti pesanti, contenenti molte annotazioni.</li>
+                            <li>Modificate le icone di eliminazione in base al loro testo.</li>
+                            <li>La build di Windows è stata migrata da xpdf a poppler.</li>
+                            <li>Migliorata la coerenza del livello z e il modo in cui gli utenti possono modificarlo. Un semplice clic su "Livello superiore" e "Livello inferiore" incrementa o decrementa il livello z dell'oggetto selezionato. Il comportamento del clic prolungato rimane invariato.</li>
+                        </ul>
+                        <h3>Correzioni di bug</h3>
+                        <ul>
+                            <li>Risolto un problema relativo a QTBUG-79216, in cui i tasti morti venivano semplicemente ignorati nei widget web. 
+                                La soluzione alternativa risolve completamente il problema su Linux, ma non su macOS. 
+                                È possibile aggirare il problema dando la messa a fuoco a un input del widget e premendo la pagina successiva e poi 
+                                la pagina precedente sulla barra degli strumenti della lavagna, 
+                                o semplicemente ricaricando la pagina quando possibile.</li>
+                            <li>Risolto un problema in cui la maschera manteneva il rapporto d'aspetto quando si utilizzava la maniglia in basso a destra per ridimensionarla.</li>
+                            <li>Risolto un problema in cui un nuovo widget creato non era visibile fino al successivo avvio.</li>
+                            <li>Risolto un problema in cui la rimozione dalla lavagna di un nuovo widget creato cancellava il widget dalla libreria e dal disco.</li>
+                            <li>Risolto un problema in cui il trascinamento di un oggetto da un widget alla lavagna non attivava mai il rilascio del mouse, con il risultato che il widget veniva spostato quando non previsto.</li>
+                            <li>Risolto un problema in cui i livelli z degli oggetti non venivano impostati correttamente.</li>
+                            <li>Risolti i crash che si verificavano durante l'utilizzo delle funzionalità del pulsante "Aggiungi" in modalità documenti.</li>
+                            <li>Risolto un crash che si verificava durante il tentativo di trascinare e rilasciare un'immagine già presente sulla lavagna.</li>
+                            <li>Risolto un problema in cui un'immagine veniva copiata e incollata in posizioni sbagliate fuori schermo su Windows.</li>
+                            <li>Risolto un crash che si verificava durante l'uscita diretta da OpenBoard in modalità lavagna su documenti pesanti.</li>
+                            <li>Risolto un problema in cui la scala di un elemento PDF non veniva mantenuta durante la copia della pagina in un altro documento.</li>
+                            <li>Risolto un problema in cui la gomma non funzionava quando completamente all'interno di un poligono.</li>
+                            <li>Risolto un profilo sRGB non corretto e alcuni diritti sui file.</li>
+                            <li>Risolto un problema evitando l'accesso a un DisplayManager non inizializzato.</li>
+                            <li>Risolto il comportamento delle icone della riga durante lo zoom.</li>
+                            <li>Risolti i parametri di installazione silenziosa di Windows per vcredist.</li>
+                        </ul>
+                        <h3>Problemi noti</h3>
+                        <ul>
+                            <li>Alcuni widget di terze parti potrebbero non funzionare più, poiché l'API interna dell'widget è stata modificata. 
+                                Segnalare il problema all'autore del widget e al team di OpenBoard per aiutare a effettuare l'aggiornamento del widget.</li>
+                            <li>L'aggiunta di un PDF alla lavagna dal browser interno (clic destro -> aggiungi alla lavagna) potrebbe non funzionare in modo coerente.</li>
+                            <li>In alcuni casi, i documenti allo stesso livello potrebbero avere lo stesso nome.</li>
+                            <li>Potrebbe verificarsi un problema durante l'importazione di un UBX, in cui gli utenti si ritrovano 
+                                con documenti importati che appaiono più volte nell'albero dei documenti allo stesso livello.</li>
+                        </ul>
+                        <h3>Linux</h3>
+                        <ul> <li>In modalità desktop, il Dock di Gnome deve essere posizionato in basso per aggirare il problema con la paletta di sinistra di OpenBoard che non è utilizzabile dall'alto (vedi <https://bugreports.qt.io/browse/QTBUG-81341> per maggiori dettagli).</li> </ul> <h3>Ubuntu 20.04</h3> <ul> <li>Quando lo schermo di controllo non è il più a sinistra, il menu principale non apparirà dove dovrebbe. Ciò è dovuto a un bug di Qt (vedi <https://bugreports.qt.io/browse/QTBUG-84462> per maggiori dettagli).</li> </ul> <h3>macOS</h3> <ul> <li>Alcuni video .mp4 potrebbero essere riproducibili, mentre altri no.</li> </ul>
                         <h2>Versione 1.7.0 </h2>
                         <p><strong>Nota importante:</strong> molti di questi cambiamenti sono stati resi possibili grazie all'aiuto della comunità OpenBoard! 
                             Un grande ringraziamento a tutti per il vostro supporto. 
@@ -1645,20 +1700,16 @@
                             Pacchetti
                         </h3>
                         <p>
-                            L'ultima versione disponibile, 1.6.4, può essere scaricata da
-                            <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.6.4"
-                            data_temp_dwid="0">
-                                qui
+                            L'ultima versione disponibile, 1.7.1, può essere scaricata da
+                            <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
+                                qui.
                             </a>
-                            . I pacchetti binari vengono forniti per Windows 10+, macOS 10.13+, Ubuntu
-                            20.04.
                         </p>
                         <p>
-                            Controllare qui per le
+                            Puoi anche trovare la documentazione per creare OpenBoard dal sorgente su 
                             <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-from-source">
-                                istruzioni per l'installazione
+                                GitHub.
                             </a>
-                            .
                         </p>
                     </div>
                 </div>
@@ -1669,7 +1720,7 @@
                 <ul class="footer-links pull-right">
                     <li>
                         <a href="https://github.com/OpenBoard-org/OpenBoard">
-                            OpenBoard on GitHub
+                            GitHub
                         </a>
                     </li>
                 </ul>

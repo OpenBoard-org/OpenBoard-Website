@@ -110,7 +110,7 @@
                     <p class="text-muted">
                         (von macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard-1.7.0.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
                         Laden Sie OpenBoard für macOS herunter
                     </a>
                 </div>
@@ -122,7 +122,7 @@
                     <p class="text-muted">
                         (von Windows 10)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/OpenBoard_Installer_1.7.0.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
                         Laden Sie OpenBoard für Windows herunter
                     </a>
                 </div>
@@ -134,11 +134,11 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_22.04_1.7.0_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
                         Laden Sie OpenBoard für Ubuntu 22.04 herunter
                     </a>
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.0/openboard_ubuntu_20.04_1.7.0_amd64.deb">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
                             Laden Sie OpenBoard für Ubuntu 20.04 herunter
                         </a>
                     </p>
@@ -159,6 +159,68 @@
                     <h1 id="changelog">
                         Versionshinweise
                     </h1>
+                    <h2>Version 1.7.1</h2>
+                        <p><strong>Wichtiger Hinweis:</strong> Viele dieser Änderungen wurden durch die Hilfe der OpenBoard-Community ermöglicht! Vielen Dank an alle für Ihre Unterstützung. Besonderer Dank geht an die GitHub-Beitragenden:
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>,
+                        <a href="https://github.com/Vekhir">Vekhir</a> und
+                        <a href="https://github.com/PatricCunhaforWork">PatricCunhaforWork</a>!
+                        </p>
+                        <h3>Neue Funktionen</h3>
+                        <ul>
+                            <li>Hinzufügen der Möglichkeit, Werkzeuge (Lineal, Zirkel, etc.) mit den Pfeiltasten der Tastatur zu verschieben.</li>
+                            <li>Hinzufügen einer neuen Latex2SVG-Anwendung, die Latex-Formeln in SVG konvertiert, die Sie dann auf das Whiteboard ziehen und ablegen können. Unterstützt auch mhchem für Chemie.</li>
+                            <li>Hinzufügen der Unterstützung für CMake für Linux-Builds</li>
+                        </ul>
+                        <h3>Verbesserungen</h3>
+                        <ul>
+                            <li>Vereinfachung der Regeln zum Hinzufügen eines neuen Textes auf das Whiteboard, wenn es in der Nähe einer anderen Textbox ist.</li>
+                            <li>Verbesserung der Leistung beim Laden von Dokumenten, insbesondere bei großen Dokumenten mit vielen Annotationen.</li>
+                            <li>Anpassung der Tooltipps der Löschsymbole basierend auf ihrem Text.</li>
+                            <li>Migration der Windows-Version von xpdf zu poppler.</li>
+                            <li>Verbesserung der Kohärenz des zLevels und wie Benutzer es ändern können. Ein einfacher Klick auf "Higher Level" und "Lower Level" erhöht oder verringert nun den zLevel des ausgewählten Objekts. Das Verhalten bei langem Klick bleibt unverändert.</li>
+                        </ul>
+
+                        <h3>Korrekturen</h3>
+                        <ul>
+                            <li>Umgehung eines Problems im Zusammenhang mit QTBUG-79216, bei dem tote Tasten in Web-Widgets einfach ignoriert wurden. Die Umgehung löst das Problem vollständig unter Linux, jedoch nicht unter macOS. Sie können das Problem umgehen, indem Sie einem Feld des Widgets den Fokus geben und dann die nächste und vorherige Seite in der Symbolleiste des Whiteboards drücken oder einfach die Seite neu laden, wenn dies möglich ist.</li>
+                            <li>Korrektur eines Problems, bei dem das Seitenverhältnis beibehalten wurde, wenn die untere rechte Ecke zum Ändern der Größe verwendet wurde.</li>
+                            <li>Korrektur eines Problems, bei dem ein neu erstelltes Widget erst nach dem nächsten Start sichtbar wäre</li>
+                            <li>Korrektur eines Problems, bei dem das Löschen eines neu erstellten Widgets vom Whiteboard es aus der Bibliothek und von der Festplatte löschen würde</li>
+                            <li>Korrektur eines Problems, bei dem das Ziehen und Ablegen eines Objekts von einem Widget auf das Whiteboard niemals das mouseReleaseEvent-Ereignis auslösen würde, was zu unerwünschten Bewegungen des Widgets führte.</li>
+                            <li>Korrektur eines Problems, bei dem die z-Levels von Objekten nicht korrekt festgelegt wurden</li>
+                            <li>Korrektur von Abstürzen beim Verwenden der "Hinzufügen"-Schaltflächenfunktionen im Dokumentenmodus</li>
+                            <li>Korrektur eines Absturzes beim Versuch, ein bereits auf dem Whiteboard vorhandenes Bild per Drag & Drop zu verschieben</li>
+                            <li>Korrektur eines Problems, bei dem ein Bild unter Windows an falschen Bildschirmpositionen kopiert wurde</li>
+                            <li>Korrektur eines Absturzes beim direkten Beenden von OpenBoard vom Whiteboard-Modus aus in großen Dokumenten.</li>
+                            <li>Korrektur eines Problems, bei dem die Skalierung eines PDF-Elements beim Kopieren der Seite in ein anderes Dokument nicht beibehalten wurde</li>
+                            <li>Korrektur eines Problems, bei dem der Radiergummi nicht funktionierte, wenn er vollständig innerhalb eines Polygons lag</li>
+                            <li>Korrektur des falschen sRGB-Profils und einiger Dateiberechtigungen</li>
+                            <li>Korrektur eines Problems, bei dem auf den DisplayManager zugegriffen werden konnte, bevor er initialisiert wurde</li>
+                            <li>Korrektur des Verhaltens der Lineal-Symbole beim Zoomen</li>
+                            <li>Korrektur der stillen Windows-Installationsparameter für vcredist</li>
+                        </ul>
+                        <h3>Bekannte Probleme</h3>
+                        <ul>
+                            <li>Einige Drittanbieter-Widgets funktionieren möglicherweise nicht mehr, da sich die interne Widget-API geändert hat. Bitte melden Sie dies dem Widget-Autor und dem OpenBoard-Team, um bei der Aktualisierung des Widgets zu helfen.</li>
+                            <li>Hinzufügen eines PDFs zum Whiteboard aus dem internen Browser (Rechtsklick -> Zum Whiteboard hinzufügen) funktioniert nicht konsistent.</li>
+                            <li>In einigen Fällen können Dokumente desselben Levels denselben Namen haben.</li>
+                            <li>Beim Importieren eines UBX kann ein Problem auftreten, bei dem importierte Dokumente mehrmals in der Dokumentenstruktur auf demselben Level angezeigt werden.</li>
+                        </ul>
+
+                        <h3>Linux</h3>
+                        <ul>
+                            <li>Im Desktop-Modus muss das Gnome-Dock unten positioniert werden, um das Problem mit der linken Palette von OpenBoard zu umgehen, die von oben nicht nutzbar ist (siehe https://bugreports.qt.io/browse/QTBUG-81341 für weitere Details).</li>
+                        </ul>
+
+                        <h3>Ubuntu 20.04</h3>
+                        <ul>
+                            <li>Wenn der Steuerbildschirm nicht der erste Bildschirm links ist, wird das Hauptmenü nicht dort angezeigt, wo es sollte. Dies liegt an einem Qt-Bug (siehe https://bugreports.qt.io/browse/QTBUG-84462 für weitere Details).</li>
+                        </ul>
+
+                        <h3>MacOS</h3>
+                        <ul>
+                            <li>Einige .mp4-Videos können abgespielt werden, andere nicht.</li>
+                        </ul>
                     <h2>Version 1.7.0 </h2>
                     <p><strong>Wichtiger Hinweis:</strong> Viele dieser Änderungen waren dank der Hilfe der OpenBoard-Community möglich!
                         Ein großes Dankeschön an alle für eure Unterstützung.
@@ -1649,19 +1711,17 @@
                         Pakete
                     </h3>
                     <p>
-                        Die neueste Version, 1.6.4, kann
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.6.4">
-                            hier
+                        Die neueste Version, 1.7.1, kann
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
+                            hier.
                         </a>
-                        . abgerufen werden. Installer sind für Windows (&gt; = 10), macOS (&gt;
-                        = 10.13) und Ubuntu (20.04) verfügbar. Siehe Installationsanweisungen.
                     </p>
                     <p>
-                        Cf.
+                        Auf 
                         <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-from-source">
-                            Installationsanweisungen
+                            GitHub
                         </a>
-                        .
+                        finden Sie auch Dokumentation zum Erstellen von OpenBoard aus dem Quellcode.
                     </p>
                 </div>
             </div>
