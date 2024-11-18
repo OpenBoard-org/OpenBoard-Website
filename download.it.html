@@ -97,11 +97,6 @@
             </div>
         </nav>
         <div class="container">
-            <div class="page-header">
-                <h1>
-                    Scarica OpenBoard
-                </h1>
-            </div>
             <div class="row platforms">
                 <div class="col-md-4 col-sm-12 platform">
                     <img alt="macOS logo" class="img-circle" src="images/OS-X-logo.png">
@@ -111,11 +106,9 @@
                     <p class="text-muted">
                         (macOS 12+)
                     </p>
-                    <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
-                            Scarica OpenBoard per macOS
-                        </a>
-                    </p>
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard-1.7.2.dmg">
+                        Scarica OpenBoard per macOS
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12 platform">
                     <img alt="Windows logo" class="img-circle" src="images/Windows-logo.png">
@@ -125,27 +118,39 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard_Installer_1.7.2.exe">
                         Scarica OpenBoard per Windows
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-12 platform">
-                    <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
+                    <img alt="Debian logo" class="img-circle" src="images/Debian-logo.png">
                     <p>
-                        Ubuntu
+                        Debian
                     </p>
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
-                            Scarica OpenBoard per Ubuntu 22.04
-                        </a>
-                    </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
-                        Scarica OpenBoard per Ubuntu 20.04
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/openboard_debian_12_1.7.2_amd64.deb">
+                        Scarica OpenBoard per Debian 12
                     </a>
                 </div>
+                <div class="row platforms">
+                    <div class="col-md-12 col-sm-12 platform">
+                        <img alt="Logo di Github" src="images/Github-logo.png">
+                        <p>
+                            Altre piattaforme
+                        </p>
+                        <p class="text-muted">
+                            (Pacchetti non ufficiali sono disponibili su altre piattaforme, grazie alla community di OpenBoard)
+                        </p>
+                        <p>
+                            <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/wiki/Downloads#other-platforms">
+                                Trova pacchetti creati dalla community su GitHub
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-8">
                         <h1>
@@ -162,6 +167,53 @@
                         <h1 id="changelog">
                             Note sulla versione
                         </h1>
+                        <h2>Versione 1.7.2</h2>
+                        <p><strong>Ringraziamenti alla comunità di OpenBoard:</strong> molte di queste migliorie sono state rese possibili grazie al supporto della comunità di OpenBoard! Grazie ai contributori di GitHub: 
+                            <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                            <a href="https://github.com/Vekhir">Vekhir</a>,
+                            <a href="https://github.com/sebojolais">sebojolais</a>
+                            e a molti altri!
+                        </p>
+
+                        <h3>Nuove funzionalità</h3>
+                        <ul>
+                            <li>Aggiunta della funzionalità "Allinea alla griglia", che consente di allineare gli elementi sulle linee dei fondi esistenti. Se non è presente alcun fondo, viene utilizzata la griglia predefinita.</li>
+                        </ul>
+
+                        <h3>Miglioramenti</h3>
+                        <ul>
+                            <li>Le scene ora vengono caricate in background per migliorare le prestazioni complessive.</li>
+                            <li>Ottimizzazione della gestione delle miniature per ridurre operazioni pesanti e inutili.</li>
+                            <li>Esportazione dello strumento Assi durante l’esportazione di un documento in formato PDF.</li>
+                            <li>Visualizzazione dell'angolo di rotazione attuale per ogni oggetto, comprese le selezioni di oggetti in rotazione.</li>
+                            <li>Visualizzazione dell'indice z di un oggetto quando si usano i pulsanti per avanzare/indietreggiare l’oggetto.</li>
+                            <li>Possibilità di disegnare su entrambi i lati del triangolo, anche oltre i limiti.</li>
+                            <li>Il centro di rotazione del triangolo ora è il suo angolo invece della graduazione 0.</li>
+                            <li>I bordi grigi dello schermo ora sono trasparenti e si adattano alla risoluzione del secondo schermo.</li>
+                            <li>Aggiornamento di Qt 5 a Qt 6 su tutte le piattaforme supportate.</li>
+                        </ul>
+
+                        <h3>Correzioni di bug</h3>
+                        <ul>
+                            <li>Correzione di un bug che causava un crash quando veniva aggiunta un'annotazione alla prima pagina all'avvio di OpenBoard e l'utente usciva dalla modalità Tafel.</li>
+                            <li>Correzione di un problema che impediva la lettura dei video su Debian.</li>
+                            <li>Correzione dell'interattività "Dice".</li>
+                            <li>Correzione di diversi crash e miglioramenti della stabilità generale.</li>
+                        </ul>
+
+                        <h3>Problemi noti</h3>
+                        <ul>
+                            <li>Le voci dei menu a discesa dei widget potrebbero apparire dietro la palette in modalità Tafel.</li>
+                            <li>Rari crash durante la manipolazione delle caselle di testo su Ubuntu 22.04, e talvolta su macOS e Debian.</li>
+                            <li>Problemi persistenti con la lettura di alcuni file video e audio locali.</li>
+                            <li>Possono apparire documenti duplicati durante l'importazione di UBX.</li>
+                        </ul>
+
+                        <h3>Linux</h3>
+                        <ul>
+                            <li>In modalità Desktop, il Dock di Gnome deve essere posizionato in basso per evitare problemi con la palette sinistra di OpenBoard (vedi <a href="https://bugreports.qt.io/browse/QTBUG-81341">QTBUG-81341</a> per maggiori dettagli).</li>
+                        </ul>
+
                         <h2>Versione 1.7.1</h2>
                         <p><strong>Nota importante:</strong> Molte di queste modifiche sono state possibili grazie all'aiuto della comunità di OpenBoard! 
                             Un grande ringraziamento a tutti per il vostro supporto. Ringraziamenti speciali ai contributori di GitHub: 
@@ -1700,8 +1752,8 @@
                             Pacchetti
                         </h3>
                         <p>
-                            L'ultima versione disponibile, 1.7.1, può essere scaricata da
-                            <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
+                            L'ultima versione disponibile, 1.7.2, può essere scaricata da
+                            <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.2">
                                 qui.
                             </a>
                         </p>

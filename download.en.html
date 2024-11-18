@@ -96,11 +96,6 @@
             </div>
         </nav>
         <div class="container">
-            <div class="page-header">
-                <h1>
-                    Download OpenBoard
-                </h1>
-            </div>
             <div class="row platforms">
                 <div class="col-md-4 col-sm-12 platform">
                     <img alt="macOS logo" class="img-circle" src="images/OS-X-logo.png">
@@ -110,7 +105,7 @@
                     <p class="text-muted">
                         (macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard-1.7.2.dmg">
                         Download OpenBoard for macOS
                     </a>
                 </div>
@@ -122,24 +117,35 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard_Installer_1.7.2.exe">
                         Download OpenBoard for Windows
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-12 platform">
-                    <img alt="Ubuntu logo" class="img-circle" src="images/Ubuntu-logo.png">
+                    <img alt="Debian logo" src="images/Debian-logo.png">
                     <p>
-                        Ubuntu
+                        Debian
                     </p>
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
-                        Download OpenBoard for Ubuntu 22.04
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/openboard_debian_12_1.7.2_amd64.deb">
+                        Download OpenBoard for Debian 12
                     </a>
+                </div>
+            </div>
+            <div class="row platforms">
+                <div class="col-md-12 col-sm-12 platform">
+                    <img alt="Github logo" src="images/Github-logo.png">
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
-                            Download OpenBoard for Ubuntu 20.04
+                        Other platforms
+                    </p>
+                    <p class="text-muted">
+                        (Unofficial packages are available on other platforms, thanks to the OpenBoard community)
+                    </p>
+                    <p>
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/wiki/Downloads#other-platforms">
+                            Find Community-driven packages on GitHub
                         </a>
                     </p>
                 </div>
@@ -159,6 +165,53 @@
                     <h1 id="changelog">
                         Release Notes
                     </h1>
+                    <h2>Version 1.7.2</h2>
+                    <p><strong>Thanks to the OpenBoard Community:</strong> many of these improvements were made possible thanks to the support of the OpenBoard community! Special thanks to GitHub contributors: 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                        <a href="https://github.com/Vekhir">Vekhir</a>, 
+                        <a href="https://github.com/sebojolais">sebojolais</a>
+                        and many others!
+                    </p>
+
+                    <h3>New Features</h3>
+                    <ul>
+                        <li>Added the "Snap to Grid" feature, allowing users to align elements to the lines of existing backgrounds. If no background is displayed, the default grid is used.</li>
+                    </ul>
+
+                    <h3>Improvements</h3>
+                    <ul>
+                        <li>Scenes are now loaded in the background to improve overall performance.</li>
+                        <li>Optimized thumbnail management to reduce unnecessary heavy operations.</li>
+                        <li>Exported the Axes tool when exporting a document to PDF.</li>
+                        <li>Current rotation angle is now displayed for any object, including rotating selections.</li>
+                        <li>The current z-index of an object is displayed when using the bring forward/send backward buttons.</li>
+                        <li>It is now possible to draw on either side of the triangle, even beyond its limits.</li>
+                        <li>The triangle's rotation center is now its corner instead of the 0 mark.</li>
+                        <li>The gray screen borders are now transparent and adjust to the resolution of the secondary screen.</li>
+                        <li>Updated from Qt 5 to Qt 6 on all supported platforms.</li>
+                    </ul>
+
+                    <h3>Bug Fixes</h3>
+                    <ul>
+                        <li>Fixed a bug causing a crash when an annotation was added to the first page at OpenBoard startup, and the user exited OpenBoard from the Board mode.</li>
+                        <li>Fixed an issue preventing video playback on Debian.</li>
+                        <li>Fixed the interactivity of the "Dice" feature.</li>
+                        <li>Fixed several crashes and improved overall stability.</li>
+                    </ul>
+
+                    <h3>Known Issues</h3>
+                    <ul>
+                        <li>Dropdown lists of widgets may sometimes appear behind the palette in Board mode.</li>
+                        <li>Rare crashes when manipulating text boxes on Ubuntu 22.04, and occasionally on macOS and Debian.</li>
+                        <li>Persistent issues with playing certain local video and audio files.</li>
+                        <li>Duplicate documents may appear when importing UBX files.</li>
+                    </ul>
+
+                    <h3>Linux</h3>
+                    <ul>
+                        <li>In Desktop mode, the Gnome Dock must be positioned at the bottom to avoid issues with OpenBoard's left palette (see <a href="https://bugreports.qt.io/browse/QTBUG-81341">QTBUG-81341</a> for more details).</li>
+                    </ul>
+
                     <h2>Version 1.7.1</h2>
                     <p><strong>Important Note:</strong> Many of these changes were made possible with the help of the OpenBoard community! 
                         A big thank you to all for your support. 
@@ -1636,8 +1689,8 @@
                         Source code
                     </h3>
                     <p>
-                        The source code of the latest available version, 1.7.1, can be obtained
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
+                        The source code of the latest available version, 1.7.2, can be obtained
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.2">
                             here. 
                         </a>
                     </p>

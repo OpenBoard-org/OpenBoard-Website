@@ -96,11 +96,6 @@
             </div>
         </nav>
         <div class="container">
-            <div class="page-header">
-                <h1>
-                    OpenBoard herunterladen
-                </h1>
-            </div>
             <div class="row platforms">
                 <div class="col-md-4 col-sm-12 platform">
                     <img alt="macOS logo" src="images/OS-X-logo.png">
@@ -110,7 +105,7 @@
                     <p class="text-muted">
                         (von macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard-1.7.1.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard-1.7.2.dmg">
                         Laden Sie OpenBoard für macOS herunter
                     </a>
                 </div>
@@ -122,24 +117,35 @@
                     <p class="text-muted">
                         (von Windows 10)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/OpenBoard_Installer_1.7.1.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard_Installer_1.7.2.exe">
                         Laden Sie OpenBoard für Windows herunter
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-12 platform">
-                    <img alt="Ubuntu logo" src="images/Ubuntu-logo.png">
+                    <img alt="Debian logo" src="images/Debian-logo.png">
                     <p>
-                        Ubuntu
+                        Debian
                     </p>
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_22.04_1.7.1_amd64.deb">
-                        Laden Sie OpenBoard für Ubuntu 22.04 herunter
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/openboard_debian_12_1.7.2_amd64.deb">
+                        Laden Sie OpenBoard für Debian 12 herunter
                     </a>
+                </div>
+            </div>
+            <div class="row platforms">
+                <div class="col-md-12 col-sm-12 platform">
+                    <img alt="Github-Logo" src="images/Github-logo.png">
                     <p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.1/openboard_ubuntu_20.04_1.7.1_amd64.deb">
-                            Laden Sie OpenBoard für Ubuntu 20.04 herunter
+                        Weitere Plattformen
+                    </p>
+                    <p class="text-muted">
+                        (Inoffizielle Pakete sind auf anderen Plattformen verfügbar, dank der OpenBoard-Community)
+                    </p>
+                    <p>
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/wiki/Downloads#other-platforms">
+                            Community-gesteuerte Pakete auf GitHub finden
                         </a>
                     </p>
                 </div>
@@ -159,6 +165,53 @@
                     <h1 id="changelog">
                         Versionshinweise
                     </h1>
+                    <h2>Version 1.7.2</h2>
+                    <p><strong>Dank an die OpenBoard-Community:</strong> viele dieser Verbesserungen wurden dank der Unterstützung der OpenBoard-Community möglich! Besonderer Dank an die GitHub-Beitragenden: 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                        <a href="https://github.com/Vekhir">Vekhir</a>, 
+                        <a href="https://github.com/sebojolais">sebojolais</a>
+                        und viele andere!
+                    </p>
+
+                    <h3>Neue Funktionen</h3>
+                    <ul>
+                        <li>Hinzufügung der Funktion "Am Raster ausrichten", die es Benutzern ermöglicht, Elemente an den Linien bestehender Hintergründe auszurichten. Wenn kein Hintergrund angezeigt wird, wird das Standardraster verwendet.</li>
+                    </ul>
+
+                    <h3>Verbesserungen</h3>
+                    <ul>
+                        <li>Szenen werden jetzt im Hintergrund geladen, um die Gesamtleistung zu verbessern.</li>
+                        <li>Optimierung der Miniaturansichten-Verwaltung zur Reduzierung unnötiger, ressourcenintensiver Vorgänge.</li>
+                        <li>Export des Achsenwerkzeugs beim Export eines Dokuments als PDF.</li>
+                        <li>Der aktuelle Drehwinkel wird nun für jedes Objekt angezeigt, einschließlich rotierender Auswahlen.</li>
+                        <li>Die aktuelle z-Index eines Objekts wird beim Verwenden der Vorwärts-/Rückwärts-Schaltflächen angezeigt.</li>
+                        <li>Es ist nun möglich, auf beiden Seiten des Dreiecks zu zeichnen, auch über die Begrenzungen hinaus.</li>
+                        <li>Der Drehpunkt des Dreiecks ist nun seine Ecke statt der Markierung 0.</li>
+                        <li>Die grauen Bildschirmränder sind jetzt transparent und passen sich der Auflösung des sekundären Bildschirms an.</li>
+                        <li>Aktualisierung von Qt 5 auf Qt 6 auf allen unterstützten Plattformen.</li>
+                    </ul>
+
+                    <h3>Fehlerbehebungen</h3>
+                    <ul>
+                        <li>Behebung eines Fehlers, der einen Absturz verursachte, wenn eine Annotation auf der ersten Seite beim Start von OpenBoard hinzugefügt wurde und der Benutzer OpenBoard im Tafelmodus verließ.</li>
+                        <li>Behebung eines Problems, das die Wiedergabe von Videos auf Debian verhinderte.</li>
+                        <li>Fehlerbehebung bei der Interaktivität des "Würfel"-Features.</li>
+                        <li>Behebung mehrerer Abstürze und Verbesserung der allgemeinen Stabilität.</li>
+                    </ul>
+
+                    <h3>Bekannte Probleme</h3>
+                    <ul>
+                        <li>Dropdown-Menüs von Widgets können manchmal hinter der Palette im Tafelmodus erscheinen.</li>
+                        <li>Seltene Abstürze beim Bearbeiten von Textfeldern auf Ubuntu 22.04 und gelegentlich auf macOS und Debian.</li>
+                        <li>Anhaltende Probleme bei der Wiedergabe bestimmter lokaler Video- und Audiodateien.</li>
+                        <li>Duplikate von Dokumenten können beim Importieren von UBX-Dateien erscheinen.</li>
+                    </ul>
+
+                    <h3>Linux</h3>
+                    <ul>
+                        <li>Im Desktop-Modus muss das Gnome-Dock unten positioniert werden, um Probleme mit der linken Palette von OpenBoard zu vermeiden (siehe <a href="https://bugreports.qt.io/browse/QTBUG-81341">QTBUG-81341</a> für weitere Details).</li>
+                    </ul>
+
                     <h2>Version 1.7.1</h2>
                         <p><strong>Wichtiger Hinweis:</strong> Viele dieser Änderungen wurden durch die Hilfe der OpenBoard-Community ermöglicht! Vielen Dank an alle für Ihre Unterstützung. Besonderer Dank geht an die GitHub-Beitragenden:
                         <a href="https://github.com/letsfindaway">letsfindaway</a>,
@@ -1711,8 +1764,8 @@
                         Pakete
                     </h3>
                     <p>
-                        Die neueste Version, 1.7.1, kann
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.1">
+                        Die neueste Version, 1.7.2, kann
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.2">
                             hier.
                         </a>
                     </p>
