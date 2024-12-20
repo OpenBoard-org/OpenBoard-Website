@@ -105,7 +105,7 @@
                     <p class="text-muted">
                         (macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard-1.7.2.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard-1.7.3.dmg">
                         Download OpenBoard for macOS
                     </a>
                 </div>
@@ -117,7 +117,7 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard_Installer_1.7.2.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard_Installer_1.7.3.exe">
                         Download OpenBoard for Windows
                     </a>
                 </div>
@@ -129,7 +129,7 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/openboard_debian_12_1.7.2_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/openboard_debian_12_1.7.3_amd64.deb">
                         Download OpenBoard for Debian 12
                     </a>
                 </div>
@@ -165,6 +165,25 @@
                     <h1 id="changelog">
                         Release Notes
                     </h1>
+                    <h2>Version 1.7.3</h2>
+                    <h3>Bug fixes</h3>
+                    <ul>
+                        <li>Tried to mitigate some audio-related issues on Debian by forcing the use of the ffmpeg backend (see <a href="#known-issues">Known Issues</a> for more details on the remaining bugs).</li>
+                        <li>Fixed an issue where the Windows package would not contain the correct version of OpenSSL DLLs.</li>
+                    </ul>
+
+                    <h3 id="known-issues">Known issues</h3>
+                    <ul>
+                        <li>On any widget, select options (drop-down lists) won't appear in the right position. Be careful as they might sometimes appear behind the left or right palette of the Board Mode.</li>
+                        <li>Reading multiple audio files, then returning to a previously played audio file within the same session, results in the audio file not being played correctly, especially with short audios. Duplicate the audio to replay it without any issue, or use alternative methods to play audio (desktop mode, letters order interactivity, online audio and video apps like PeerTube, etc.).</li>
+                        <li>Some use cases remain where documents at the same level can have the same name.</li>
+                        <li>An unidentified issue may occur when importing a UBX, resulting in the imported documents appearing multiple times in the document tree at the same level.</li>
+                    </ul>
+
+                    <h4>Linux</h4>
+                    <ul>
+                        <li>In Desktop Mode, the Gnome Dock should be set to the bottom position to work around the issue with the OpenBoard left palette being unusable from above it (cf. <a href="https://bugreports.qt.io/browse/QTBUG-81341" target="_blank">https://bugreports.qt.io/browse/QTBUG-81341</a> for more details).</li>
+                    </ul>
                     <h2>Version 1.7.2</h2>
                     <p><strong>Thanks to the OpenBoard Community:</strong> many of these improvements were made possible thanks to the support of the OpenBoard community! Special thanks to GitHub contributors: 
                         <a href="https://github.com/letsfindaway">letsfindaway</a>, 

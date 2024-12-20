@@ -105,7 +105,7 @@
                     <p class="text-muted">
                         (à partir de macOS 12)
                     </p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard-1.7.2.dmg">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard-1.7.3.dmg">
                             Télécharger OpenBoard pour macOS
                         </a>
                 </div>
@@ -117,7 +117,7 @@
                     <p class="text-muted">
                         (à partir de Windows 10)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/OpenBoard_Installer_1.7.2.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard_Installer_1.7.3.exe">
                         Télécharger OpenBoard pour Windows
                     </a>
                 </div>
@@ -129,7 +129,7 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.2/openboard_debian_12_1.7.2_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/openboard_debian_12_1.7.3_amd64.deb">
                         Télécharger OpenBoard pour Debian 12
                     </a>
                 </div>
@@ -166,6 +166,25 @@
                     <h1 id="changelog">
                         Notes de version
                     </h1>
+                    <h2>Version 1.7.3</h2>
+                    <h3>Corrections de bugs</h3>
+                    <ul>
+                        <li>Tentative de résolution de certains problèmes audio liés à Debian en forçant l'utilisation du backend ffmpeg (voir <a href="#known-issues">Problèmes connus</a> pour plus de détails sur les bogues restants).</li>
+                        <li>Correction d'un problème où le package Windows ne contenait pas la bonne version des DLL OpenSSL.</li>
+                    </ul>
+
+                    <h3 id="known-issues">Problèmes connus</h3>
+                    <ul>
+                        <li>Sur n'importe quel widget, les options sélectionnées (listes déroulantes) n'apparaîtront pas à la bonne position. Attention, elles peuvent parfois apparaître derrière la palette gauche ou droite du mode Tableau.</li>
+                        <li>Lire plusieurs fichiers audio, puis revenir à un fichier audio précédemment lu dans la même session, entraîne une lecture incorrecte de ce fichier audio, surtout avec des fichiers courts. Dupliquez l'audio pour le lire sans problème ou utilisez des méthodes alternatives pour lire l'audio (mode bureau, interactivité ordre des lettres, applications audio et vidéo en ligne comme PeerTube, etc.).</li>
+                        <li>Certains cas d'utilisation subsistent où des documents au même niveau peuvent avoir le même nom.</li>
+                        <li>Un problème non identifié peut survenir lors de l'importation d'un UBX, entraînant l'apparition multiple des documents importés dans l'arborescence des documents au même niveau.</li>
+                    </ul>
+
+                    <h4>Linux</h4>
+                    <ul>
+                        <li>En mode Bureau, le dock Gnome doit être positionné en bas pour contourner le problème de la palette gauche d'OpenBoard qui devient inutilisable lorsqu'elle est au-dessus (cf. <a href="https://bugreports.qt.io/browse/QTBUG-81341" target="_blank">https://bugreports.qt.io/browse/QTBUG-81341</a> pour plus de détails).</li>
+                    </ul>
                     <h2>Version 1.7.2</h2>
                     <p><strong>Remerciements à la communauté OpenBoard :</strong> beaucoup de ces améliorations ont été rendues possibles grâce au soutien de la communauté OpenBoard ! Un immense merci aux contributeurs GitHub : 
                         <a href="https://github.com/letsfindaway">letsfindaway</a>, 
@@ -1747,8 +1766,8 @@
                         Code source
                     </h3>
                     <p>
-                        Le code source de la dernière version, 1.7.2, peut être obtenu
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.2">
+                        Le code source de la dernière version, 1.7.3, peut être obtenu
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.3">
                             ici
                         </a>
                     </p>
