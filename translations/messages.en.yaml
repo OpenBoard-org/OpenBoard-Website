@@ -11,9 +11,6 @@ nav:
   support: "Help"
   languages:
     en: "English"
-    fr: "Français"
-    de: "Deutsch"
-    it: "Italiano"
 
 home:
   hero_title: "OpenBoard"

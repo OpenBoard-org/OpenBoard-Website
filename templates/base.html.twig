@@ -43,6 +43,7 @@
                             </li>
                             </ul>
                             {% set availableLocales = supportedLocales|default(['en','fr','de','it']) %}
+                            {% set languageLabels = languageLabels|default({}) %}
                             {% set currentRoute = app.request.attributes.get('_route') %}
                             {% set currentParams = app.request.attributes.get('_route_params')|default({}) %}
                             {% set routeSupportsLocale = currentParams['_locale'] is defined %}
@@ -59,11 +60,12 @@
                                             {% set targetRoute = routeSupportsLocale ? currentRoute : 'home' %}
                                             {% set targetParams = routeSupportsLocale ? currentParams|merge({'_locale': code}) : {'_locale': code} %}
                                             {% set flagPath = asset('images/flags/' ~ code|lower|replace({'_':'-'}) ~ '.png') %}
+                                            {% set label = languageLabels[code]|default(code|upper) %}
                                             <li class="{{ app.request.locale == code ? 'active' }}">
                                                 <a href="{{ path(targetRoute, targetParams) }}">
                                                     <img class="flag-icon" src="{{ flagPath }}" alt="" onerror="this.style.display='none';">
                                                     <span class="lang-code">{{ code|upper }}</span>
-                                                    <span class="lang-label">{{ ('nav.languages.' ~ code)|trans }}</span>
+                                                    <span class="lang-label">{{ label }}</span>
                                                 </a>
                                             </li>
                                         {% endfor %}

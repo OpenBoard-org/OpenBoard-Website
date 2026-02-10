@@ -10,10 +10,7 @@ nav:
   documentation: "Documentation"
   support: "Aide"
   languages:
-    en: "English"
     fr: "Français"
-    de: "Deutsch"
-    it: "Italiano"
 
 home:
   hero_title: "OpenBoard"

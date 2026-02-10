@@ -11,11 +11,11 @@
         <h3>{{ 'support.tips_title'|trans }}</h3>
         <p>{{ 'support.tips_text_1'|trans }}</p>
         <p>{{ 'support.tips_text_2'|trans }}</p>
-        {% set hint_image = app.request.locale == 'fr'
-            ? asset('images/startup-hints.png')
-            : asset('images/startup-hints.' ~ app.request.locale ~ '.png') %}
+        {% set hint_locale = app.request.locale %}
+        {% set hint_path = 'images/startup-hints.' ~ hint_locale ~ '.png' %}
+        {% set hint_image = asset(hint_path) %}
         <div class="row text-center spacer-lg">
-            <p><img src="{{ hint_image }}" alt="{{ 'support.tips_image_alt'|trans }}" /></p>
+            <p><img src="{{ hint_image }}" alt="{{ 'support.tips_image_alt'|trans }}" onerror="this.onerror=null; this.src='{{ asset('images/startup-hints.png') }}';" /></p>
         </div>
 
         <h3>{{ 'support.docs_title'|trans }}</h3>

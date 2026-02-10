@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Yaml\Yaml;
 
@@ -13,7 +14,10 @@ class PageController extends AbstractController
 {
     private array $supportedLocales;
 
-    public function __construct(private ParameterBagInterface $parameterBag)
+    public function __construct(
+        private ParameterBagInterface $parameterBag,
+        private TranslatorInterface $translator,
+    )
     {
         $translationsDir = $this->parameterBag->get('kernel.project_dir') . '/translations';
         $this->supportedLocales = $this->discoverSupportedLocales($translationsDir);
@@ -160,6 +164,7 @@ class PageController extends AbstractController
     {
         return $this->render($template, $parameters + [
             'supportedLocales' => $this->supportedLocales,
+            'languageLabels' => $this->buildLanguageLabels(),
         ]);
     }
 
@@ -187,5 +192,21 @@ class PageController extends AbstractController
         sort($locales);
 
         return $locales ?: ['en'];
+    }
+
+    /**
+     * Build localized labels for the language switcher using each locale's own catalog.
+     */
+    private function buildLanguageLabels(): array
+    {
+        $labels = [];
+
+        foreach ($this->supportedLocales as $code) {
+            $key = 'nav.languages.' . $code;
+            $translated = $this->translator->trans($key, locale: $code);
+            $labels[$code] = ($translated === $key) ? strtoupper($code) : $translated;
+        }
+
+        return $labels;
     }
 }
