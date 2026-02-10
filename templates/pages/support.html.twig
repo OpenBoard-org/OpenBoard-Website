@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'support.title'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>{{ 'support.title'|trans }}</h1>
+        <p>{{ 'support.intro_1'|trans }}</p>
+        <p>{{ 'support.intro_2'|trans }}</p>
+
+        <h3>{{ 'support.tips_title'|trans }}</h3>
+        <p>{{ 'support.tips_text_1'|trans }}</p>
+        <p>{{ 'support.tips_text_2'|trans }}</p>
+        {% set hint_image = app.request.locale == 'fr'
+            ? asset('images/startup-hints.png')
+            : asset('images/startup-hints.' ~ app.request.locale ~ '.png') %}
+        <div class="row text-center spacer-lg">
+            <p><img src="{{ hint_image }}" alt="{{ 'support.tips_image_alt'|trans }}" /></p>
+        </div>
+
+        <h3>{{ 'support.docs_title'|trans }}</h3>
+        <p>
+            {{ 'support.docs_text'|trans }}
+            <a href="{{ path('documentation') }}">{{ 'support.docs_link_label'|trans }}</a>!
+        </p>
+
+        <h3>{{ 'support.ask_title'|trans }}</h3>
+        <p>{{ 'support.ask_text_1'|trans }}</p>
+        <p>{{ 'support.ask_text_2'|trans }}</p>
+    </div>
+{% endblock %}

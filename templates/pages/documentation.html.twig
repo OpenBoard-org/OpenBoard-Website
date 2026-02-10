@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'documentation.title'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>{{ 'documentation.title'|trans }}</h1>
+        <p>{{ 'documentation.intro'|trans }}</p>
+
+        <h3>{{ 'documentation.manuals_title'|trans }}</h3>
+        <ul>
+            <li>
+                <span class="label label-success">{{ 'documentation.badge_new'|trans }}</span>
+                <a target="_blank" href="/download/{{ 'documentation.manual_user_file'|trans }}">{{ 'documentation.manual_user_label'|trans }}</a>
+                <span class="text-muted">{{ 'documentation.manual_user_size'|trans }}</span>
+            </li>
+            <li>
+                <span class="label label-success">{{ 'documentation.badge_new'|trans }}</span>
+                <a target="_blank" href="/download/{{ 'documentation.manual_onepage_file'|trans }}">{{ 'documentation.manual_onepage_label'|trans }}</a>
+                <span class="text-muted">{{ 'documentation.manual_onepage_size'|trans }}</span>
+            </li>
+            <li>
+                <span class="label label-success">{{ 'documentation.badge_new'|trans }}</span>
+                <a target="_blank" href="/download/{{ 'documentation.manual_docmode_file'|trans }}">{{ 'documentation.manual_docmode_label'|trans }}</a>
+                <span class="text-muted">{{ 'documentation.manual_docmode_size'|trans }}</span>
+            </li>
+        </ul>
+
+        <h3>{{ 'documentation.advanced_title'|trans }}</h3>
+        <p>{{ 'documentation.advanced_intro'|trans }}</p>
+        <p>{{ 'documentation.advanced_links_intro'|trans }}</p>
+        <ul>
+            <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Configuration">{{ 'documentation.link_configuration'|trans }}</a></li>
+            <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Parameters">{{ 'documentation.link_parameters'|trans }}</a></li>
+        </ul>
+
+        <h3>{{ 'documentation.dev_title'|trans }}</h3>
+        <p>{{ 'documentation.dev_intro'|trans }}</p>
+        <h4>{{ 'documentation.dev_ob_title'|trans }}</h4>
+        <ul>
+            <li>
+                <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-from-source">
+                    {{ 'documentation.dev_ob_build'|trans }}
+                </a>
+                <ul>
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-Ubuntu">{{ 'documentation.dev_ob_ubuntu'|trans }}</a></li>
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-Windows">{{ 'documentation.dev_ob_windows'|trans }}</a></li>
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-MacOS-(Universal)">{{ 'documentation.dev_ob_macos'|trans }}</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>{{ 'documentation.dev_qt_title'|trans }}</h4>
+        <ul>
+            <li>
+                {{ 'documentation.dev_qt_build'|trans }}
+                <ul>
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-Qt-WebEngine-on-Ubuntu">{{ 'documentation.dev_qt_ubuntu'|trans }}</a></li>
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-Qt-WebEngine-on-Windows">{{ 'documentation.dev_qt_windows'|trans }}</a></li>
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-Qt-WebEngine-on-macOS">{{ 'documentation.dev_qt_macos'|trans }}</a></li>
+                </ul>
+            </li>
+            <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changes-with-Qt-WebEngine">{{ 'documentation.dev_qt_changes'|trans }}</a></li>
+        </ul>
+
+        <h4>{{ 'documentation.widgets_title'|trans }}</h4>
+        <p>{{ 'documentation.widgets_intro'|trans }}</p>
+        <p>
+            {{ 'documentation.widgets_template_intro'|trans }}
+            <a href="/download/template.wgt.zip">template.wgt.zip</a>
+            <span class="text-muted">{{ 'documentation.widgets_template_size'|trans }}</span>
+        </p>
+        <p>{{ 'documentation.widgets_icon'|trans }}</p>
+        <p>{{ 'documentation.widgets_more'|trans }}</p>
+        <ul>
+            <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Creating-Web-Widgets">{{ 'documentation.widgets_link_create'|trans }}</a></li>
+            <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/The-Web-Widgets-API">{{ 'documentation.widgets_link_api'|trans }}</a></li>
+            <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/How-to-update-a-widget-to-the-new-API">{{ 'documentation.widgets_link_update'|trans }}</a></li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,59 @@
+releases:
+  - version: "1.7.5"
+    sections:
+      - title: "What's Changed"
+        items:
+          - "Fixed an issue where duplicating a document and selecting the new copy would not show its thumbnail."
+          - "Improved drag & drop of multiple pages and selection behavior in the document thumbnails view."
+          - "Fixed typos in the README."
+      - title: "New Contributors"
+        items:
+          - "@CryHavoc21 made their first contribution in #853."
+
+  - version: "1.7.4"
+    sections:
+      - title: "What's Changed"
+        items:
+          - "Updated to Qt 6.9 on macOS, Debian and Windows."
+          - "Fixed glitches when rendering PDFs on screens with DPI scaling > 100%."
+          - "Fixed blurry PDFs when devicePixelRatio is not 1.0."
+          - "Fixed a bug where the view was restored to center when clearing the scene."
+          - "Unified thumbnails for Board and Document modes."
+          - "Fixed dropping a PDF URL to the board."
+          - "Copied ItemOwnZValue correctly when cloning an item."
+          - "Fixed tool usage with tablet eraser."
+          - "Fixed a bug where users could not rotate a horizontal or vertical line."
+          - "Added rotate snap indicator and allow snapping rotated items."
+          - "Fixed small scene shifts when switching pages."
+          - "Import a file only once per document."
+          - "Background loader performance improvements."
+          - "Fixed spinning message after UBZ import."
+          - "Fixed thumbnail synchronization."
+          - "Fixed incomplete ubdocument files."
+          - "Refactored UI enable/disable handling."
+          - "Checked document validity in thumbnails view."
+          - "Fixed a possible crash in UBThumbnailScene."
+          - "Fixed thumbnail size and UI buttons."
+          - "Added WebP image support."
+          - "Fixed typos."
+          - "Improved delegate handle detection with tablet pen."
+          - "Made UBPersistenceManager::createDocumentProxyStructure static."
+          - "Worked around a Windows crash where dropbar was attached to a dangling scene after a document switch."
+          - "Fixed German translation for cache."
+          - "Fixed blurry screenshots."
+
+  - version: "1.7.3"
+    sections:
+      - title: "Bug fixes"
+        items:
+          - "Tried to mitigate some audio-related issues on Debian by forcing the use of the ffmpeg backend (see Known Issues for more details on the remaining bugs)."
+          - "Fixed an issue where the Windows package would not contain the correct version of OpenSSL DLLs."
+      - title: "Known issues"
+        items:
+          - "On any widget, select options (drop-down lists) won't appear in the right position. Be careful as they might sometimes appear behind the left or right palette of the Board Mode."
+          - "Reading multiple audio files, then returning to a previously played audio file within the same session, results in the audio file not being played correctly, especially with short audios."
+          - "Some use cases remain where documents at the same level can have the same name."
+          - "An unidentified issue may occur when importing a UBX, resulting in the imported documents appearing multiple times in the document tree at the same level."
+      - title: "Linux"
+        items:
+          - "In Desktop Mode, the Gnome Dock should be set to the bottom position to work around the issue with the OpenBoard left palette being unusable from above it (cf. QTBUG-81341 for more details)."

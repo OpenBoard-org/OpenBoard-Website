@@ -3393,7 +3393,6 @@ tbody.collapse.in {
 .navbar {
    position:relative;
    min-height:50px;
-   margin-bottom:20px;
    border:1px solid transparent
 }
 .navbar:after,.navbar:before {
@@ -7857,6 +7856,37 @@ body {
     background: lightgrey;
     padding: 3px;
     border-radius: 2px;
+}
+
+.navbar-language-dropdown .dropdown-menu {
+   min-width: 200px;
+}
+
+.flag-icon {
+   width:18px;
+   height:12px;
+   margin-right:8px;
+   box-shadow:0 0 0 1px rgba(0,0,0,.1);
+   vertical-align:middle;
+}
+
+.navbar-language-dropdown .dropdown-toggle {
+   padding:10px 12px;
+   display:flex;
+   align-items:center;
+   gap:8px;
+   height:50px;
+}
+
+.navbar-language-dropdown .lang-code {
+   font-weight:600;
+   margin-right:6px;
+}
+
+.navbar-language-dropdown .dropdown-menu>li>a {
+   display:flex;
+   align-items:center;
+   gap:8px;
 }
 
 @media screen and (min-width:768px) {

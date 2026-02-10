@@ -1,0 +1,59 @@
+releases:
+  - version: "1.7.5"
+    sections:
+      - title: "Cambiamenti"
+        items:
+          - "Corretto un problema per cui duplicando un documento e selezionando la nuova copia non veniva mostrata la miniatura."
+          - "Corretto il trascinamento di più pagine e il comportamento di selezione nella vista delle miniature dei documenti."
+          - "Corrette alcune imprecisioni nel README."
+      - title: "Nuovi contributori"
+        items:
+          - "@CryHavoc21 ha fatto la sua prima contribution in #853."
+
+  - version: "1.7.4"
+    sections:
+      - title: "Cambiamenti"
+        items:
+          - "Aggiornamento a Qt 6.9 su macOS, Debian e Windows."
+          - "Corretti glitch durante il rendering dei PDF su schermi con scala DPI > 100%."
+          - "Risolti PDF sfocati quando devicepixelratio non è 1.0."
+          - "Risolto un bug che riportava la vista al centro quando si ripuliva la scena."
+          - "Miniature unificate per le modalità Lavagna e Documento."
+          - "Risolto il trascinamento di URL PDF sulla lavagna."
+          - "ItemOwnZValue viene copiato correttamente quando si clona un elemento."
+          - "Corretta l'uso degli strumenti con la gomma della tavoletta."
+          - "Corretto un bug che impediva di ruotare una linea orizzontale o verticale."
+          - "Aggiunto indicatore di snap alla rotazione e aggancio degli elementi ruotati."
+          - "Corretti piccoli spostamenti della scena durante il cambio pagina."
+          - "Import di un file eseguito una sola volta per documento."
+          - "Prestazioni: migliorato il caricatore in background."
+          - "Risolto il messaggio di attesa che rimaneva dopo l'import UBZ."
+          - "Corretta la sincronizzazione delle miniature."
+          - "Corretti file ubdocument incompleti."
+          - "Refactor della gestione di abilitazione/disabilitazione dell'interfaccia."
+          - "Verifica di validità del documento nella vista delle miniature."
+          - "Risolto un possibile crash in UBThumbnailScene."
+          - "Corretti dimensione delle miniature e pulsanti dell'interfaccia."
+          - "Aggiunto supporto per immagini WebP."
+          - "Corrette alcune sviste/typo."
+          - "Migliorato il rilevamento della maniglia delegata con la penna della tavoletta."
+          - "UBPersistenceManager::createDocumentProxyStructure è ora statico."
+          - "Aggirato un crash su Windows in cui la dropbar rimaneva agganciata a una scena non valida dopo un cambio documento."
+          - "Corretta la traduzione tedesca di “Cache”."
+          - "Risolte schermate sfocate."
+
+  - version: "1.7.3"
+    sections:
+      - title: "Correzioni di bug"
+        items:
+          - "Mitigati alcuni problemi audio su Debian forzando l'uso del backend ffmpeg."
+          - "Risolto un problema per cui il pacchetto Windows non conteneva la versione corretta delle DLL di OpenSSL."
+      - title: "Problemi Conosciuti"
+        items:
+          - "Nei widget le liste a discesa possono apparire nella posizione errata (anche dietro le palette)."
+          - "Riprodurre più file audio e tornare a uno precedente può causare riproduzione errata, soprattutto con audio brevi."
+          - "Alcuni casi d'uso consentono documenti allo stesso livello con lo stesso nome."
+          - "Import UBX può generare documenti duplicati allo stesso livello."
+      - title: "Linux"
+        items:
+          - "In modalità Desktop, il dock di Gnome dovrebbe essere in basso (QTBUG-81341)."

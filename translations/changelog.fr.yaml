@@ -1,0 +1,59 @@
+releases:
+  - version: "1.7.5"
+    sections:
+      - title: "Changements"
+        items:
+          - "Correction d'un problème où la duplication d'un document puis la sélection de la copie n'affichait pas sa vignette."
+          - "Correction du glisser-déposer de plusieurs pages et du comportement de sélection dans la vue des vignettes de documents."
+          - "Correction de fautes de frappe dans le README."
+      - title: "Nouveaux contributeurs"
+        items:
+          - "@CryHavoc21 a réalisé sa première contribution dans #853."
+
+  - version: "1.7.4"
+    sections:
+      - title: "Changements"
+        items:
+          - "Mise à jour vers Qt 6.9 sur macOS, Debian et Windows."
+          - "Correction de glitches lors du rendu des PDF sur des écrans avec un DPI > 100%."
+          - "Correction de PDF flous quand devicepixelratio n'est pas à 1.0."
+          - "Correction d'un bug où la vue était recentrée lors du nettoyage de la scène."
+          - "Vignettes unifiées pour les modes Tableau et Document."
+          - "Correction du dépôt d'une URL PDF sur le tableau."
+          - "Copie correcte de ItemOwnZValue lors du clonage d'un élément."
+          - "Correction de l'utilisation des outils avec la gomme d'une tablette."
+          - "Correction d'un bug empêchant la rotation d'une ligne horizontale ou verticale."
+          - "Ajout d'un indicateur d'accrochage à la rotation et alignement des éléments tournés."
+          - "Correction de petits décalages de scène lors du changement de page."
+          - "Import d'un fichier une seule fois par document."
+          - "Amélioration des performances du chargeur en arrière-plan."
+          - "Correction du message de chargement qui restait après l'import UBZ."
+          - "Correction de la synchronisation des vignettes."
+          - "Correction des fichiers ubdocument incomplets."
+          - "Refactorisation de la gestion d'activation/désactivation de l'interface."
+          - "Vérification de la validité du document dans la vue des vignettes."
+          - "Correction d'un crash possible dans UBThumbnailScene."
+          - "Ajustement de la taille des vignettes et des boutons de l'interface."
+          - "Ajout du support des images WebP."
+          - "Correction de fautes de frappe."
+          - "Meilleure détection de la poignée de délégué avec un stylet de tablette."
+          - "UBPersistenceManager::createDocumentProxyStructure est désormais statique."
+          - "Contournement d'un plantage sous Windows où la dropbar restait attachée à une scène invalide après un changement de document."
+          - "Correction de la traduction allemande pour « cache »."
+          - "Correction de captures d'écran floues."
+
+  - version: "1.7.3"
+    sections:
+      - title: "Corrections de bugs"
+        items:
+          - "Tentative de résolution de certains problèmes audio liés à Debian en forçant l'utilisation du backend ffmpeg (voir Problèmes connus pour plus de détails sur les bogues restants)."
+          - "Correction d'un problème où le package Windows ne contenait pas la bonne version des DLL OpenSSL."
+      - title: "Problèmes connus"
+        items:
+          - "Sur n'importe quel widget, les options sélectionnées (listes déroulantes) n'apparaîtront pas à la bonne position."
+          - "Lire plusieurs fichiers audio puis revenir à un audio précédemment lu dans la même session entraîne une lecture incorrecte, surtout avec des fichiers courts."
+          - "Certains cas d'utilisation subsistent où des documents au même niveau peuvent avoir le même nom."
+          - "Un problème non identifié peut survenir lors de l'importation d'un UBX, entraînant des documents importés multiples au même niveau."
+      - title: "Linux"
+        items:
+          - "En mode Bureau, le dock Gnome doit être positionné en bas pour contourner le problème de la palette gauche d'OpenBoard (cf. QTBUG-81341)."

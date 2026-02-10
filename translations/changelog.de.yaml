@@ -1,0 +1,59 @@
+releases:
+  - version: "1.7.5"
+    sections:
+      - title: "Änderungen"
+        items:
+          - "Behoben: Beim Duplizieren eines Dokuments und Auswahl der Kopie wurde keine Miniatur angezeigt."
+          - "Drag & Drop mehrerer Seiten und das Auswahlverhalten in der Dokument-Miniaturansicht wurden korrigiert."
+          - "Tippfehler im README behoben."
+      - title: "Neue Mitwirkende"
+        items:
+          - "@CryHavoc21 hat seine erste Contribution in #853 gemacht."
+
+  - version: "1.7.4"
+    sections:
+      - title: "Änderungen"
+        items:
+          - "Aktualisierung auf Qt 6.9 unter macOS, Debian und Windows."
+          - "Glitches beim PDF-Rendering auf Bildschirmen mit DPI-Skalierung > 100 % behoben."
+          - "Verschwommene PDFs behoben, wenn devicePixelRatio nicht 1.0 ist."
+          - "Behoben: Die Ansicht wurde nach dem Leeren der Szene zur Mitte zurückgesetzt."
+          - "Miniaturen für Board- und Dokumentmodus vereinheitlicht."
+          - "Behoben: PDF-URL auf das Board ablegen."
+          - "ItemOwnZValue wird beim Klonen eines Elements korrekt kopiert."
+          - "Werkzeugnutzung mit Tablet-Radierer korrigiert."
+          - "Horizontale oder vertikale Linien ließen sich nicht drehen – behoben."
+          - "Dreh-Snap-Indikator hinzugefügt und Ausrichten gedrehter Elemente ermöglicht."
+          - "Kleine Szenenverschiebungen beim Seitenwechsel behoben."
+          - "Datei-Import pro Dokument nur einmal ausgeführt."
+          - "Performance: Hintergrund-Lader verbessert."
+          - "Drehende Meldung nach UBZ-Import behoben."
+          - "Synchronisation der Miniaturen korrigiert."
+          - "Unvollständige ubdocument-Dateien behoben."
+          - "Aktivierungs-/Deaktivierungslogik der UI refaktoriert."
+          - "Gültigkeitsprüfung des Dokuments in der Miniaturansicht hinzugefügt."
+          - "Möglichen Absturz in UBThumbnailScene behoben."
+          - "Miniaturgröße und UI-Schaltflächen korrigiert."
+          - "WebP-Bildsupport hinzugefügt."
+          - "Tippfehler behoben."
+          - "Delegate-Handle-Erkennung mit Tablet-Stift verbessert."
+          - "UBPersistenceManager::createDocumentProxyStructure ist jetzt statisch."
+          - "Workaround für Windows-Absturz, bei dem die Dropbar an einer ungültigen Szene hing."
+          - "Deutsche Übersetzung für „Cache“ korrigiert."
+          - "Verschwommene Screenshots behoben."
+
+  - version: "1.7.3"
+    sections:
+      - title: "Fehlerbehebungen"
+        items:
+          - "Audio-Probleme auf Debian durch Erzwingen des ffmpeg-Backends teilweise mitigiert."
+          - "Behoben: Windows-Paket enthielt nicht die richtige Version der OpenSSL-DLLs."
+      - title: "Bekannte Probleme"
+        items:
+          - "Dropdowns in Widgets erscheinen manchmal an falscher Position (hinter Paletten)."
+          - "Mehrere Audios abspielen und zurückkehren kann zu fehlerhafter Wiedergabe führen, besonders bei kurzen Audios."
+          - "Dokumente auf derselben Ebene können denselben Namen haben."
+          - "Beim Import eines UBX können importierte Dokumente mehrfach erscheinen."
+      - title: "Linux"
+        items:
+          - "Im Desktop-Modus Gnome-Dock unten positionieren, um das Palette-Problem zu umgehen (QTBUG-81341)."

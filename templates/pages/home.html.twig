@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'site.title'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="splash">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 spacer-lg">
+                    <h1>{{ 'home.hero_title'|trans }}</h1>
+                    <p class="lead">{{ 'home.hero_tagline'|trans }}</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="{{ path('download', {'_locale': app.request.locale}) }}">
+                            {{ 'home.hero_cta'|trans }}
+                        </a>
+                    </p>
+                    <small>{{ 'home.hero_note'|trans }}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% set features = [
+        {'icon': 'fa-file-o', 'title': 'home.features.easy.title'|trans, 'text': 'home.features.easy.text'|trans},
+        {'icon': 'fa-github', 'title': 'home.features.opensource.title'|trans, 'text': 'home.features.opensource.text'|trans|raw},
+        {'icon': 'fa-globe', 'title': 'home.features.universal.title'|trans, 'text': 'home.features.universal.text'|trans},
+        {'icon': 'fa-heart', 'title': 'home.features.simple.title'|trans, 'text': 'home.features.simple.text'|trans},
+        {'icon': 'fa-graduation-cap', 'title': 'home.features.academia.title'|trans, 'text': 'home.features.academia.text'|trans},
+        {'icon': 'fa-pencil', 'title': 'home.features.handwriting.title'|trans, 'text': 'home.features.handwriting.text'|trans},
+    ] %}
+
+    <div class="section-tout">
+        <div class="container">
+            <div class="row">
+                {% for feature in features %}
+                    <div class="col-lg-4 col-sm-6">
+                        <h3>
+                            <i class="fa {{ feature.icon }}"></i>
+                            {{ feature.title|raw }}
+                        </h3>
+                        <p>{{ feature.text|raw }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center spacer-lg">
+            <p>
+                <img src="{{ asset('images/openboard-wacom.jpg') }}" width="100%" alt="OpenBoard classroom illustration">
+            </p>
+            <h2>{{ 'home.highlight_title'|trans }}</h2>
+            <p class="lead">{{ 'home.highlight_subtitle'|trans }}</p>
+            <p>
+                <a class="btn btn-lg btn-primary" href="{{ path('download', {'_locale': app.request.locale}) }}">
+                    {{ 'home.highlight_cta'|trans }}
+                </a>
+            </p>
+        </div>
+        <p class="lead">{{ 'home.summary'|trans|raw }}</p>
+
+        <h3>{{ 'home.origins_title'|trans }}</h3>
+        <p>{{ 'home.origins_text'|trans|raw }}</p>
+
+        <h3>{{ 'home.cross_title'|trans }}</h3>
+        <p>{{ 'home.cross_text'|trans }}</p>
+
+        <h3>{{ 'home.involved_title'|trans }}</h3>
+        <p>{{ 'home.involved_text_1'|trans|raw }}</p>
+        <p>{{ 'home.involved_text_2'|trans|raw }}</p>
+
+        <h3>{{ 'home.next_title'|trans }}</h3>
+        <p>{{ 'home.next_text'|trans|raw }}</p>
+    </div>
+{% endblock %}

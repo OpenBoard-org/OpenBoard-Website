@@ -1,0 +1,213 @@
+site:
+  title: "OpenBoard, the best interactive whiteboard for schools and universities"
+  description: "OpenBoard is an open source cross-platform interactive whiteboard application. OpenBoard is intended for use primarily in schools and universities, and can be used both with interactive whiteboards or in a dual-screen setup with a touchscreen and secondary display."
+
+nav:
+  brand: "OpenBoard"
+  toggle: "Toggle navigation"
+  download: "Download"
+  github: "GitHub"
+  documentation: "Documentation"
+  support: "Help"
+  languages:
+    en: "English"
+    fr: "Français"
+    de: "Deutsch"
+    it: "Italiano"
+
+home:
+  hero_title: "OpenBoard"
+  hero_tagline: "Interactive whiteboard for schools and universities"
+  hero_cta: "Get OpenBoard for free"
+  hero_note: "For Windows, macOS and Linux."
+  highlight_title: "Choose the best for your class"
+  highlight_subtitle: "Free and open source"
+  highlight_cta: "Get OpenBoard now"
+  summary: "OpenBoard is an open source cross-platform teaching software for interactive whiteboard designed primarily for use in schools and universities. It can be used both with interactive whiteboards or in a dual-screen setup with a pen-tablet display and a beamer. It can also be used on your computer without any additional hardware."
+  origins_title: "Where is it from ?"
+  origins_text: "OpenBoard was originally forked from Open-Sankoré 2.0, which was itself based on Uniboard. This fork was created to refocus the software on its original core functionalities and values, that is the work of a teacher in a classroom, privileging the ease of use. The evolution of this software will therefore take place in accordance with these core principles."
+  cross_title: "Cross-platform"
+  cross_text: "Supported platforms are Windows, macOS and Linux."
+  involved_title: "Who is involved?"
+  involved_text_1: "Currently, OpenBoard is maintained by the Education Department (DIP) of the canton of Geneva, in Switzerland. The University of Lausanne, who developped the original Uniboard software in 2003 has joined the effort by means of a logistical and financial contribution. An association project will be developed in 2019."
+  involved_text_2: "A meeting was held in June 2016 between representatives from the universities of Lausanne, Neuchâtel, Fribourg and Geneva, the departments of Education from the cantons of Geneva and Jura as well as various institutions from the canton of Vaud (Switzerland) to together reflect on the desired evolution of OpenBoard."
+  next_title: "What's next ?"
+  next_text: "Interest is growing fast across Switzerland but also in Europe and North America. A swiss law non-profit organisation should be created. This organisation would promote OpenBoard and its open source development and foster collaboration between interested parties. This in respect of the core principles which led to the creation of this fork, that is the refocusing on the work of a teacher in a classroom, privileging the ease of use."
+  features:
+    easy:
+      title: "Easy to Install"
+      text: "Simply download and start using it right away. No registration required."
+    opensource:
+      title: "Open Source"
+      text: "OpenBoard is released under the GPLv3 License and maintained by the community on <a target=\"_blank\" href=\"https://github.com/OpenBoard-org/OpenBoard\">GitHub</a>."
+    universal:
+      title: "Universal"
+      text: "Available on Windows, Mac and Linux so you can stay with what you like the most."
+    simple:
+      title: "Simple"
+      text: "OpenBoard is easy to use yet powerful. It is a tool that can help you do your job and does not get in the way."
+    academia:
+      title: "K-12 to Academia"
+      text: "Engage K-12 Student with interactive courses or give the perfect lecture at University."
+    handwriting:
+      title: "Handwriting"
+      text: "Use a pen tablet, an interactive whiteboard or even a mouse to write and annotate your course. We are constantly working the improve the writing experience."
+
+download:
+  title: "Download"
+  platforms:
+    macos:
+      name: "macOS"
+      note: "(macOS 12+)"
+      cta: "Download OpenBoard for macOS"
+    windows:
+      name: "Windows"
+      note: "(Windows 10+)"
+      cta: "Download OpenBoard for Windows"
+    debian:
+      name: "Debian"
+      note: "(64-bits)"
+      cta: "Download OpenBoard for Debian 12"
+  other_platforms_title: "Other platforms"
+  other_platforms_note: "(Unofficial packages are available on other platforms, thanks to the OpenBoard community)"
+  other_platforms_cta: "Find Community-driven packages on GitHub"
+  old_releases_title: "Old releases"
+  old_releases_text: "For older operating system versions, such as macOS 10.12, Windows 7 or Ubuntu 16.04 for example, all OpenBoard releases are available <a href=\"%releasesUrl%\">on GitHub</a>"
+  community_title: "Community Thanks"
+  community_thanks_label: "Thanks to the OpenBoard Community:"
+  community_thanks_text: "many of the improvements OpenBoard benefits from have been made possible by the support of the OpenBoard community!"
+  community_contributors_intro: "Special thanks to GitHub contributors:"
+  community_contributors_suffix: "and many others!"
+  release_notes_title: "Release Notes"
+  version_label: "Version %version%"
+  changelog:
+    more: "Older release notes are available on <a href=\"%releasesUrl%\">GitHub</a>."
+    1_7_5:
+      changed:
+        title: "What's Changed"
+        items:
+          1: "Fixed an issue where duplicating a document and selecting the new copy would not show its thumbnail."
+          2: "Improved drag & drop of multiple pages and selection behavior in the document thumbnails view."
+          3: "Fixed typos in the README."
+      contributors:
+        title: "New Contributors"
+        items:
+          1: "@CryHavoc21 made their first contribution in #853."
+    1_7_4:
+      changed:
+        title: "What's Changed"
+        items:
+          1: "Updated to Qt 6.9 on macOS, Debian and Windows."
+          2: "Fixed glitches when rendering PDFs on screens with DPI scaling > 100%."
+          3: "Fixed blurry PDFs when devicePixelRatio is not 1.0."
+          4: "Fixed a bug where the view was restored to center when clearing the scene."
+          5: "Unified thumbnails for Board and Document modes."
+          6: "Fixed dropping a PDF URL to the board."
+          7: "Copied ItemOwnZValue correctly when cloning an item."
+          8: "Fixed tool usage with tablet eraser."
+          9: "Fixed a bug where users could not rotate a horizontal or vertical line."
+          10: "Added rotate snap indicator and allow snapping rotated items."
+          11: "Fixed small scene shifts when switching pages."
+          12: "Import a file only once per document."
+          13: "Background loader performance improvements."
+          14: "Fixed spinning message after UBZ import."
+          15: "Fixed thumbnail synchronization."
+          16: "Fixed incomplete ubdocument files."
+          17: "Refactored UI enable/disable handling."
+          18: "Checked document validity in thumbnails view."
+          19: "Fixed a possible crash in UBThumbnailScene."
+          20: "Fixed thumbnail size and UI buttons."
+          21: "Added WebP image support."
+          22: "Fixed typos."
+          23: "Improved delegate handle detection with tablet pen."
+          24: "Made UBPersistenceManager::createDocumentProxyStructure static."
+          25: "Worked around a Windows crash where dropbar was attached to a dangling scene after a document switch."
+          26: "Fixed German translation for cache."
+          27: "Fixed blurry screenshots."
+    1_7_3:
+      fixes:
+        title: "Bug fixes"
+        items:
+          1: "Tried to mitigate some audio-related issues on Debian by forcing the use of the ffmpeg backend (see Known Issues for more details on the remaining bugs)."
+          2: "Fixed an issue where the Windows package would not contain the correct version of OpenSSL DLLs."
+      known:
+        title: "Known issues"
+        items:
+          1: "On any widget, select options (drop-down lists) won't appear in the right position. Be careful as they might sometimes appear behind the left or right palette of the Board Mode."
+          2: "Reading multiple audio files, then returning to a previously played audio file within the same session, results in the audio file not being played correctly, especially with short audios."
+          3: "Some use cases remain where documents at the same level can have the same name."
+          4: "An unidentified issue may occur when importing a UBX, resulting in the imported documents appearing multiple times in the document tree at the same level."
+      linux:
+        title: "Linux"
+        items:
+          1: "In Desktop Mode, the Gnome Dock should be set to the bottom position to work around the issue with the OpenBoard left palette being unusable from above it (cf. QTBUG-81341 for more details)."
+
+documentation:
+  title: "Documentation"
+  intro: "Here are some resources you might need."
+  manuals_title: "User Manuals"
+  badge_new: "New!"
+  manual_user_file: "Tutoriel_OpenBoard_1.6EN.pdf"
+  manual_user_label: "OpenBoard User Manual"
+  manual_user_size: "(PDF, 3.2MB)"
+  manual_onepage_file: "OpenBoard1.6_interface-EN.pdf"
+  manual_onepage_label: "OpenBoard Explained in One Page"
+  manual_onepage_size: "(PDF, 624KB)"
+  manual_docmode_file: "OpenBoard1.6_Mode_Doc_in_1_pageEN.pdf"
+  manual_docmode_label: "OpenBoard: \"Documents\" Mode Explained in One Page"
+  manual_docmode_size: "(PDF, 1.6MB)"
+  advanced_title: "For Advanced Users"
+  advanced_intro: "OpenBoard offers numerous settings to adjust its functionality to your needs! Some can be adjusted directly in the application from the Preferences window. Others can be adjusted only from the configuration files."
+  advanced_links_intro: "Here are some useful links to learn how to use them:"
+  link_configuration: "OpenBoard configuration"
+  link_parameters: "List of OpenBoard parameters"
+  dev_title: "For Developers"
+  dev_intro: "On GitHub, you will find documentation to help you build OpenBoard from source code, build Qt WebEngine (with activated proprietary codecs) from source code, or even build your own web widgets."
+  dev_ob_title: "OpenBoard"
+  dev_ob_build: "Build OpenBoard from source"
+  dev_ob_ubuntu: "Build OpenBoard on Ubuntu"
+  dev_ob_windows: "Build OpenBoard on Windows"
+  dev_ob_macos: "Build OpenBoard on macOS"
+  dev_qt_title: "Qt WebEngine"
+  dev_qt_build: "Build Qt WebEngine from source"
+  dev_qt_ubuntu: "Build Qt WebEngine on Ubuntu"
+  dev_qt_windows: "Build Qt WebEngine on Windows"
+  dev_qt_macos: "Build Qt WebEngine on macOS"
+  dev_qt_changes: "Changes with Qt WebEngine"
+  widgets_title: "Web Widgets"
+  widgets_intro: "In OpenBoard, you can easily create web widgets that can be dragged and dropped onto the board! Your widgets can even interact with OpenBoard through an API integrated into OpenBoard! A widget is simply a website, placed in a folder with the extension .wgt."
+  widgets_template_intro: "Download the template, unzip it, and start creating your own applications:"
+  widgets_template_size: "(zip, <4KB)"
+  widgets_icon: "Don't forget to modify the icon (the icon.png file) that will be used to represent your application in OpenBoard, and fill in the config.xml file with your information and a unique identifier!"
+  widgets_more: "Here is some documentation to help you go further:"
+  widgets_link_create: "Creating Web Widgets"
+  widgets_link_api: "The Web Widgets API"
+  widgets_link_update: "How to update a widget to the new API"
+
+github:
+  title: "GitHub"
+  intro_1: "OpenBoard uses GitHub to share its source code. The platform also serves as a place for interaction, where OpenBoard users can participate."
+  intro_2: "GitHub is an international platform with participants from various nationalities. If you wish to contribute, please communicate in English whenever possible, so that everyone can benefit from your exchanges!"
+  contribute_title: "Contribute"
+  contribute_text: "You can contribute to the development of OpenBoard by reporting bugs, suggesting improvements, or making changes to the source code yourself."
+  source_link_label: "Access the source code"
+  build_link_label: "Build OpenBoard from source (wiki)"
+  bug_title: "Report a Bug"
+  bug_link_label: "Open a bug report"
+  improvement_title: "Propose an Improvement"
+  improvement_link_label: "Share an idea"
+
+support:
+  title: "Help"
+  intro_1: "OpenBoard is user-friendly software, but it is extensive, and it takes time to master all its aspects."
+  intro_2: "Here are some tips to help you get started."
+  tips_title: "Tips and Tricks"
+  tips_text_1: "The first time you launch OpenBoard, a window opens to welcome you and introduce the software."
+  tips_text_2: "You can reopen this window at any time through the \"Tips and Tricks\" button in the OpenBoard menu located at the top right of the application."
+  tips_image_alt: "OpenBoard startup hints"
+  docs_title: "Documentation"
+  docs_text: "You will also find documentation on this website, presenting OpenBoard and its features. Feel free to take a look by clicking"
+  docs_link_label: "here"
+  ask_title: "Ask a Question"
+  ask_text_1: "If you haven't found the help you're looking for above, you can ask a question on the GitHub platform to get help from the OpenBoard community."
+  ask_text_2: "Remember that GitHub is an international platform; the language used for communication is English so that everyone can benefit from your exchanges."

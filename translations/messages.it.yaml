@@ -1,0 +1,288 @@
+site:
+  title: "OpenBoard, il miglior programma per lavagne interattive per la scuola e l'università"
+  description: "OpenBoard è un'applicazione open source multipiattaforma per lavagne interattive, pensata principalmente per scuole e università, utilizzabile con TBI o configurazioni a doppio schermo."
+
+nav:
+  brand: "OpenBoard"
+  toggle: "Commuta navigazione"
+  download: "Scaricamento"
+  github: "GitHub"
+  documentation: "Documentazione"
+  support: "Aiuto"
+  languages:
+    en: "English"
+    fr: "Français"
+    de: "Deutsch"
+    it: "Italiano"
+
+home:
+  hero_title: "OpenBoard"
+  hero_tagline: "Lavagna interattiva per la scuola e l'università"
+  hero_cta: "Ottieni OpenBoard liberamente"
+  hero_note: "Per Windows, macOS e Linux."
+  highlight_title: "Scegli il meglio per la tua classe"
+  highlight_subtitle: "Libero e open source"
+  highlight_cta: "Scarica OpenBoard ora!"
+  summary: "OpenBoard è un'applicazione di lavagna interattiva open source e multipiattaforma progettata principalmente per l'uso nelle scuole e nelle università. Può essere usata sia con lavagne interattive che con uno schermo tavoletta a penna, con o senza un'impostazione a doppio schermo, ed un proiettore. Può anche essere usata sul tuo computer, senza alcun hardware aggiuntivo."
+  origins_title: "Da dove viene?"
+  origins_text: "OpenBoard è nato da un fork di Open-Sankoré 2.0, il quale è derivato da un programma chiamato Uniboard. Questo fork è stato creato per riposizionare il software alle sue funzionalità di base e ai suoi valori originali, che sono il lavoro di un insegnante in classe, privilegiando la facilità d'uso. L'evoluzione di questo software perciò seguirà questi principi."
+  cross_title: "Multipiattaforma"
+  cross_text: "Le piattaforme supportate sono Windows, macOS e Linux."
+  involved_title: "Chi è coinvolto?"
+  involved_text_1: "Attualmente, OpenBoard viene mantenuto dal Dipartimento d'Istruzione (DIP) del cantone di Ginevra, in Svizzera. L'Università di Losanna, che ha sviluppato il software Uniboard originale nel 2003 si è unita nello sforzo fornendo contributi logistici e finanziari."
+  involved_text_2: "Nel giugno 2016 si è svolto un incontro tra i rappresentanti delle università di Losanna, Neuchâtel, Friburgo e Ginevra, i ministeri dell'istruzione pubblica del Cantone di Ginevra e del Giura e diverse istituzioni del Cantone di Vaud (Svizzera) per riflettere insieme sull'auspicato sviluppo di OpenBoard. Un progetto di associazione è in fase di sviluppo nel 2019."
+  next_title: "Ed ora?"
+  next_text: "L'interesse su questo programma sta crescendo velocemente in Svizzera ma anche in Europa e in Nord America. Verrà creata un'organizzazione legale svizzera senza scopo di lucro. Questa organizzazione promuoverà OpenBoard ed il suo sviluppo open source favorendo la collaborazione tra le parti interessate, rispettando i due principi fondamentali: rifocalizzare il software sul lavoro dell'insegnante in classe e privilegiare la facilità d'uso."
+  features:
+    easy:
+      title: "Facile da installare"
+      text: "Semplicemente scaricalo e comincia ad usarlo da subito. Non è richiesta alcuna registrazione."
+    opensource:
+      title: "Open Source"
+      text: "OpenBoard è rilasciato nei termini della licenza GPLv3 e viene mantenuto dalla comunità su <a target=\"_blank\" href=\"https://github.com/OpenBoard-org/OpenBoard\">GitHub</a>."
+    universal:
+      title: "Universale"
+      text: "Disponibile per Windows, Mac e Linux. Utilizzate OpenBoard sul vostro sistema operativo favorito."
+    simple:
+      title: "Semplice"
+      text: "OpenBoard è facile da usare ma potente. È uno strumento che può aiutare a svolgere il proprio lavoro senza ostacolarlo."
+    academia:
+      title: "Dalle elementari all'accademia"
+      text: "Cattura l'attenzione dei bambini con corsi interattivi o presenta la lezione perfetta all'Università."
+    handwriting:
+      title: "Scrittura a mano libera"
+      text: "Usa una tavoletta grafica, una lavagna interattiva o persino un mouse per scrivere e annotare la tua lezione. Stiamo lavorando costantemente per migliorare l'esperienza di scrittura."
+
+download:
+  title: "Scaricamento"
+  platforms:
+    macos:
+      name: "macOS"
+      note: "(macOS 12+)"
+      cta: "Scarica OpenBoard per macOS"
+    windows:
+      name: "Windows"
+      note: "(Windows 10+)"
+      cta: "Scarica OpenBoard per Windows"
+    debian:
+      name: "Debian"
+      note: "(64-bits)"
+      cta: "Scarica OpenBoard per Debian 12"
+  other_platforms_title: "Altre piattaforme"
+  other_platforms_note: "(Pacchetti non ufficiali sono disponibili su altre piattaforme, grazie alla community di OpenBoard)"
+  other_platforms_cta: "Trova pacchetti creati dalla community su GitHub"
+  old_releases_title: "Vecchie versioni"
+  old_releases_text: "Per versioni di sistemi operativi più datate, come macOS 10.12, Windows 7 o Ubuntu 16.04, tutte le release di OpenBoard sono disponibili <a href=\"%releasesUrl%\">su GitHub</a>"
+  community_title: "Ringraziamenti"
+  community_thanks_label: "Ringraziamenti alla comunità di OpenBoard:"
+  community_thanks_text: "molti miglioramenti sono stati resi possibili dal supporto della community!"
+  community_contributors_intro: "Grazie in particolare ai contributori GitHub:"
+  community_contributors_suffix: "e a molti altri!"
+  release_notes_title: "Note sulla versione"
+  version_label: "Versione %version%"
+  changelog:
+    more: "Le note di versioni precedenti sono disponibili su <a href=\"%releasesUrl%\">GitHub</a>."
+    1_7_5:
+      changed:
+        title: "Cambiamenti"
+        items:
+          1: "Corretto un problema per cui duplicando un documento e selezionando la nuova copia non veniva mostrata la miniatura."
+          2: "Corretto il trascinamento di più pagine e il comportamento di selezione nella vista delle miniature dei documenti."
+          3: "Corrette alcune imprecisioni nel README."
+      contributors:
+        title: "Nuovi contributori"
+        items:
+          1: "@CryHavoc21 ha fatto la sua prima contribution in #853."
+    1_7_4:
+      changed:
+        title: "Cambiamenti"
+        items:
+          1: "Aggiornamento a Qt 6.9 su macOS, Debian e Windows."
+          2: "Corretti glitch durante il rendering dei PDF su schermi con scala DPI > 100%."
+          3: "Risolti PDF sfocati quando devicepixelratio non è 1.0."
+          4: "Risolto un bug che riportava la vista al centro quando si ripuliva la scena."
+          5: "Miniature unificate per le modalità Lavagna e Documento."
+          6: "Risolto il trascinamento di URL PDF sulla lavagna."
+          7: "ItemOwnZValue viene copiato correttamente quando si clona un elemento."
+          8: "Corretta l'uso degli strumenti con la gomma della tavoletta."
+          9: "Corretto un bug che impediva di ruotare una linea orizzontale o verticale."
+          10: "Aggiunto indicatore di snap alla rotazione e aggancio degli elementi ruotati."
+          11: "Corretti piccoli spostamenti della scena durante il cambio pagina."
+          12: "Import di un file eseguito una sola volta per documento."
+          13: "Prestazioni: migliorato il caricatore in background."
+          14: "Risolto il messaggio di attesa che rimaneva dopo l'import UBZ."
+          15: "Corretta la sincronizzazione delle miniature."
+          16: "Corretti file ubdocument incompleti."
+          17: "Refactor della gestione di abilitazione/disabilitazione dell'interfaccia."
+          18: "Verifica di validità del documento nella vista delle miniature."
+          19: "Risolto un possibile crash in UBThumbnailScene."
+          20: "Corretti dimensione delle miniature e pulsanti dell'interfaccia."
+          21: "Aggiunto supporto per immagini WebP."
+          22: "Corrette alcune sviste/typo."
+          23: "Migliorato il rilevamento della maniglia delegata con la penna della tavoletta."
+          24: "UBPersistenceManager::createDocumentProxyStructure è ora statico."
+          25: "Aggirato un crash su Windows in cui la dropbar rimaneva agganciata a una scena non valida dopo un cambio documento."
+          26: "Corretta la traduzione tedesca di “Cache”."
+          27: "Risolte schermate sfocate."
+    1_7_3:
+      fixes:
+        title: "Correzioni di bug"
+        items:
+          1: "Mitigati alcuni problemi audio su Debian forzando l'uso del backend ffmpeg."
+          2: "Risolto un problema per cui il pacchetto Windows non conteneva la versione corretta delle DLL di OpenSSL."
+      known:
+        title: "Problemi Conosciuti"
+        items:
+          1: "Nei widget le liste a discesa possono apparire nella posizione errata (anche dietro le palette)."
+          2: "Riprodurre più file audio e tornare a uno precedente può causare riproduzione errata, soprattutto con audio brevi."
+          3: "Alcuni casi d'uso consentono documenti allo stesso livello con lo stesso nome."
+          4: "Import UBX può generare documenti duplicati allo stesso livello."
+      linux:
+        title: "Linux"
+        items:
+          1: "In modalità Desktop, il dock di Gnome dovrebbe essere in basso (QTBUG-81341)."
+
+documentation:
+  title: "Documentazione"
+  intro: "Ecco alcune risorse che potrebbero servirti."
+  manuals_title: "Manuali utente"
+  badge_new: "Nuovo!"
+  manual_user_file: "Manuel_OpenBoard1.6IT.pdf"
+  manual_user_label: "Manuale utente OpenBoard"
+  manual_user_size: "(PDF, 3.2MB)"
+  manual_onepage_file: "OpenBoard1.6_interface-IT.pdf"
+  manual_onepage_label: "OpenBoard spiegato in una pagina"
+  manual_onepage_size: "(PDF, 624KB)"
+  manual_docmode_file: "OpenBoard1.6_Mode_Doc_it_1_page.pdf"
+  manual_docmode_label: "OpenBoard: modalità \"Documenti\" spiegata in una pagina"
+  manual_docmode_size: "(PDF, 1.6MB)"
+  advanced_title: "Per utenti avanzati"
+  advanced_intro: "OpenBoard offre numerose impostazioni per adattarne il funzionamento alle tue esigenze! Alcune possono essere regolate direttamente nell'app dalla finestra Preferenze. Altre solo dai file di configurazione."
+  advanced_links_intro: "Ecco alcuni link utili per imparare a usarle:"
+  link_configuration: "Configurazione di OpenBoard"
+  link_parameters: "Elenco dei parametri di OpenBoard"
+  dev_title: "Per sviluppatori"
+  dev_intro: "Su GitHub trovi documentazione per compilare OpenBoard dal sorgente, compilare Qt WebEngine (con codec proprietari) o creare web widget."
+  dev_ob_title: "OpenBoard"
+  dev_ob_build: "Compila OpenBoard dal sorgente"
+  dev_ob_ubuntu: "Compila OpenBoard su Ubuntu"
+  dev_ob_windows: "Compila OpenBoard su Windows"
+  dev_ob_macos: "Compila OpenBoard su macOS"
+  dev_qt_title: "Qt WebEngine"
+  dev_qt_build: "Compila Qt WebEngine dal sorgente"
+  dev_qt_ubuntu: "Compila Qt WebEngine su Ubuntu"
+  dev_qt_windows: "Compila Qt WebEngine su Windows"
+  dev_qt_macos: "Compila Qt WebEngine su macOS"
+  dev_qt_changes: "Modifiche con Qt WebEngine"
+  widgets_title: "Web Widgets"
+  widgets_intro: "In OpenBoard puoi creare facilmente web widget da trascinare sulla lavagna! I widget possono interagire con OpenBoard tramite un'API integrata. Un widget è semplicemente un sito web in una cartella .wgt."
+  widgets_template_intro: "Scarica il template, estrailo e inizia a creare le tue applicazioni:"
+  widgets_template_size: "(zip, <4KB)"
+  widgets_icon: "Non dimenticare di modificare l'icona (icon.png) e compilare config.xml con le tue informazioni e un identificatore unico!"
+  widgets_more: "Ecco della documentazione per andare oltre:"
+  widgets_link_create: "Creare Web Widgets"
+  widgets_link_api: "L'API dei Web Widgets"
+  widgets_link_update: "Come aggiornare un widget alla nuova API"
+  content_html: |-
+    <h1>Documentazione</h1>
+    <p>Ecco alcune risorse che potrebbero servirti.</p>
+    <h3>Manuali utente</h3>
+    <ul>
+        <li><span class="label label-success">Nuovo!</span> <a target="_blank" href="/download/Manuel_OpenBoard1.6IT.pdf">Manuale utente OpenBoard</a> <span class="text-muted">(PDF, 3.2MB)</span></li>
+        <li><span class="label label-success">Nuovo!</span> <a target="_blank" href="/download/OpenBoard1.6_interface-IT.pdf">OpenBoard spiegato in una pagina</a> <span class="text-muted">(PDF, 624KB)</span></li>
+        <li><span class="label label-success">Nuovo!</span> <a target="_blank" href="/download/OpenBoard1.6_Mode_Doc_it_1_page.pdf">OpenBoard: modalità \"Documenti\" spiegata in una pagina</a> <span class="text-muted">(PDF, 1.6MB)</span></li>
+    </ul>
+    <h3>Per utenti avanzati</h3>
+    <p>OpenBoard offre numerose impostazioni per adattarne il funzionamento alle tue esigenze! Alcune possono essere regolate direttamente dall'applicazione nella finestra Preferenze. Altre possono essere regolate solo dai file di configurazione.</p>
+    <p>Ecco alcuni link utili per imparare a usarle:</p>
+    <ul>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Configuration">Configurazione di OpenBoard</a></li>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Parameters">Elenco dei parametri di OpenBoard</a></li>
+    </ul>
+    <h3>Per sviluppatori</h3>
+    <p>Su GitHub troverai documentazione per aiutarti a compilare OpenBoard dal codice sorgente, compilare Qt WebEngine (con codec proprietari attivati) o persino creare i tuoi web widget.</p>
+    <h4>OpenBoard</h4>
+    <ul>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-from-source">Compila OpenBoard dal sorgente</a>
+            <ul>
+                <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-Ubuntu">Compila OpenBoard su Ubuntu</a></li>
+                <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-Windows">Compila OpenBoard su Windows</a></li>
+                <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-MacOS-(Universal)">Compila OpenBoard su macOS</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Qt WebEngine</h4>
+    <ul>
+        <li>Compila Qt WebEngine dal sorgente
+            <ul>
+                <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-Qt-WebEngine-on-Ubuntu">Compila Qt WebEngine su Ubuntu</a></li>
+                <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-Qt-WebEngine-on-Windows">Compila Qt WebEngine su Windows</a></li>
+                <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-Qt-WebEngine-on-macOS">Compila Qt WebEngine su macOS</a></li>
+            </ul>
+        </li>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Changes-with-Qt-WebEngine">Modifiche con Qt WebEngine</a></li>
+    </ul>
+    <h4>Web Widgets</h4>
+    <p>In OpenBoard puoi creare facilmente web widget da trascinare sulla lavagna! I tuoi widget possono persino interagire con OpenBoard tramite un'API integrata! Un widget è semplicemente un sito web, inserito in una cartella con estensione <span class="code">.wgt</span>.</p>
+    <p>Scarica il template, estrailo e inizia a creare le tue applicazioni: <a href="/download/template.wgt.zip">template.wgt.zip</a> <span class="text-muted">(zip, &lt;4KB)</span></p>
+    <p>Non dimenticare di modificare l'icona (il file <span class="code">icon.png</span>) che rappresenterà la tua applicazione in OpenBoard, e di compilare il file <span class="code">config.xml</span> con le tue informazioni e <strong>un identificatore unico!</strong></p>
+    <p>Ecco della documentazione per andare oltre:</p>
+    <ul>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Creating-Web-Widgets">Creare Web Widgets</a></li>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/The-Web-Widgets-API">L'API dei Web Widgets</a></li>
+        <li><a href="https://github.com/OpenBoard-org/OpenBoard/wiki/How-to-update-a-widget-to-the-new-API">Come aggiornare un widget alla nuova API</a></li>
+    </ul>
+
+github:
+  title: "GitHub"
+  intro_1: "OpenBoard utilizza GitHub per condividere il suo codice sorgente. La piattaforma serve anche come luogo di interazione, dove gli utenti di OpenBoard possono partecipare."
+  intro_2: "GitHub è una piattaforma internazionale con partecipanti di varie nazionalità. Se desideri contribuire, comunica in inglese quando possibile, così che tutti possano beneficiare degli scambi!"
+  contribute_title: "Contribuire"
+  contribute_text: "Puoi contribuire allo sviluppo di OpenBoard segnalando bug, suggerendo miglioramenti o modificando tu stesso il codice sorgente."
+  source_link_label: "Accedi al codice sorgente"
+  build_link_label: "Compila OpenBoard (wiki)"
+  bug_title: "Segnala un bug"
+  bug_link_label: "Apri una segnalazione"
+  improvement_title: "Proporre un miglioramento"
+  improvement_link_label: "Condividi un'idea"
+  content_html: |-
+    <h1>GitHub</h1>
+    <p>OpenBoard utilizza GitHub per condividere il suo codice sorgente. La piattaforma serve anche come luogo di interazione, dove gli utenti di OpenBoard possono partecipare.</p>
+    <p>GitHub è una piattaforma internazionale con partecipanti di varie nazionalità. Se desideri contribuire, comunica in inglese quando possibile, così che tutti possano beneficiare degli scambi!</p>
+    <h2>Contribuire</h2>
+    <p>Puoi contribuire allo sviluppo di OpenBoard segnalando bug, suggerendo miglioramenti o modificando tu stesso il codice sorgente. Se sei uno sviluppatore, puoi accedere al codice sorgente seguendo <a href="https://github.com/OpenBoard-org/OpenBoard">questo link</a>.</p>
+    <p>Troverai anche <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-from-source">pagine wiki</a> per aiutarti a costruire la tua versione di OpenBoard.</p>
+    <h2>Segnala un bug</h2>
+    <p>Per segnalare un bug, segui <a href="https://github.com/OpenBoard-org/OpenBoard/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D">questo link</a>.</p>
+    <h2>Proporre un miglioramento</h2>
+    <p>Per proporre un miglioramento, segui <a href="https://github.com/OpenBoard-org/OpenBoard/discussions/categories/ideas">questo link</a>.</p>
+
+support:
+  title: "Aiuto"
+  intro_1: "OpenBoard è un software intuitivo, ma ampio, e richiede tempo per padroneggiarne tutti gli aspetti."
+  intro_2: "Ecco alcuni suggerimenti per iniziare."
+  tips_title: "Suggerimenti e trucchi"
+  tips_text_1: "Al primo avvio di OpenBoard si apre una finestra di benvenuto che introduce il software. Prenditi il tempo per leggere le varie pagine: ti aiuteranno a familiarizzare con l'applicazione!"
+  tips_text_2: "Puoi riaprire questa finestra in qualsiasi momento tramite il pulsante \"Suggerimenti e trucchi\" nel menu OpenBoard in alto a destra."
+  tips_image_alt: "Suggerimenti OpenBoard"
+  docs_title: "Documentazione"
+  docs_text: "Su questo sito trovi anche documentazione che presenta OpenBoard e le sue funzionalità. Dai un'occhiata cliccando"
+  docs_link_label: "qui"
+  ask_title: "Fare una domanda"
+  ask_text_1: "Se non hai trovato l'aiuto che cercavi, puoi porre una domanda su GitHub per ottenere aiuto dalla community di OpenBoard."
+  ask_text_2: "Ricorda che GitHub è una piattaforma internazionale; la lingua usata è l'inglese così che tutti possano beneficiare degli scambi."
+  content_html: |-
+    <h1>Aiuto</h1>
+    <p>OpenBoard è un software intuitivo, ma ampio, e richiede tempo per padroneggiarne tutti gli aspetti.</p>
+    <p>Ecco alcuni suggerimenti per iniziare.</p>
+    <h3>Suggerimenti e trucchi</h3>
+    <p>Al primo avvio di OpenBoard si apre una finestra di benvenuto che introduce il software. Prenditi il tempo per leggere le varie pagine: ti aiuteranno a familiarizzare con l'applicazione!</p>
+    <p>Puoi riaprire questa finestra in qualsiasi momento tramite il pulsante "Suggerimenti e trucchi" nel menu OpenBoard in alto a destra dell'applicazione.</p>
+    <div class="row text-center spacer-lg">
+        <p><img src="/images/startup-hints.it.png" alt="Suggerimenti OpenBoard"/></p>
+    </div>
+    <h3>Documentazione</h3>
+    <p>Su questo sito troverai anche documentazione che presenta OpenBoard e le sue funzionalità. Dai un'occhiata cliccando <a href="/documentation">qui</a>!</p>
+    <h3>Fare una domanda</h3>
+    <p>Se non hai trovato l'aiuto che cercavi sopra, puoi porre una domanda sulla piattaforma GitHub per ottenere aiuto dalla community di OpenBoard: segui <a href="https://github.com/OpenBoard-org/OpenBoard/discussions/categories/q-a">questo link</a>.</p>
+    <p>Ricorda che GitHub è una piattaforma internazionale, con molte nazionalità. La lingua usata per comunicare è l'inglese, così che tutti possano beneficiare degli scambi!</p>

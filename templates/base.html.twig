@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="{{ app.request.locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="{% block meta_description %}{{ 'site.description'|trans }}{% endblock %}">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>{% block title %}{{ 'site.title'|trans }}{% endblock %}</title>
+        <link rel="apple-touch-icon" href="{{ asset('apple-touche-icon.png') }}">
+        <link rel="icon" href="{{ asset('favicon.ico') }}">
+        <link rel="stylesheet" href="{{ asset('styles/vendor.css') }}">
+        <link rel="stylesheet" href="{{ asset('styles/main.css') }}">
+    </head>
+    <body>
+        {% block navigation %}
+            {% set nav_class = nav_class|default('navbar navbar-inverse navbar-static-top') %}
+            <nav class="{{ nav_class }}" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">{{ 'nav.toggle'|trans }}</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ path('home', {'_locale': app.request.locale|default('en')}) }}">
+                            <img src="{{ asset('images/openboard-logo.png') }}" alt="OpenBoard">
+                            {{ 'nav.brand'|trans }}
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="{{ app.request.attributes.get('_route') == 'download' ? 'active' }}">
+                                <a href="{{ path('download', {'_locale': app.request.locale|default('en')}) }}">{{ 'nav.download'|trans }}</a>
+                            </li>
+                            <li class="{{ app.request.attributes.get('_route') == 'github' ? 'active' }}">
+                                <a href="{{ path('github', {'_locale': app.request.locale|default('en')}) }}">{{ 'nav.github'|trans }}</a>
+                            </li>
+                            <li class="{{ app.request.attributes.get('_route') == 'documentation' ? 'active' }}">
+                                <a href="{{ path('documentation', {'_locale': app.request.locale|default('en')}) }}">{{ 'nav.documentation'|trans }}</a>
+                            </li>
+                            <li class="{{ app.request.attributes.get('_route') == 'support' ? 'active' }}">
+                                <a href="{{ path('support', {'_locale': app.request.locale|default('en')}) }}">{{ 'nav.support'|trans }}</a>
+                            </li>
+                            </ul>
+                            {% set availableLocales = supportedLocales|default(['en','fr','de','it']) %}
+                            {% set currentRoute = app.request.attributes.get('_route') %}
+                            {% set currentParams = app.request.attributes.get('_route_params')|default({}) %}
+                            {% set routeSupportsLocale = currentParams['_locale'] is defined %}
+                            {% set currentFlag = asset('images/flags/' ~ app.request.locale|lower|replace({'_':'-'}) ~ '.png') %}
+                            <ul class="nav navbar-nav navbar-right navbar-language-dropdown">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img class="flag-icon" src="{{ currentFlag }}" alt="" onerror="this.style.display='none';">
+                                        {{ app.request.locale|upper }}
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        {% for code in availableLocales %}
+                                            {% set targetRoute = routeSupportsLocale ? currentRoute : 'home' %}
+                                            {% set targetParams = routeSupportsLocale ? currentParams|merge({'_locale': code}) : {'_locale': code} %}
+                                            {% set flagPath = asset('images/flags/' ~ code|lower|replace({'_':'-'}) ~ '.png') %}
+                                            <li class="{{ app.request.locale == code ? 'active' }}">
+                                                <a href="{{ path(targetRoute, targetParams) }}">
+                                                    <img class="flag-icon" src="{{ flagPath }}" alt="" onerror="this.style.display='none';">
+                                                    <span class="lang-code">{{ code|upper }}</span>
+                                                    <span class="lang-label">{{ ('nav.languages.' ~ code)|trans }}</span>
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+        {% endblock %}
+
+        {% block body %}{% endblock %}
+
+        <div class="container">
+            <div class="footer">
+                <ul class="footer-links pull-right">
+                    <li><a href="https://github.com/OpenBoard-org/OpenBoard">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="{{ asset('scripts/plugins.js') }}"></script>
+    </body>
+</html>

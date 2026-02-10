@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'github.title'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>{{ 'github.title'|trans }}</h1>
+        <p>{{ 'github.intro_1'|trans }}</p>
+        <p>{{ 'github.intro_2'|trans }}</p>
+
+        <h2>{{ 'github.contribute_title'|trans }}</h2>
+        <p>{{ 'github.contribute_text'|trans }}</p>
+        <p>
+            <a href="https://github.com/OpenBoard-org/OpenBoard">
+                {{ 'github.source_link_label'|trans }}
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-from-source">
+                {{ 'github.build_link_label'|trans }}
+            </a>
+        </p>
+
+        <h2>{{ 'github.bug_title'|trans }}</h2>
+        <p>
+            <a href="https://github.com/OpenBoard-org/OpenBoard/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=%5BBug%5D">
+                {{ 'github.bug_link_label'|trans }}
+            </a>
+        </p>
+
+        <h2>{{ 'github.improvement_title'|trans }}</h2>
+        <p>
+            <a href="https://github.com/OpenBoard-org/OpenBoard/discussions/categories/ideas">
+                {{ 'github.improvement_link_label'|trans }}
+            </a>
+        </p>
+    </div>
+{% endblock %}
