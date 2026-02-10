@@ -105,7 +105,7 @@
                     <p class="text-muted">
                         (ab macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard-1.7.3.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard-1.7.5.dmg">
                         Laden Sie OpenBoard für macOS herunter
                     </a>
                 </div>
@@ -117,7 +117,7 @@
                     <p class="text-muted">
                         (ab Windows 10)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard_Installer_1.7.3.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard_Installer_1.7.5.exe">
                         Laden Sie OpenBoard für Windows herunter
                     </a>
                 </div>
@@ -129,7 +129,7 @@
                     <p class="text-muted">
                         (64-bit)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/openboard_debian_12_1.7.3_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/openboard_debian_12_1.7.5_amd64.deb">
                         Laden Sie OpenBoard für Debian 12 herunter
                     </a>
                 </div>
@@ -162,9 +162,60 @@
                             auf GitHub
                         </a>
                     </p>
+                    <h1>Dank</h1>
+                    <p><strong>Dank an die OpenBoard-Community:</strong> viele der Verbesserungen, von denen OpenBoard profitiert, wurden durch die Unterstützung der OpenBoard-Community ermöglicht! Besonderer Dank an die GitHub-Beitragenden: 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                        <a href="https://github.com/Vekhir">Vekhir</a>, 
+                        <a href="https://github.com/sebojolais">sebojolais</a>
+                        und viele andere!
+                    </p>
                     <h1 id="changelog">
                         Versionshinweise
                     </h1>
+                    <h2>Version 1.7.5</h2>
+                    <h3>Änderungen</h3>
+                    <ul>
+                        <li>Behoben: Beim Duplizieren eines Dokuments und Auswahl der Kopie wurde keine Miniatur angezeigt.</li>
+                        <li>Drag &amp; Drop mehrerer Seiten und das Auswahlverhalten in der Dokument-Miniaturansicht wurden korrigiert.</li>
+                        <li>Tippfehler im README behoben.</li>
+                    </ul>
+                    <h3>Neue Mitwirkende</h3>
+                    <ul>
+                        <li>@CryHavoc21 hat seine erste Contribution in #853 gemacht.</li>
+                    </ul>
+
+                    <h2>Version 1.7.4</h2>
+                    <h3>Änderungen</h3>
+                    <ul>
+                        <li>Aktualisierung auf Qt 6.9 unter macOS, Debian und Windows.</li>
+                        <li>Glitches beim PDF-Rendering auf Bildschirmen mit DPI-Skalierung &gt; 100 % behoben.</li>
+                        <li>Verschwommene PDFs behoben, wenn <code>devicePixelRatio</code> nicht 1.0 ist.</li>
+                        <li>Behoben: Die Ansicht wurde nach dem Leeren der Szene zur Mitte zurückgesetzt.</li>
+                        <li>Miniaturen für Board- und Dokumentmodus vereinheitlicht.</li>
+                        <li>Behoben: PDF-URL auf das Board ablegen.</li>
+                        <li><code>ItemOwnZValue</code> wird beim Klonen eines Elements korrekt kopiert.</li>
+                        <li>Werkzeugnutzung mit Tablet-Radierer korrigiert.</li>
+                        <li>Behoben: Horizontale oder vertikale Linien ließen sich nicht drehen.</li>
+                        <li>Dreh-Snap-Indikator hinzugefügt und Ausrichten gedrehter Elemente ermöglicht.</li>
+                        <li>Kleine Szenenverschiebungen beim Seitenwechsel behoben.</li>
+                        <li>Datei-Import pro Dokument nur einmal ausgeführt.</li>
+                        <li>Performance: Hintergrund-Lader verbessert.</li>
+                        <li>Drehende Meldung nach UBZ-Import behoben.</li>
+                        <li>Synchronisation der Miniaturen korrigiert.</li>
+                        <li>Unvollständige <code>ubdocument</code>-Dateien behoben.</li>
+                        <li>Aktivierungs-/Deaktivierungslogik der UI refaktoriert.</li>
+                        <li>Gültigkeitsprüfung des Dokuments in der Miniaturansicht hinzugefügt.</li>
+                        <li>Möglichen Absturz in <code>UBThumbnailScene</code> behoben.</li>
+                        <li>Miniaturgröße und UI-Schaltflächen korrigiert.</li>
+                        <li>WebP-Bildsupport hinzugefügt.</li>
+                        <li>Tippfehler behoben.</li>
+                        <li>Delegate-Handle-Erkennung mit Tablet-Stift verbessert.</li>
+                        <li><code>UBPersistenceManager::createDocumentProxyStructure</code> ist jetzt statisch.</li>
+                        <li>Workaround für einen systematischen Windows-Absturz, bei dem die Dropbar nach einem Dokumentwechsel an einer ungültigen Szene hing.</li>
+                        <li>Deutsche Übersetzung für „Cache“ korrigiert.</li>
+                        <li>Verschwommene Screenshots behoben.</li>
+                    </ul>
+
                     <h2>Version 1.7.3</h2>
                     <h3>Fehlerbehebungen</h3>
                     <ul>
@@ -185,13 +236,6 @@
                         <li>Im Desktop-Modus sollte das Gnome-Dock unten positioniert werden, um das Problem zu umgehen, dass die linke Palette von OpenBoard nicht verwendbar ist, wenn sie darüber liegt (siehe <a href="https://bugreports.qt.io/browse/QTBUG-81341" target="_blank">https://bugreports.qt.io/browse/QTBUG-81341</a> für weitere Details).</li>
                     </ul>
                     <h2>Version 1.7.2</h2>
-                    <p><strong>Dank an die OpenBoard-Community:</strong> viele dieser Verbesserungen wurden dank der Unterstützung der OpenBoard-Community möglich! Besonderer Dank an die GitHub-Beitragenden: 
-                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
-                        <a href="https://github.com/Vekhir">Vekhir</a>, 
-                        <a href="https://github.com/sebojolais">sebojolais</a>
-                        und viele andere!
-                    </p>
-
                     <h3>Neue Funktionen</h3>
                     <ul>
                         <li>Hinzufügung der Funktion "Am Raster ausrichten", die es Benutzern ermöglicht, Elemente an den Linien bestehender Hintergründe auszurichten. Wenn kein Hintergrund angezeigt wird, wird das Standardraster verwendet.</li>
@@ -1783,8 +1827,8 @@
                         Pakete
                     </h3>
                     <p>
-                        Die neueste Version, 1.7.3, kann
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.3">
+                        Die neueste Version, 1.7.5, kann
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.5">
                             hier.
                         </a>
                     </p>

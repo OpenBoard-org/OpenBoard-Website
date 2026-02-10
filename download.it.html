@@ -106,7 +106,7 @@
                     <p class="text-muted">
                         (macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard-1.7.3.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard-1.7.5.dmg">
                         Scarica OpenBoard per macOS
                     </a>
                 </div>
@@ -118,7 +118,7 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard_Installer_1.7.3.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard_Installer_1.7.5.exe">
                         Scarica OpenBoard per Windows
                     </a>
                 </div>
@@ -130,7 +130,7 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/openboard_debian_12_1.7.3_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/openboard_debian_12_1.7.5_amd64.deb">
                         Scarica OpenBoard per Debian 12
                     </a>
                 </div>
@@ -164,9 +164,60 @@
                                 su GitHub
                             </a>
                         </p>
+                        <h1>Ringraziamenti</h1>
+                        <p><strong>Ringraziamenti alla comunità di OpenBoard:</strong> molti dei miglioramenti di cui beneficia OpenBoard sono stati resi possibili dal supporto della comunità OpenBoard! Grazie ai contributori di GitHub: 
+                            <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                            <a href="https://github.com/Vekhir">Vekhir</a>,
+                            <a href="https://github.com/sebojolais">sebojolais</a>
+                            e a molti altri!
+                        </p>
                         <h1 id="changelog">
                             Note sulla versione
                         </h1>
+                        <h2>Versione 1.7.5</h2>
+                        <h3>Cambiamenti</h3>
+                        <ul>
+                            <li>Corretto un problema per cui duplicando un documento e selezionando la nuova copia non veniva mostrata la miniatura.</li>
+                            <li>Corretto il trascinamento di più pagine e il comportamento di selezione nella vista delle miniature dei documenti.</li>
+                            <li>Corrette alcune imprecisioni nel README.</li>
+                        </ul>
+                        <h3>Nuovi contributori</h3>
+                        <ul>
+                            <li>@CryHavoc21 ha fatto la sua prima contribution in #853.</li>
+                        </ul>
+
+                        <h2>Versione 1.7.4</h2>
+                        <h3>Cambiamenti</h3>
+                        <ul>
+                            <li>Aggiornamento a Qt 6.9 su macOS, Debian e Windows.</li>
+                            <li>Corretti glitch durante il rendering dei PDF su schermi con scala DPI &gt; 100%.</li>
+                            <li>Risolti PDF sfocati quando <code>devicepixelratio</code> non è 1.0.</li>
+                            <li>Risolto un bug che riportava la vista al centro quando si ripuliva la scena.</li>
+                            <li>Miniature unificate per le modalità Lavagna e Documento.</li>
+                            <li>Risolto il trascinamento di URL PDF sulla lavagna.</li>
+                            <li><code>ItemOwnZValue</code> viene copiato correttamente quando si clona un elemento.</li>
+                            <li>Corretta l'uso degli strumenti con la gomma della tavoletta.</li>
+                            <li>Corretto un bug che impediva di ruotare una linea orizzontale o verticale.</li>
+                            <li>Aggiunto indicatore di snap alla rotazione e aggancio degli elementi ruotati.</li>
+                            <li>Corretti piccoli spostamenti della scena durante il cambio pagina.</li>
+                            <li>Import di un file eseguito una sola volta per documento.</li>
+                            <li>Prestazioni: migliorato il caricatore in background.</li>
+                            <li>Risolto il messaggio di attesa che rimaneva dopo l'import UBZ.</li>
+                            <li>Corretta la sincronizzazione delle miniature.</li>
+                            <li>Corretti file <code>ubdocument</code> incompleti.</li>
+                            <li>Refactor della gestione di abilitazione/disabilitazione dell'interfaccia.</li>
+                            <li>Verifica di validità del documento nella vista delle miniature.</li>
+                            <li>Risolto un possibile crash in <code>UBThumbnailScene</code>.</li>
+                            <li>Corretti dimensione delle miniature e pulsanti dell'interfaccia.</li>
+                            <li>Aggiunto supporto per immagini WebP.</li>
+                            <li>Corrette alcune sviste/typo.</li>
+                            <li>Migliorato il rilevamento della maniglia delegata con la penna della tavoletta.</li>
+                            <li><code>UBPersistenceManager::createDocumentProxyStructure</code> è ora statico.</li>
+                            <li>Aggirato un crash su Windows in cui la dropbar rimaneva agganciata a una scena non valida dopo un cambio documento.</li>
+                            <li>Corretta la traduzione tedesca di “Cache”.</li>
+                            <li>Risolte schermate/screenshot sfocate.</li>
+                        </ul>
+
                         <h2>Versione 1.7.3</h2>
                         <h3>Correzioni di bug</h3>
                         <ul>
@@ -187,13 +238,6 @@
                             <li>In modalità Desktop, il dock di Gnome dovrebbe essere impostato in basso per aggirare il problema della palette sinistra di OpenBoard che diventa inutilizzabile quando si trova sopra (vedi <a href="https://bugreports.qt.io/browse/QTBUG-81341" target="_blank">https://bugreports.qt.io/browse/QTBUG-81341</a> per maggiori dettagli).</li>
                         </ul>
                         <h2>Versione 1.7.2</h2>
-                        <p><strong>Ringraziamenti alla comunità di OpenBoard:</strong> molte di queste migliorie sono state rese possibili grazie al supporto della comunità di OpenBoard! Grazie ai contributori di GitHub: 
-                            <a href="https://github.com/letsfindaway">letsfindaway</a>, 
-                            <a href="https://github.com/Vekhir">Vekhir</a>,
-                            <a href="https://github.com/sebojolais">sebojolais</a>
-                            e a molti altri!
-                        </p>
-
                         <h3>Nuove funzionalità</h3>
                         <ul>
                             <li>Aggiunta della funzionalità "Allinea alla griglia", che consente di allineare gli elementi sulle linee dei fondi esistenti. Se non è presente alcun fondo, viene utilizzata la griglia predefinita.</li>
@@ -1771,8 +1815,8 @@
                             Pacchetti
                         </h3>
                         <p>
-                            L'ultima versione disponibile, 1.7.3, può essere scaricata da
-                            <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.3">
+                            L'ultima versione disponibile, 1.7.5, può essere scaricata da
+                            <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.5">
                                 qui.
                             </a>
                         </p>

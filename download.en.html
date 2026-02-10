@@ -105,7 +105,7 @@
                     <p class="text-muted">
                         (macOS 12+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard-1.7.3.dmg">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard-1.7.5.dmg">
                         Download OpenBoard for macOS
                     </a>
                 </div>
@@ -117,7 +117,7 @@
                     <p class="text-muted">
                         (Windows 10+)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard_Installer_1.7.3.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard_Installer_1.7.5.exe">
                         Download OpenBoard for Windows
                     </a>
                 </div>
@@ -129,7 +129,7 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/openboard_debian_12_1.7.3_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/openboard_debian_12_1.7.5_amd64.deb">
                         Download OpenBoard for Debian 12
                     </a>
                 </div>
@@ -162,9 +162,60 @@
                             on GitHub
                         </a>
                     </p>
+                    <h1>Community Thanks</h1>
+                    <p><strong>Thanks to the OpenBoard Community:</strong> many of the improvements OpenBoard benefits from have been made possible by the support of the OpenBoard community! Special thanks to GitHub contributors: 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                        <a href="https://github.com/Vekhir">Vekhir</a>, 
+                        <a href="https://github.com/sebojolais">sebojolais</a>
+                        and many others!
+                    </p>
                     <h1 id="changelog">
                         Release Notes
                     </h1>
+                    <h2>Version 1.7.5</h2>
+                    <h3>What's Changed</h3>
+                    <ul>
+                        <li>Fixed an issue where duplicating a document and selecting the new copy would not show its thumbnail.</li>
+                        <li>Improved drag &amp; drop of multiple pages and selection behavior in the document thumbnails view.</li>
+                        <li>Fixed typos in the README.</li>
+                    </ul>
+                    <h3>New Contributors</h3>
+                    <ul>
+                        <li>@CryHavoc21 made their first contribution in #853.</li>
+                    </ul>
+
+                    <h2>Version 1.7.4</h2>
+                    <h3>What's Changed</h3>
+                    <ul>
+                        <li>Updated to Qt 6.9 on macOS, Debian and Windows.</li>
+                        <li>Fixed glitches when rendering PDFs on screens with DPI scaling &gt; 100%.</li>
+                        <li>Fixed blurry PDFs when <code>devicePixelRatio</code> is not 1.0.</li>
+                        <li>Fixed a bug where the view was restored to center when clearing the scene.</li>
+                        <li>Unified thumbnails for Board and Document modes.</li>
+                        <li>Fixed dropping a PDF URL to the board.</li>
+                        <li>Copied <code>ItemOwnZValue</code> correctly when cloning an item.</li>
+                        <li>Fixed tool usage with tablet eraser.</li>
+                        <li>Fixed a bug where users could not rotate a horizontal or vertical line.</li>
+                        <li>Added rotate snap indicator and allow snapping rotated items.</li>
+                        <li>Fixed small scene shifts when switching pages.</li>
+                        <li>Import a file only once per document.</li>
+                        <li>Background loader performance improvements.</li>
+                        <li>Fixed spinning message after UBZ import.</li>
+                        <li>Fixed thumbnail synchronization.</li>
+                        <li>Fixed incomplete <code>ubdocument</code> files.</li>
+                        <li>Refactored UI enable/disable handling.</li>
+                        <li>Checked document validity in thumbnails view.</li>
+                        <li>Fixed a possible crash in <code>UBThumbnailScene</code>.</li>
+                        <li>Fixed thumbnail size and UI buttons.</li>
+                        <li>Added WebP image support.</li>
+                        <li>Fixed typos.</li>
+                        <li>Improved delegate handle detection with tablet pen.</li>
+                        <li>Made <code>UBPersistenceManager::createDocumentProxyStructure</code> static.</li>
+                        <li>Worked around a Windows crash where dropbar was attached to a dangling scene after a document switch.</li>
+                        <li>Fixed German translation for cache.</li>
+                        <li>Fixed blurry screenshots.</li>
+                    </ul>
+
                     <h2>Version 1.7.3</h2>
                     <h3>Bug fixes</h3>
                     <ul>
@@ -185,13 +236,6 @@
                         <li>In Desktop Mode, the Gnome Dock should be set to the bottom position to work around the issue with the OpenBoard left palette being unusable from above it (cf. <a href="https://bugreports.qt.io/browse/QTBUG-81341" target="_blank">https://bugreports.qt.io/browse/QTBUG-81341</a> for more details).</li>
                     </ul>
                     <h2>Version 1.7.2</h2>
-                    <p><strong>Thanks to the OpenBoard Community:</strong> many of these improvements were made possible thanks to the support of the OpenBoard community! Special thanks to GitHub contributors: 
-                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
-                        <a href="https://github.com/Vekhir">Vekhir</a>, 
-                        <a href="https://github.com/sebojolais">sebojolais</a>
-                        and many others!
-                    </p>
-
                     <h3>New Features</h3>
                     <ul>
                         <li>Added the "Snap to Grid" feature, allowing users to align elements to the lines of existing backgrounds. If no background is displayed, the default grid is used.</li>

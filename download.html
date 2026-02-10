@@ -105,7 +105,7 @@
                     <p class="text-muted">
                         (à partir de macOS 12)
                     </p>
-                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard-1.7.3.dmg">
+                        <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard-1.7.5.dmg">
                             Télécharger OpenBoard pour macOS
                         </a>
                 </div>
@@ -117,7 +117,7 @@
                     <p class="text-muted">
                         (à partir de Windows 10)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/OpenBoard_Installer_1.7.3.exe">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard_Installer_1.7.5.exe">
                         Télécharger OpenBoard pour Windows
                     </a>
                 </div>
@@ -129,7 +129,7 @@
                     <p class="text-muted">
                         (64-bits)
                     </p>
-                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.3/openboard_debian_12_1.7.3_amd64.deb">
+                    <a class="btn btn-primary" href="https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/openboard_debian_12_1.7.5_amd64.deb">
                         Télécharger OpenBoard pour Debian 12
                     </a>
                 </div>
@@ -163,9 +163,60 @@
                             sur GitHub
                         </a>
                     </p>
+                    <h1>Remerciements</h1>
+                    <p><strong>Remerciements à la communauté OpenBoard :</strong> beaucoup des améliorations dont bénéficie OpenBoard ont été rendues possibles par le soutien de la communauté OpenBoard ! Un immense merci aux contributeurs GitHub : 
+                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
+                        <a href="https://github.com/Vekhir">Vekhir</a>, 
+                        <a href="https://github.com/sebojolais">sebojolais</a>
+                        et bien d'autres !
+                    </p>
                     <h1 id="changelog">
                         Notes de version
                     </h1>
+                    <h2>Version 1.7.5</h2>
+                    <h3>Changements</h3>
+                    <ul>
+                        <li>Correction d'un problème où la duplication d'un document puis la sélection de la copie n'affichait pas sa vignette.</li>
+                        <li>Correction du glisser-déposer de plusieurs pages et du comportement de sélection dans la vue des vignettes de documents.</li>
+                        <li>Correction de fautes de frappe dans le README.</li>
+                    </ul>
+                    <h3>Nouveaux contributeurs</h3>
+                    <ul>
+                        <li>@CryHavoc21 a réalisé sa première contribution dans #853.</li>
+                    </ul>
+
+                    <h2>Version 1.7.4</h2>
+                    <h3>Changements</h3>
+                    <ul>
+                        <li>Mise à jour vers Qt 6.9 sur macOS, Debian et Windows.</li>
+                        <li>Correction de glitches lors du rendu des PDF sur des écrans avec un DPI &gt; 100%.</li>
+                        <li>Correction de PDF flous quand <code>devicepixelratio</code> n'est pas à 1.0.</li>
+                        <li>Correction d'un bug où la vue était recentrée lors du nettoyage de la scène.</li>
+                        <li>Vignettes unifiées pour les modes Tableau et Document.</li>
+                        <li>Correction du dépôt d'une URL PDF sur le tableau.</li>
+                        <li>Copie correcte de <code>ItemOwnZValue</code> lors du clonage d'un élément.</li>
+                        <li>Correction de l'utilisation des outils avec la gomme d'une tablette.</li>
+                        <li>Correction d'un bug empêchant la rotation d'une ligne horizontale ou verticale.</li>
+                        <li>Ajout d'un indicateur d'accrochage à la rotation et alignement des éléments tournés.</li>
+                        <li>Correction de petits décalages de scène lors du changement de page.</li>
+                        <li>Import d'un fichier une seule fois par document.</li>
+                        <li>Amélioration des performances du chargeur en arrière-plan.</li>
+                        <li>Correction du message de chargement qui restait après l'import UBZ.</li>
+                        <li>Correction de la synchronisation des vignettes.</li>
+                        <li>Correction des fichiers <code>ubdocument</code> incomplets.</li>
+                        <li>Refactorisation de la gestion d'activation/désactivation de l'interface.</li>
+                        <li>Vérification de la validité du document dans la vue des vignettes.</li>
+                        <li>Correction d'un crash possible dans <code>UBThumbnailScene</code>.</li>
+                        <li>Ajustement de la taille des vignettes et des boutons de l'interface.</li>
+                        <li>Ajout du support des images WebP.</li>
+                        <li>Correction de fautes de frappe.</li>
+                        <li>Meilleure détection de la poignée de délégué avec un stylet de tablette.</li>
+                        <li><code>UBPersistenceManager::createDocumentProxyStructure</code> est désormais statique.</li>
+                        <li>Contournement d'un plantage sous Windows où la dropbar restait attachée à une scène invalide après un changement de document.</li>
+                        <li>Correction de la traduction allemande pour « cache ».</li>
+                        <li>Correction de captures d'écran floues.</li>
+                    </ul>
+
                     <h2>Version 1.7.3</h2>
                     <h3>Corrections de bugs</h3>
                     <ul>
@@ -186,13 +237,6 @@
                         <li>En mode Bureau, le dock Gnome doit être positionné en bas pour contourner le problème de la palette gauche d'OpenBoard qui devient inutilisable lorsqu'elle est au-dessus (cf. <a href="https://bugreports.qt.io/browse/QTBUG-81341" target="_blank">https://bugreports.qt.io/browse/QTBUG-81341</a> pour plus de détails).</li>
                     </ul>
                     <h2>Version 1.7.2</h2>
-                    <p><strong>Remerciements à la communauté OpenBoard :</strong> beaucoup de ces améliorations ont été rendues possibles grâce au soutien de la communauté OpenBoard ! Un immense merci aux contributeurs GitHub : 
-                        <a href="https://github.com/letsfindaway">letsfindaway</a>, 
-                        <a href="https://github.com/Vekhir">Vekhir</a>, 
-                        <a href="https://github.com/sebojolais">sebojolais</a>
-                        et bien d'autres !
-                    </p>
-
                     <h3>Nouvelles fonctionnalités</h3>
                     <ul>
                         <li>Ajout de la fonctionnalité "Aligner sur la grille", permettant d'aligner des éléments sur les lignes des fonds existants. Si aucun fond n'est affiché, la grille par défaut est utilisée.</li>
@@ -1766,8 +1810,8 @@
                         Code source
                     </h3>
                     <p>
-                        Le code source de la dernière version, 1.7.3, peut être obtenu
-                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.3">
+                        Le code source de la dernière version, 1.7.5, peut être obtenu
+                        <a href="https://github.com/OpenBoard-org/OpenBoard/releases/tag/v1.7.5">
                             ici
                         </a>
                     </p>
