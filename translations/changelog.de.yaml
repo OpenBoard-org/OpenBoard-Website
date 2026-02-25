@@ -3,12 +3,9 @@ releases:
     sections:
       - title: "Änderungen"
         items:
-          - "Behoben: Beim Duplizieren eines Dokuments und Auswahl der Kopie wurde keine Miniatur angezeigt."
-          - "Drag & Drop mehrerer Seiten und das Auswahlverhalten in der Dokument-Miniaturansicht wurden korrigiert."
-          - "Tippfehler im README behoben."
-      - title: "Neue Mitwirkende"
-        items:
-          - "@CryHavoc21 hat seine erste Contribution in #853 gemacht."
+          - "Absturz beim Verwenden des Buttons „Zum Dokument hinzufügen“ im Dokumentenmodus behoben."
+          - "Fehler behoben, bei dem die Standard-PDF-Exportmethode ständig fehlschlug."
+          - "Fix: Neuordnung der Board-Miniaturen nach dem Duplizieren einer Szene von @letsfindaway in #1430."
 
   - version: "1.7.4"
     sections:

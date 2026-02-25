@@ -3,12 +3,9 @@ releases:
     sections:
       - title: "Cambiamenti"
         items:
-          - "Corretto un problema per cui duplicando un documento e selezionando la nuova copia non veniva mostrata la miniatura."
-          - "Corretto il trascinamento di più pagine e il comportamento di selezione nella vista delle miniature dei documenti."
-          - "Corrette alcune imprecisioni nel README."
-      - title: "Nuovi contributori"
-        items:
-          - "@CryHavoc21 ha fatto la sua prima contribution in #853."
+          - "Corretto un crash usando il pulsante \"aggiungi al documento\" in Modalità Documenti."
+          - "Corretto un bug per cui il metodo di esportazione PDF standard falliva costantemente."
+          - "Fix: riordino delle miniature della lavagna dopo la duplicazione di una scena da parte di @letsfindaway in #1430."
 
   - version: "1.7.4"
     sections:

@@ -3,12 +3,9 @@ releases:
     sections:
       - title: "What's Changed"
         items:
-          - "Fixed an issue where duplicating a document and selecting the new copy would not show its thumbnail."
-          - "Improved drag & drop of multiple pages and selection behavior in the document thumbnails view."
-          - "Fixed typos in the README."
-      - title: "New Contributors"
-        items:
-          - "@CryHavoc21 made their first contribution in #853."
+          - "Fixed a crash when using the \"add to document\" button in Documents Mode."
+          - "Fixed a bug where the standard PDF export method would constantly fail."
+          - "Fix: rearrange board thumbnails after duplicating scene by @letsfindaway in #1430."
 
   - version: "1.7.4"
     sections:

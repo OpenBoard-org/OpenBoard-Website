@@ -3,12 +3,9 @@ releases:
     sections:
       - title: "Changements"
         items:
-          - "Correction d'un problème où la duplication d'un document puis la sélection de la copie n'affichait pas sa vignette."
-          - "Correction du glisser-déposer de plusieurs pages et du comportement de sélection dans la vue des vignettes de documents."
-          - "Correction de fautes de frappe dans le README."
-      - title: "Nouveaux contributeurs"
-        items:
-          - "@CryHavoc21 a réalisé sa première contribution dans #853."
+          - "Correction d'un crash lors de l'utilisation du bouton « ajouter au document » en mode Documents."
+          - "Correction d'un bug où l'export PDF standard échouait systématiquement."
+          - "Ajustement du réagencement des vignettes de tableau après la duplication d'une scène par @letsfindaway dans #1430."
 
   - version: "1.7.4"
     sections:
