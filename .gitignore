@@ -21,3 +21,8 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> local assistant tools ###
+/.codex
+/.claude
+###< local assistant tools ###
