@@ -1,11 +1,32 @@
 releases:
-  - version: "1.7.5"
+  - version: "1.7.7"
+    sections:
+      - title: "Änderungen"
+        items:
+          - "Weißer Hintergrund wird für Widgets bei Qt-Versionen über 6.8.0 nicht mehr erzwungen."
+          - "Warnsymbol und Hinweistext werden bei beschädigten Dokumenten angezeigt, um besser zu erklären, was zu tun ist."
+          - "Fehlerbehebung: Cookie-Speicherung aktiviert (von @letsfindaway in #1445)."
+          - "Feature: Dokumentkonverter 1.8.0 auf den 1.7.x-Zweig zurückportiert (von @letsfindaway in #1443)."
+          - "Build: Anpassung an poppler 26.02 (von @letsfindaway in #1434)."
+
+  - version: "1.7.6"
     sections:
       - title: "Änderungen"
         items:
           - "Absturz beim Verwenden des Buttons „Zum Dokument hinzufügen“ im Dokumentenmodus behoben."
           - "Fehler behoben, bei dem die Standard-PDF-Exportmethode ständig fehlschlug."
-          - "Fix: Neuordnung der Board-Miniaturen nach dem Duplizieren einer Szene von @letsfindaway in #1430."
+          - "Neuordnung der Board-Miniaturen nach dem Duplizieren einer Szene (von @letsfindaway in #1430)."
+
+  - version: "1.7.5"
+    sections:
+      - title: "Änderungen"
+        items:
+          - "Behoben: Beim Duplizieren eines Dokuments und Auswahl der Kopie wurde keine Miniatur angezeigt."
+          - "Drag & Drop mehrerer Seiten und das Auswahlverhalten in der Dokument-Miniaturansicht wurden korrigiert."
+          - "Tippfehler im README behoben."
+      - title: "Neue Mitwirkende"
+        items:
+          - "@CryHavoc21 hat seine erste Contribution in #853 gemacht."
 
   - version: "1.7.4"
     sections:

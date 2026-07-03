@@ -61,21 +61,21 @@ class PageController extends AbstractController
                 'name_key' => 'download.platforms.macos.name',
                 'note_key' => 'download.platforms.macos.note',
                 'cta_key' => 'download.platforms.macos.cta',
-                'url' => 'https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard-1.7.5.dmg',
+                'url' => 'https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.7/OpenBoard-1.7.7.dmg',
             ],
             [
                 'image' => 'images/Windows-logo.png',
                 'name_key' => 'download.platforms.windows.name',
                 'note_key' => 'download.platforms.windows.note',
                 'cta_key' => 'download.platforms.windows.cta',
-                'url' => 'https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard_Installer_1.7.5.exe',
+                'url' => 'https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.7/OpenBoard_Installer_1.7.7.exe',
             ],
             [
                 'image' => 'images/Debian-logo.png',
                 'name_key' => 'download.platforms.debian.name',
                 'note_key' => 'download.platforms.debian.note',
                 'cta_key' => 'download.platforms.debian.cta',
-                'url' => 'https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/openboard_debian_12_1.7.5_amd64.deb',
+                'url' => 'https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.7/openboard_debian_12_1.7.7_amd64.deb',
             ],
         ];
 
