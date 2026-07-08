@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'download.title'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row platforms">
+            {% for entry in downloads %}
+                <div class="col-md-4 col-sm-12 platform">
+                    <img alt="{{ entry.name_key|trans }} logo" class="img-circle" src="{{ asset(entry.image) }}">
+                    <p>{{ entry.name_key|trans }}</p>
+                    <p class="text-muted">{{ entry.note_key|trans }}</p>
+                    <a class="btn btn-primary" href="{{ entry.url }}">
+                        {{ entry.cta_key|trans }}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="row platforms">
+            <div class="col-md-12 col-sm-12 platform">
+                <img alt="Github logo" src="{{ asset('images/Github-logo.png') }}">
+                <p>{{ 'download.other_platforms_title'|trans }}</p>
+                <p class="text-muted">{{ 'download.other_platforms_note'|trans }}</p>
+                <p>
+                    <a class="btn btn-primary" href="{{ communityPackagesUrl }}">
+                        {{ 'download.other_platforms_cta'|trans }}
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1>{{ 'download.old_releases_title'|trans }}</h1>
+                <p>{{ 'download.old_releases_text'|trans({'%releasesUrl%': releasesUrl})|raw }}</p>
+
+                <h1>{{ 'download.community_title'|trans }}</h1>
+                <p><strong>{{ 'download.community_thanks_label'|trans }}</strong> {{ 'download.community_thanks_text'|trans }}</p>
+                <p>{{ 'download.community_contributors_intro'|trans }}
+                    <a href="https://github.com/letsfindaway">letsfindaway</a>,
+                    <a href="https://github.com/Vekhir">Vekhir</a>,
+                    <a href="https://github.com/sebojolais">sebojolais</a>
+                    {{ 'download.community_contributors_suffix'|trans }}
+                </p>
+
+                <h1 id="changelog">{{ 'download.release_notes_title'|trans }}</h1>
+                {% for release in changelog %}
+                    <h2>{{ 'download.version_label'|trans({'%version%': release.version}) }}</h2>
+                    {% for section in release.sections %}
+                        <h3>{{ section.title }}</h3>
+                        <ul>
+                            {% for item in section.items %}
+                                <li>{{ item|raw }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
+                {% endfor %}
+                <p class="text-muted">{{ 'download.changelog.more'|trans({'%releasesUrl%': releasesUrl})|raw }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
